@@ -1,5 +1,5 @@
 
-# M3 — SD Configuration and Logistics Exceptions
+# M3 - SD Configuration and Logistics Exceptions
 
 **Status:** Not started
 

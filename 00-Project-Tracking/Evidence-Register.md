@@ -14,9 +14,24 @@ Each evidence item must be traceable to a module, requirement, and completed or 
 
 | Evidence ID | Module | Requirement | Description | Execution Status | Evidence File |
 |---|---|---|---|---|---|
-| EV-001 | TBD | TBD | TBD | Not Started | TBD |
+| EV-001 | M1 | Access / A01 | 14 assigned business roles list, cropped to exclude user-identifying columns | Executed | M1-Landscape-and-Monitoring/evidence/iam-14-roles-crop.png |
+| EV-002 | M1 | A02 / M1.02 | VA01 sales organization 1010/10/00 | Executed | M1-Landscape-and-Monitoring/evidence/sales-org-va01.png |
+| EV-003 | M1 | M1.03 | Sales fulfillment issues: 44 issue flags, 40 affected documents | Executed | M1-Landscape-and-Monitoring/evidence/sales-fulfillment-monitoring.png |
+| EV-004 | M1 | M1.03 | Manage Outbound Deliveries: 8 ready-for-GI results | Executed | M1-Landscape-and-Monitoring/evidence/outbound-delivery-monitoring.png |
+| EV-005 | M1 | A05 / M1.03 | SIT log view: 36 entries | Executed | M1-Landscape-and-Monitoring/evidence/situation-log-sit.png |
+| EV-006 | M1 | M1.03 | Billing posting status filter menu; counts supplied in chat | Executed - count not screenshot-proven | M1-Landscape-and-Monitoring/evidence/billing-posting-status-filter.png |
+| EV-007 | M1 | M1.03 | Delivery output filters; counts supplied in chat | Executed - count not screenshot-proven | M1-Landscape-and-Monitoring/evidence/delivery-output-status-filter.png |
+| EV-008 | M1 | Triage / INC-SD-002 | Third-party item category CB1/purchase requisition diagnostic | Executed | M1-Landscape-and-Monitoring/evidence/third-party-item-cb1-pr.png |
+| EV-009 | M1 | Triage / INC-SD-002 | Order 1055 TG11 item TAN and plant 1010 | Executed | M1-Landscape-and-Monitoring/evidence/stock-material-tg11-tan.png |
+| EV-010 | M1 | Triage / INC-SD-002 | Negative test: Political Reasons delivery-block error | Executed | M1-Landscape-and-Monitoring/evidence/delivery-block-error.png |
+| EV-011 | M1 | Triage / INC-SD-002 | Positive test: sales order 1055 to outbound delivery 80000784 in document flow | Executed | M1-Landscape-and-Monitoring/evidence/delivery-positive-document-flow.png |
+| EV-012 | M1 | M1.02 / INC-SD-002 | Outbound delivery 80000784 shipping point 1010 | Executed | M1-Landscape-and-Monitoring/evidence/delivery-shipping-point.png |
+| EV-013 | M1 | Triage / INC-SD-002 | Outbound delivery 80000784 checked, not picked, GI not started, not invoiced | Executed | M1-Landscape-and-Monitoring/evidence/delivery-processing-status.png |
+| EV-014 | M1 | Triage / INC-SD-001 | Pricing baseline PPR0 EUR 17.55, tax and internal price | Executed | M1-Landscape-and-Monitoring/evidence/pricing-baseline.png |
+| EV-015 | M1 | Triage / INC-SD-001 | Pricing Analysis Y10101 PPR0 message 203 manual override | Executed | M1-Landscape-and-Monitoring/evidence/pricing-analysis-manual-override.png |
+| EV-016 | M1 | Triage / INC-SD-001 | VA03 order 1056 corrected PPR0 EUR 17.55 | Executed | M1-Landscape-and-Monitoring/evidence/pricing-corrected-va03.png |
 
-Additional rows will be added as evidence is collected.
+**Evidence limitations:** Some aggregate monitor counts were supplied as contemporaneous SAP UI readouts rather than preserved screenshot counts. Do not characterize them as screenshot-verified. The cropped IAM screenshot omits user identity. Review all images for publication rights and other sensitive data before making the repo public.
 
 ## Evidence Categories
 

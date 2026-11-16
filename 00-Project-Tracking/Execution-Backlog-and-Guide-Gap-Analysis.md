@@ -1,8 +1,8 @@
 # Execution Backlog and Word-Guide Gap Analysis
 
 **Source of requirements:** `SAP_SD_Complete_2_Week_Lab_and_Interview_Guide.docx` (original Word guide, sections 1, 2, 4–9).  
-**Working structure:** repository contents as received.  
-**Project state:** No SAP exercises have been performed or verified at the start of this execution phase.  
+**Working structure:** original repository preserved; M1 evidence and execution records added from the 16 November 2026 SAP training session.  
+**Project state:** M1 monitoring and two controlled sandbox incidents have been executed and verified (see EV-001–EV-016). Modules M2–M9 are not yet executed.  
 **Scheduling:** No daily, weekly, or duration-based schedule is imposed. Work proceeds as soon as individual results are verified.
 
 ## Evidence and completion rules
@@ -11,7 +11,7 @@
 - Mark an SAP task **Executed** only after the actual step is performed in an authorized SAP training system and the result is verified and logged (transaction/Fiori app, client, timestamp, document IDs where applicable, expected versus actual, anonymized screenshot or system output).
 - **Simulated** = worked through on paper, explicitly without claiming SAP execution. **Blocked** = confirmed infeasible because of access, data, or tenant constraints. **Not Started** = no outcome yet.
 - A read-only system inspection may be an executed *inspection*, but does not imply that the related corrective action, configuration change, or end-to-end transaction has been executed.
-- The 15 requirement rows stay Not Started until supported outcomes are assessed; later mark each row by the actual level of coverage and link evidence. Do not call a partly completed module complete.
+- Update requirement rows as evidence is produced; use **In Progress** for partial coverage and link to exact evidence. Do not present a partly covered job requirement as fully executed.
 - Preserve all existing templates. Copy/fill them for concrete case deliverables; do not overwrite examples with fabricated client results.
 - Do not run destructive activities, modify shared configuration, reprocess shared IDocs, transport changes or change other users' roles without explicit permission.
 - Do not publish the repository until all exercises, classification, anonymization, and final portfolio validation are finished. Repository privacy cannot be inferred from the local ZIP.
@@ -33,14 +33,14 @@ Use [M1 Access Audit and Baseline](../M1-Landscape-and-Monitoring/Access-Audit-a
 
 ## M1 — Environment, monitoring and support operations (R01)
 
-Existing: M1 README only. Missing: execution-specific inventory, monitoring, runbook and triage records. New M1 working files address this documentary gap without claiming results.
+M1 evidence now captured in the access/baseline, support runbook and triage files. Some access-audit capabilities are explicitly deferred to the applicable later modules; these are not implicitly verified.
 
-- [ ] **M1.01** Record release/client, user permissions and access matrix (Gate A).
-- [ ] **M1.02** Inspect org and sample data: company code, sales org, distribution channel, division, plant, shipping point, billing setup, customer/material, stock and approved scenario.
-- [ ] **M1.03** Monitoring sweep: incomplete sales docs; blocked orders, deliveries or invoices; IDoc statuses; SLG1; interface/output queues; record accessible views and explicit access failures.
-- [ ] **M1.04** Define severity, impact, urgency, response/SLA *illustrations*, escalation owners, ticket states, evidence standards and daily handover format for the fictional company.
-- [ ] **M1.05** Create **two triage tickets**, based on observed conditions if available; otherwise label fictional scenarios as simulated. Distinguish incident, service request and problem.
-- [ ] **M1.06** Baseline KPIs: incident volume and age, failed interfaces, billing backlog, mean resolution time. Label every unmeasurable value as N/A or illustrative, never observed.
+- [x] **M1.01** Record release/client, user permissions and access matrix (Gate A). **Completed as documented snapshot; specialized access unverified/deferred.**
+- [x] **M1.02** Inspect org and sample data: sales org, distribution channel, division, plant, shipping point, billing setup, customer/material, stock and approved scenario. **Completed for verified fields; company code/delivery type not independently checked.**
+- [x] **M1.03** Monitoring sweep: blocked documents and fulfillment, delivery, billing, output and available application logs. **Completed for accessible views; incomplete-order totals/IDoc/general SD logs not measured.**
+- [x] **M1.04** Define severity, impact, urgency, response/SLA *illustrations*, escalation owners, ticket states, evidence standards and daily handover format for the fictional company. **Completed as simulated operating design.**
+- [x] **M1.05** Create **two triage tickets**. **Completed with two deliberately reproduced, diagnosed, corrected and retested sandbox cases: order 1055 delivery block and order 1056 PPR0 manual pricing override.**
+- [x] **M1.06** Baseline KPIs: incident volume and age, failed interfaces, billing backlog, mean resolution time. **Completed where measurable; remaining values explicitly N/A, not invented.**
 
 Deliverables: **access audit**, **support runbook**, **baseline monitoring sheet**, **2 triage tickets**, anonymized EV references. Files: `M1/Access-Audit-and-Baseline.md`, `M1/Support-Runbook-and-Triage.md` (actual folder is `M1-Landscape-and-Monitoring`).
 
@@ -176,4 +176,4 @@ Deliverables: bilingual messages, training demonstration/guide, capstone, eviden
 | M9 | 5 substantive guides/templates and README | Specific JP/EN case, demo delivery evidence, capstone, presentation, final coverage evidence |
 | Project-wide | `Requirement-Coverage.md`, `Evidence-Register.md`, `PORTFOLIO-VALIDATION.md` | Actual EV references, all 15 R-status decisions, final validation/sign-off |
 
-**Current verified SAP exercise count: 0.** No screenshots, live document numbers, real SAP incident diagnoses or live configuration changes are present in the uploaded repository.
+**Current verified M1 controlled incident exercises: 2.** Orders 1055 and 1056 were intentionally faulted, diagnosed and corrected in SAP, with verified retests; see EV-009–EV-016. Monitoring/authorization inspections are separately evidenced in EV-001–EV-007. **No M2 full O2C chain, live configuration change, production support, or M4 IDoc recovery is yet claimed.**

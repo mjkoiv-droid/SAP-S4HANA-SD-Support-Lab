@@ -1,5 +1,5 @@
 
-# SAP S/4HANA SD — Application Support Lab
+# SAP S/4HANA SD - Application Support Lab
 
 **Independent SAP S/4HANA Practical Project | November 2026**
 

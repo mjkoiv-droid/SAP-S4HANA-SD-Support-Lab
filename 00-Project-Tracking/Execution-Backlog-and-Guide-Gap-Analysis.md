@@ -2,7 +2,7 @@
 
 **Source of requirements:** `SAP_SD_Complete_2_Week_Lab_and_Interview_Guide.docx` (original Word guide, sections 1, 2, 4–9).  
 **Working structure:** original repository preserved; M1 evidence and execution records added from the 16 November 2026 SAP training session.  
-**Project state:** M1 monitoring and two controlled sandbox incidents have been executed and verified (see EV-001–EV-016). Modules M2–M9 are not yet executed.  
+**Project state:** M1 has verified monitoring observations and two corrected, controlled sandbox incidents (EV-001–EV-016); its broader mandatory access audit remains **partially open**. M2–M9 have not been executed.  
 **Scheduling:** No daily, weekly, or duration-based schedule is imposed. Work proceeds as soon as individual results are verified.
 
 ## Evidence and completion rules
@@ -35,14 +35,14 @@ Use [M1 Access Audit and Baseline](../M1-Landscape-and-Monitoring/Access-Audit-a
 
 M1 evidence now captured in the access/baseline, support runbook and triage files. Some access-audit capabilities are explicitly deferred to the applicable later modules; these are not implicitly verified.
 
-- [x] **M1.01** Record release/client, user permissions and access matrix (Gate A). **Completed as documented snapshot; specialized access unverified/deferred.**
-- [x] **M1.02** Inspect org and sample data: sales org, distribution channel, division, plant, shipping point, billing setup, customer/material, stock and approved scenario. **Completed for verified fields; company code/delivery type not independently checked.**
-- [x] **M1.03** Monitoring sweep: blocked documents and fulfillment, delivery, billing, output and available application logs. **Completed for accessible views; incomplete-order totals/IDoc/general SD logs not measured.**
+- [ ] **M1.01 — Partial:** Record release/client, user permissions and access matrix (Gate A). User-specific 14-role snapshot was verified, but System → Status, release and complete client/permission boundaries were not independently rechecked. Gate A remains open.
+- [ ] **M1.02 — Partial:** Inspect org and sample data: sales org, distribution channel, division, plant, shipping point, billing setup, customer/material, stock and approved scenario. Verified fields are recorded; **company code and actual delivery type remain unverified**.
+- [ ] **M1.03 — Partial:** Monitoring sweep: verified accessible sales fulfillment, deliveries, billing, output and SIT logs; **incomplete-document, blocked-delivery and IDoc/interface/general SD log totals were not measured** (scope limitations documented).
 - [x] **M1.04** Define severity, impact, urgency, response/SLA *illustrations*, escalation owners, ticket states, evidence standards and daily handover format for the fictional company. **Completed as simulated operating design.**
 - [x] **M1.05** Create **two triage tickets**. **Completed with two deliberately reproduced, diagnosed, corrected and retested sandbox cases: order 1055 delivery block and order 1056 PPR0 manual pricing override.**
 - [x] **M1.06** Baseline KPIs: incident volume and age, failed interfaces, billing backlog, mean resolution time. **Completed where measurable; remaining values explicitly N/A, not invented.**
 
-Deliverables: **access audit**, **support runbook**, **baseline monitoring sheet**, **2 triage tickets**, anonymized EV references. Files: `M1/Access-Audit-and-Baseline.md`, `M1/Support-Runbook-and-Triage.md` (actual folder is `M1-Landscape-and-Monitoring`).
+Deliverables: **access audit**, **support runbook**, **baseline monitoring sheet**, **2 triage tickets**, anonymized EV references. Files: `M1-Landscape-and-Monitoring/Access-Audit-and-Baseline.md` and `M1-Landscape-and-Monitoring/Support-Runbook-and-Triage.md`.
 
 ## M2 — Two complete order-to-cash chains (R02)
 
@@ -165,7 +165,7 @@ Deliverables: bilingual messages, training demonstration/guide, capstone, eviden
 
 | Area | Existing material | Missing actual output or specifically missing working document |
 |---|---|---|
-| Gate A + M1 | Short README | All audit and monitoring results; M1 forms newly prepared in this package |
+| Gate A + M1 | Access audit/monitoring baseline, support runbook, two actual controlled cases, 16 evidence images; module README | Company code, delivery type, incomplete/blocked-delivery counts and specialist access checks remain open or deferred; publication permissions still require final review |
 | M2 | O2C process trace template | 2 instantiated, executed traces, flow/swimlane and control checklist |
 | M3 | Configuration analysis template | Configuration evidence, 2 incident investigations, change/impact and retests |
 | M4 | IDoc diagnostic template | Failed IDoc evidence, logs/output, safe recovery trace/checklist |

@@ -34,6 +34,23 @@
 | A07 | Transports | SE09/SE10, STMS not tested | **Unverified/deferred** to M7/alternate sandbox |
 | A08 | Data segregation | Exercises conducted against test customer 1000193, own references `M1-TEST-001`, `REF TT0234`; no master/shared customizing changed | **Test data use verified**, shared-scope policy still unverified | EV-009–EV-016 |
 
+## Access audit RAG summary (as required by original guide)
+
+**GREEN** = tested and available for the stated action; **AMBER** = partly tested, source-limited or not yet verified; **RED** = explicitly unavailable through the tested route in this sandbox. These ratings apply **only to JV2/client 100 and the specific action**, not all of SAP Learning Hub or any alternate sandbox.
+
+| Access area | RAG | Verified scope / limitation |
+|---|---|---|
+| System identity/release and tenancy boundary (A01) | AMBER | JV2/100 and expiry were supplied in the account inventory; `System → Status` was not independently captured; shared-sandbox rules remain unconfirmed |
+| Sales orders and document flow (A02) | GREEN for tested tasks | Orders 1055/1056 created/changed/displayed; document flow inspected; no complete O2C run |
+| Delivery processing (A02) | GREEN for tested tasks | Created and displayed delivery 80000784; picking, PGI and billing were not executed |
+| Billing and accounting (A02) | AMBER | Billing display/filtering available; successful FI posting not demonstrated |
+| Configuration change (A03) | AMBER | CBC reported denied from prior inventory; no safe dedicated customization client confirmed |
+| IDoc interface tools (A04) | RED in examined Launchpad | WE02/WE05/WE19/BD87 not located there; reassess in a suitable alternate sandbox |
+| Application logs / output (A05) | AMBER | SIT-only logs and delivery outputs available; SLG1/general SD monitor unavailable in tested view |
+| Authorization support (A06) | AMBER | User role assignments checked; SU53/SU01/PFCG not verified |
+| Transports (A07) | AMBER | SE09/SE10/STMS not verified; no import attempted |
+| Test-data segregation (A08) | AMBER | Own sandbox test customer/order references used; shared-client rules still unconfirmed |
+
 ## M1.02. Organization, transactions and sample-data inventory
 
 | Object | Actual observed value | Evidence |

@@ -1,4 +1,4 @@
-# M1 — System Landscape and Support Monitoring
+# M1 - System Landscape and Support Monitoring
 
 Status: Not started
 

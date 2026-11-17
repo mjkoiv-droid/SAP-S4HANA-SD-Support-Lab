@@ -7,9 +7,9 @@ This repository presents an independent SAP S/4HANA Sales (SD) professional deve
 
 The portfolio combines SAP functional knowledge with an international industrial business perspective.
 
-It is organized into nine modules and distinguishes **verified SAP sandbox execution**, **training-only simulation**, and **documentation/templates**. Module 1 contains actual SAP system-monitoring results and two controlled, resolved training cases. Its wider access audit retains explicitly documented gaps. Module 2 now contains two executed O2C traces verified through FI posting; Modules 3–9 have not been executed.
+It is organized into nine modules and distinguishes **verified SAP sandbox execution**, **training-only simulation**, and **documentation/templates**. Module 1 contains actual SAP system-monitoring results and two controlled, resolved training cases. Its wider access audit retains explicitly documented gaps. Module 2 contains two executed O2C traces verified through FI posting; Module 3 contains read-only configuration observations, reproduced pricing/picking exceptions, and a proposed change with access-blocked configuration review. Modules 4–9 have not been executed.
 
-**Execution snapshot (17 November 2026):** M1 includes 16 genuine SAP training screenshots, read-only monitoring observations and two deliberately created, reproduced and corrected support cases (sales orders `1055` and `1056`). This is **not a production client engagement**. The mandatory access audit is *partially verified*, with delivery type, general SD/IDoc logging and specialized configuration/security/transport checks still outstanding or deferred. Company code **1010** was subsequently verified in M2 (EV-025–EV-026). M2 has two complete O2C document chains through FI, with an unresolved billing-block negative test; see the M2 README.
+**Execution snapshot (17 November 2026):** M1 includes 16 genuine SAP training screenshots, read-only monitoring observations and two deliberately created, reproduced and corrected support cases (sales orders `1055` and `1056`). This is **not a production client engagement**. The mandatory access audit is *partially verified*, with delivery type, general SD/IDoc logging and specialized configuration/security/transport checks still outstanding or deferred. Company code **1010** was subsequently verified in M2 (EV-025–EV-026). M2 has two complete O2C document chains through FI, with an unresolved billing-block negative test. M3 reproduces the block issue at delivery level, verifies a controlled picking correction (PGI 4900001491), and documents the proposed change without claiming CBC access or implementation. See the M2 and M3 READMEs.
 
 **Publication:** Keep this repository **private** while executing and validating M1–M9. A downloaded ZIP cannot establish GitHub visibility settings.
 
@@ -77,6 +77,8 @@ Focus areas:
 - SAP SD integration with FI and MM
 
 ### M3 — SD Configuration and Logistics Exceptions
+
+**Status:** Read-only observations and controlled actual tests recorded (EV-036–EV-052). CBC access denied; configuration change not implemented. [View M3 results and limitations](M3-Configuration-and-Logistics/README.md).
 
 Focus areas:
 

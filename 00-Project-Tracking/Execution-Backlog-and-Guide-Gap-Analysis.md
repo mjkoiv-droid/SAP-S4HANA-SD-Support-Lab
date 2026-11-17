@@ -2,7 +2,7 @@
 
 **Source of requirements:** `SAP_SD_Complete_2_Week_Lab_and_Interview_Guide.docx` (original Word guide, sections 1, 2, 4–9).  
 **Working structure:** original repository preserved; M1 evidence and execution records added from the 16 November 2026 SAP training session.  
-**Project state:** M1 has verified monitoring observations and two corrected, controlled sandbox incidents (EV-001–EV-016); its broader mandatory access audit remains **partially open**. M2 has two fully executed O2C chains through balanced FI postings (EV-017–EV-035). Billing-block negative test failed and remains open for M3; M3–M9 have not been executed.  
+**Project state:** M1 has verified monitoring observations and two corrected, controlled sandbox incidents (EV-001–EV-016); its broader mandatory access audit remains **partially open**. M2 has two fully executed O2C chains through balanced FI postings (EV-017–EV-035). Billing-block negative test failed. M3 now has read-only configuration observations, two executed incident reproductions with corrected pricing/picking, and a proposed change/impact design; CBC inspection is blocked. M4–M9 have not been executed.  
 **Scheduling:** No daily, weekly, or duration-based schedule is imposed. Work proceeds as soon as individual results are verified.
 
 ## Evidence and completion rules
@@ -61,12 +61,12 @@ Deliverables: **access audit**, **support runbook**, **baseline monitoring sheet
 
 Existing: `M3-Configuration-and-Logistics/Configuration-Analysis-Template.md`.
 
-- [ ] **M3.01** Inspect document type, item-category and schedule-line determination, copy control, shipping-point determination, delivery and billing settings.
-- [ ] **M3.02** Inspect pricing procedure/condition technique, condition records and SD–FI account determination; identify authorized safe reproduction test.
-- [ ] **M3.03** Baseline/propose one change (e.g. pricing/billing block) with dependencies, authorization, approval, expected delta, impact and rollback.
-- [ ] **M3.04** Implement only if authorized in a dedicated training client; otherwise preserve read-only inspection and label proposed settings simulated.
-- [ ] **M3.05** Reproduce and diagnose **missing/wrong price** and **delivery/picking block** with negative, positive and regression tests, if supported.
-- [ ] **M3.06** Assess Sales, Logistics, FI, outputs, interfaces, reporting, roles, risk and regression coverage.
+- [ ] **M3.01** **Partial:** OR/TAN/CP, shipping-point inputs and transaction outcomes observed; VOV* and copy-control customizing not inspected (CBC blocked).
+- [ ] **M3.02** **Partial:** PPR0 condition record/procedure and posted FI accounts inspected, but account determination customizing not inspected.
+- [x] **M3.03** CHG-M3-001 proposed for billing block 04 / F2; baseline, dependencies, authorization, test and rollback documented; **proposal only**.
+- [x] **M3.04** **Blocked:** CBC reported Unauthorized, so no setting was edited. Read-only and proposal status retained; **no implementation claimed**.
+- [ ] **M3.05** **Partial:** wrong price 1056 (M1), partial picking 1059/80000788 (M3) reproduced, diagnosed, corrected with successful retests; **broader regression not executed**.
+- [x] **M3.06** Change impact and regression test matrix **prepared** for Sales, Logistics, FI, outputs, interfaces, reporting and roles; **proposed** analysis, not executed regression.
 
 Deliverables: filled configuration workbook, controlled change proposal, impact matrix, **2 exception investigation records**, before/after test evidence.
 
@@ -167,7 +167,7 @@ Deliverables: bilingual messages, training demonstration/guide, capstone, eviden
 |---|---|---|
 | Gate A + M1 | Access audit/monitoring baseline, support runbook, two actual controlled cases, 16 evidence images; module README | Company code 1010 was verified subsequently in M2; delivery type, incomplete/blocked-delivery counts and specialist access checks remain open or deferred; publication permissions still require final review |
 | M2 | O2C process trace template | 2 instantiated, executed traces, flow/swimlane and control checklist |
-| M3 | Configuration analysis template | Configuration evidence, 2 incident investigations, change/impact and retests |
+| M3 | Configuration analysis template; filled CFG-SD-001, 2 actual incident investigations, billing-block observation, CHG-M3-001 proposal, impact matrix, EV-036–EV-052 | CBC settings and copy-control customizing inaccessible; proposed configuration not implemented; broad regression not executed |
 | M4 | IDoc diagnostic template | Failed IDoc evidence, logs/output, safe recovery trace/checklist |
 | M5 | Incident and RCA templates | 6 filled incidents, 2 SRs, 3 RCAs, communication log, reopened ticket/problem record |
 | M6 | FS, impact and test templates | Workshop record, CHG-SD-001, traceability matrix, 6+ actual test results, defects/sign-off |

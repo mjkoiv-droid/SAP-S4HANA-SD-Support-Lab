@@ -53,6 +53,26 @@ Each evidence item must be traceable to a module, requirement, and completed or 
 
 **Evidence limitations:** For EV-017–EV-035, evidence images are captured SAP sandbox screens; original user-facing save confirmations remain in the workshop conversation, not all in screenshots. FI creator user IDs are masked in the two ledger images. The material-document movement type and stock before/after balances are not shown. The negative billing-block test failed and is not a passed control.  Some aggregate monitor counts were supplied as contemporaneous SAP UI readouts rather than preserved screenshot counts. Do not characterize them as screenshot-verified. The cropped IAM screenshot omits user identity. Review all images for publication rights and other sensitive data before making the repo public.
 
+| EV-036 | M3 | R07 | Delivery 80000785 financial processing shows billing block blank and fully invoiced | Executed — SAP screenshot | [View image](../M3-Configuration-and-Logistics/evidence/m3-order1056-delivery-no-billing-block.png) |
+| EV-037 | M3 | R07 | Sales order 1056 item 10 billing document tab shows billing block blank | Executed — SAP screenshot | [View image](../M3-Configuration-and-Logistics/evidence/m3-order1056-item-no-billing-block.png) |
+| EV-038 | M3 | R07 | Delivery 80000787 financial processing shows billing block Check Payment Terms before save | Executed — SAP screenshot | [View image](../M3-Configuration-and-Logistics/evidence/m3-delivery80000787-billing-block.png) |
+| EV-039 | M3 | R02 / R07 | Sales order 1058 document flow confirms PGI material document 4900001490 | Executed — SAP screenshot | [View image](../M3-Configuration-and-Logistics/evidence/m3-delivery80000787-post-goods-issue.png) |
+| EV-040 | M3 | R07 | Manage Your Solution indicates SAP Central Business Configuration management | Executed — SAP screenshot | [View image](../M3-Configuration-and-Logistics/evidence/m3-cbc-tenant-managed.png) |
+| EV-041 | M3 | R07 | Order 1058 item 10 PPR0 price 17.55, tax 3.33, cost 13.50 | Executed — SAP screenshot | [View image](../M3-Configuration-and-Logistics/evidence/m3-order1058-pricing-values.png) |
+| EV-042 | M3 | R07 | PPR0 condition record for material TG11 with validity and scale | Executed — SAP screenshot | [View image](../M3-Configuration-and-Logistics/evidence/m3-ppr0-condition-record.png) |
+| EV-043 | M3 | R07 | Order 1058 shipping tab: plant 1010, shipping point 1010, weight and delivery tolerances | Executed — SAP screenshot | [View image](../M3-Configuration-and-Logistics/evidence/m3-order1058-shipping.png) |
+| EV-044 | M3 | R07 | Product plant 1010 loading group Crane and availability check SR | Executed — SAP screenshot | [View image](../M3-Configuration-and-Logistics/evidence/m3-material-tg11-loading-group.png) |
+| EV-045 | M3 | R07 / R02 | Sales order 1059 quantity 2 PC, value EUR 35.10; learner IDs hidden | Executed — SAP screenshot | [View image](../M3-Configuration-and-Logistics/evidence/m3-order1059-2pc-redacted.png) |
+| EV-046 | M3 | R07 | Delivery 2 PC with picked quantity 1 PC and status B Partially Picked, before save | Executed — SAP screenshot | [View image](../M3-Configuration-and-Logistics/evidence/m3-picking-half-delivery.png) |
+| EV-047 | M3 | R07 | Goods issue failure: VLMOVE 030 delivery not yet completely picked | Executed — SAP screenshot | [View image](../M3-Configuration-and-Logistics/evidence/m3-pgi-error-vlmove030.png) |
+| EV-048 | M3 | R07 | Sales order 1059 to delivery 80000788 and goods issue document 4900001491, status complete | Executed — SAP screenshot | [View image](../M3-Configuration-and-Logistics/evidence/m3-pgi-post-correction-document-flow.png) |
+| EV-049 | M3 | R07 / R10 | Delivery 80000788 incompletion list empty | Executed — SAP screenshot | [View image](../M3-Configuration-and-Logistics/evidence/m3-delivery-incompletion-blank.png) |
+| EV-050 | M3 | R07 / R10 | VA03 sales order 1059 confirms Document is complete | Executed — SAP screenshot | [View image](../M3-Configuration-and-Logistics/evidence/m3-sales-order-complete-message.png) |
+| EV-051 | M3 | R07 | Order 1056 block 04 persists while fully delivered and invoiced | Executed — SAP screenshot | [View image](../M3-Configuration-and-Logistics/evidence/m3-order1056-billing-block-final-status.png) |
+| EV-052 | M3 | R07 / R02 | Invoice 90000305 item details 1 PC price and tax; no incompletion indicator displayed | Executed — SAP screenshot | [View image](../M3-Configuration-and-Logistics/evidence/m3-billing90000305-item-values.png) |
+
+**M3 evidence limitations:** EV-036–EV-052 are contemporaneous SAP screen images, but some later save confirmations and the separate CBC Unauthorized screen were reported in the workshop conversation, not preserved as screenshot artifacts. EV-038 shows selection before saving; the after-save confirmation was reported by the user. There was **no** FI journal number captured for invoice 90000305. No screenshot establishes exact GI movement type or configuration settings.
+
 ## Evidence Categories
 
 - SAP screenshots and transaction records

@@ -33,4 +33,4 @@ Both FI documents show customer receivable debit **EUR 20.88** and credits **EUR
 
 **Evidence handling:** The retained screenshots are genuine SAP sandbox views. Journal-entry screenshots have the creator's account identifier masked; posted amounts and document numbers remain unaltered. The primary source of several save messages is the contemporaneous user-reported SAP confirmation in the workshop conversation.
 
-**GitHub rule:** Keep repository private while the portfolio remains under execution and final validation. Changes to M2 are prepared for one controlled repository update, not evidence of any direct GitHub push.
+**GitHub rule:** Keep repository private while the portfolio remains under execution and final validation. M2 evidence was uploaded and verified against a downloaded repository ZIP; repository privacy and current live GitHub state still require separate confirmation.

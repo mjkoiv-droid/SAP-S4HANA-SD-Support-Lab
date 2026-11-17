@@ -7,9 +7,9 @@ This repository presents an independent SAP S/4HANA Sales (SD) professional deve
 
 The portfolio combines SAP functional knowledge with an international industrial business perspective.
 
-It is organized into nine modules and distinguishes **verified SAP sandbox execution**, **training-only simulation**, and **documentation/templates**. Module 1 contains actual SAP system-monitoring results and two controlled, resolved training cases. Its wider access audit retains explicitly documented gaps. Modules 2–9 have not been executed.
+It is organized into nine modules and distinguishes **verified SAP sandbox execution**, **training-only simulation**, and **documentation/templates**. Module 1 contains actual SAP system-monitoring results and two controlled, resolved training cases. Its wider access audit retains explicitly documented gaps. Module 2 now contains two executed O2C traces verified through FI posting; Modules 3–9 have not been executed.
 
-**Execution snapshot (16 November 2026):** M1 includes 16 genuine SAP training screenshots, read-only monitoring observations and two deliberately created, reproduced and corrected support cases (sales orders `1055` and `1056`). This is **not a production client engagement**. The mandatory access audit is *partially verified*, with company code, delivery type, general SD/IDoc logging and specialized configuration/security/transport checks still outstanding or deferred. No full M2 Order-to-Cash chain has been completed.
+**Execution snapshot (17 November 2026):** M1 includes 16 genuine SAP training screenshots, read-only monitoring observations and two deliberately created, reproduced and corrected support cases (sales orders `1055` and `1056`). This is **not a production client engagement**. The mandatory access audit is *partially verified*, with company code, delivery type, general SD/IDoc logging and specialized configuration/security/transport checks still outstanding or deferred. M2 has two complete O2C document chains through FI, with an unresolved billing-block negative test; see the M2 README.
 
 **Publication:** Keep this repository **private** while executing and validating M1–M9. A downloaded ZIP cannot establish GitHub visibility settings.
 
@@ -63,6 +63,8 @@ Focus areas:
 - Support investigation methodology
 
 ### M2 — Order-to-Cash Processing
+
+**Status:** Two executed training-sandbox O2C chains through FI (17 November 2026); billing block 04 negative test failed and is an open M3 issue. [View M2 traces and evidence](M2-Order-to-Cash/README.md).
 
 Focus areas:
 

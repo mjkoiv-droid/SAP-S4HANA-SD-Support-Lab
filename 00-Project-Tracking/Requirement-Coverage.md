@@ -21,12 +21,12 @@ Track progress against the 15 SAP SD application support job requirements and li
 | ID | Job Requirement | Module | Status | Evidence |
 |---|---|---|---|---|
 | R01 | Daily support and monitoring | M1, M5 | In Progress | M1 monitoring baseline and runbook: EV-003–EV-007; no repeated daily production monitoring |
-| R02 | Sales orders, picking, shipment and billing | M2, M3 | In Progress | Order 1055 → delivery 80000784 verified (EV-009–EV-013); no picking, PGI, billing or FI chain yet |
+| R02 | Sales orders, picking, shipment and billing | M2, M3 | Executed | Two training-sandbox O2C chains through balanced FI: 1055→80000784→4900001488→90000303→9400000057 and 1056→80000785→4900001489→90000304→9400000058 (EV-017–EV-035); billing-block control failed/open for M3; inventory balance/movement type unverified |
 | R03 | IDocs, interfaces, logs and output | M4 | Not Started | TBD |
 | R04 | Incidents and service requests | M5 | In Progress | Two *controlled sandbox* cases M1-TRIAGE-001/002 (EV-009–EV-016); 6-case queue and SRs pending |
 | R05 | Root cause analysis and corrective actions | M5 | In Progress | Two known root causes + corrections + retests (EV-010–EV-016); formal 3× RCA still pending |
 | R06 | Business coordination: Sales, Logistics, Finance | M6 | Not Started | TBD |
-| R07 | Enhancements, configuration and impact assessment | M3, M6 | Not Started | TBD |
+| R07 | Enhancements, configuration and impact assessment | M3, M6 | Not Started | M2 observed billing block 04 bypass in delivery-related F2 invoice (EV-027, EV-031, EV-034, EV-035); configuration root cause/impact assessment not yet executed in M3/M6 |
 | R08 | Unit, integration and UAT testing | M6, M7 | Not Started | TBD |
 | R09 | Release and post-release validation | M7 | Not Started | TBD |
 | R10 | Functional, configuration and test documentation | M3, M6, M7 | Not Started | TBD |
@@ -52,6 +52,6 @@ Each completed exercise should include:
 
 ## Completion Criteria
 
-The lab is complete when all 15 requirements have been assessed and their execution status accurately recorded. **M1-only evidence gives partial coverage of R01/R02/R04/R05; it does not complete these requirements.**
+The lab is complete when all 15 requirements have been assessed and their execution status accurately recorded. **M1 demonstrates partial monitoring/incident/RCA coverage; M2 demonstrates the R02 O2C execution scope with two full FI chains. The unresolved M2 billing-block control is an explicit M3 follow-up, not a successful control test.**
 
 Activities that cannot be performed in the training environment must be clearly identified as simulated or blocked.

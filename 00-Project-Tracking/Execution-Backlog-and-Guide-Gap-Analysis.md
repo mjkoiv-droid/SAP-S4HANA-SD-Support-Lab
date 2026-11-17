@@ -2,7 +2,7 @@
 
 **Source of requirements:** `SAP_SD_Complete_2_Week_Lab_and_Interview_Guide.docx` (original Word guide, sections 1, 2, 4–9).  
 **Working structure:** original repository preserved; M1 evidence and execution records added from the 16 November 2026 SAP training session.  
-**Project state:** M1 has verified monitoring observations and two corrected, controlled sandbox incidents (EV-001–EV-016); its broader mandatory access audit remains **partially open**. M2–M9 have not been executed.  
+**Project state:** M1 has verified monitoring observations and two corrected, controlled sandbox incidents (EV-001–EV-016); its broader mandatory access audit remains **partially open**. M2 has two fully executed O2C chains through balanced FI postings (EV-017–EV-035). Billing-block negative test failed and remains open for M3; M3–M9 have not been executed.  
 **Scheduling:** No daily, weekly, or duration-based schedule is imposed. Work proceeds as soon as individual results are verified.
 
 ## Evidence and completion rules
@@ -46,16 +46,16 @@ Deliverables: **access audit**, **support runbook**, **baseline monitoring sheet
 
 ## M2 — Two complete order-to-cash chains (R02)
 
-Existing: `M2-Order-to-Cash/O2C-Process-Trace-Template.md`.
+**Execution date:** 17 November 2026 (using orders created during M1, 16 November 2026). **Two O2C chains complete through FI** (EV-017–EV-035). Distinguish O2C passes from the **failed** billing-block negative test, open for M3.
 
-- [ ] **M2.01** Inspect customer/material, sales area, partner functions, shipping conditions, plant, stock and missing-master-data effects.
-- [ ] **M2.02** Create standard sales order (VA01/equivalent); inspect pricing, tax, schedule lines, ATP/availability, credit/status and document flow; change an authorized field and evaluate downstream impact.
-- [ ] **M2.03** Create outbound delivery (VL01N/equivalent); pick, post goods issue, verify stock movement and delivery status.
-- [ ] **M2.04** Create invoice (VF01/equivalent); inspect billing and FI accounting document, ordered/delivered/billed quantity reconciliation.
-- [ ] **M2.05** Run a **second distinct** tenant-supported variation (partial delivery, billing block, return or export) through the available O2C process; identify exceptions.
-- [ ] **M2.06** Prepare Sales → Logistics → Finance swimlane with real document IDs, control checks and exception points.
+- [ ] **M2.01 — Partial, core data checks executed:** Customer 1000193, material TG11, sales area 1010/10/00, plant 1010, shipping point 1010, 1 PC order, missing customer company-code 1010 error and corrective extension. Comprehensive stock balance and all master-field checks were not collected.
+- [ ] **M2.02 — Partial, core order/pricing/ATP executed:** Orders 1055 and 1056, item TAN, PPR0 EUR 17.55, 1 PC, tax EUR 3.33; order 1056 confirmed 1 PC. Credit check and complete ATP details for order 1055 not independently evidenced.
+- [ ] **M2.03 — Partial, picking/PGI executed:** Deliveries 80000784/80000785 fully picked and goods issues 4900001488/4900001489 created. **Movement type and stock before/after remain unverified**; do not claim those checks passed.
+- [x] **M2.04 — Executed billing/FI:** F2 invoices 90000303/90000304; RV journals 9400000057/9400000058; each balanced EUR 20.88 debit/credit. Ordered/delivered/billed 1/1/1 PC.
+- [x] **M2.05 — Executed second O2C variation:** Order 1056 with persisted header billing block 04. Invoice was nonetheless generated via delivery-related billing; **negative enforcement test FAIL**, root configuration cause **OPEN** for M3. Never describe the billing block as having worked.
+- [x] **M2.06 — Documentation completed:** Two case-specific O2C traces, executed Sales → Logistics → Finance swimlane, process-control checklist and 19 screenshot evidence files.
 
-Deliverables: **2 fully evidenced O2C traces**, annotated document-flow/swimlane, process-control checklist, screenshots; reuse process-trace template per case.
+**Deliverables:** [M2 README](../M2-Order-to-Cash/README.md), [Scenario 1](../M2-Order-to-Cash/O2C-Scenario-01-Standard-and-FI-Correction.md), [Scenario 2](../M2-Order-to-Cash/O2C-Scenario-02-Billing-Block-Exception.md), [swimlane](../M2-Order-to-Cash/O2C-Executed-Swimlane-and-Controls.md), [controls](../M2-Order-to-Cash/O2C-Process-Control-Checklist.md). Additional checks expressly remain **not verified**, despite core chain completion.
 
 ## M3 — Configuration and logistics exceptions (R02, R07, R10)
 
@@ -176,4 +176,4 @@ Deliverables: bilingual messages, training demonstration/guide, capstone, eviden
 | M9 | 5 substantive guides/templates and README | Specific JP/EN case, demo delivery evidence, capstone, presentation, final coverage evidence |
 | Project-wide | `Requirement-Coverage.md`, `Evidence-Register.md`, `PORTFOLIO-VALIDATION.md` | Actual EV references, all 15 R-status decisions, final validation/sign-off |
 
-**Current verified M1 controlled incident exercises: 2.** Orders 1055 and 1056 were intentionally faulted, diagnosed and corrected in SAP, with verified retests; see EV-009–EV-016. Monitoring/authorization inspections are separately evidenced in EV-001–EV-007. **No M2 full O2C chain, live configuration change, production support, or M4 IDoc recovery is yet claimed.**
+**Current verified M1 controlled incident exercises: 2.** Orders 1055 and 1056 were intentionally faulted, diagnosed and corrected in SAP, with verified retests; see EV-009–EV-016. Monitoring/authorization inspections are separately evidenced in EV-001–EV-007. **Two M2 O2C chains through FI are executed and evidenced (EV-017–EV-035). The billing-block negative test failed. No M3 live configuration change, production support or M4 IDoc recovery is claimed.**

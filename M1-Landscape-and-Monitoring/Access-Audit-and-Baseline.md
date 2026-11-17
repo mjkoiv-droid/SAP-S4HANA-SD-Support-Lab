@@ -55,7 +55,7 @@
 
 | Object | Actual observed value | Evidence |
 |---|---|---|
-| Company code | **Not verified**; sales organization number must not be assumed to be company code | — |
+| Company code | **1010 — DE Company Code**, independently verified subsequently in M2 billing and FI documents; not established during M1 itself | EV-025–EV-026, [M2 Scenario 1](../M2-Order-to-Cash/O2C-Scenario-01-Standard-and-FI-Correction.md) |
 | Sales organization | 1010 — DE Sales Org | EV-002 |
 | Distribution channel | 10 | EV-002 |
 | Division | 00 | EV-002 |
@@ -118,7 +118,8 @@ These figures reflect SAP training data and the applied filters **at the time ch
 - [x] Record organizational values, pricing, customer, test product, shipping point.
 - [x] Capture monitored fulfillment, delivery, billing, output and SIT log counts.
 - [x] Record two genuine controlled incident investigations and positive retests.
-- [ ] Company code and actual delivery type not independently checked; optional follow-up if needed for complete organizational inventory.
+- [x] Company code independently confirmed later in M2 as 1010 — DE Company Code (EV-025–EV-026); not part of the original M1 snapshot.
+- [ ] Actual delivery type not independently checked; optional follow-up for complete organizational inventory.
 - [ ] No comprehensive incomplete-sales-document count; no general SD application/IDoc/interface monitoring in this tenant.
 - [ ] Shared-client write/configuration policy and A03/A06/A07 specialized permissions not fully tested; handle before restricted activities in later modules.
 - [ ] Evidence snapshots must be reviewed for publication permissions and anonymized before making repo public.

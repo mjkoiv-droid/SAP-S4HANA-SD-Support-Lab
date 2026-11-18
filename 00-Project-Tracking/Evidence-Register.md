@@ -131,6 +131,15 @@ Each evidence item must be traceable to a module, requirement, and completed or 
 
 **M6 evidence boundary:** Some final save, header-clearance, delivery-block persistence, invoice 90000307 and PGI confirmations were verbal messages in the workshop chat rather than independent post-save screenshots. The accounting-list screenshots establish listed documents, not verified ledger balances. No successful billing-block remediation was demonstrated.
 
+## M7 — Transport-management read-only inspection (T41 / client 400)
+
+| EV-090 | M7 | R09 / M7.02 | T41/400: SE09 own-user selection, Customizing and Workbench with Modifiable chosen; user ID redacted | **Executed read-only inspection**; selected-user scope only | [View image](../M7-UAT-Release-and-Hypercare/evidence/m7-se09-modifiable-selection-redacted.png) |
+| EV-091 | M7 | R09 / M7.02 | T41/400: SE09 displayed an empty request list for selected-user filters. User reported repeating with Released enabled; resulting filter combination not screenshot-proven. User identifier redacted. | **Executed read-only inspection**; not a global request search | [View image](../M7-UAT-Release-and-Hypercare/evidence/m7-se09-no-user-requests-redacted.png) |
+| EV-092 | M7 | R09 / M7.02 | T41/400: STMS entry shows system T41, transport domain DOMAIN_T41 and domain-controller message | **Executed read-only inspection**; no import | [View image](../M7-UAT-Release-and-Hypercare/evidence/m7-stms-domain-controller.png) |
+| EV-093 | M7 | R09 / M7.02 | T41/400: STMS active transport-route graphic includes T41, SAP, dummy CL5; unrelated route-label metadata redacted | **Executed read-only inspection**; no actual project DEV/QAS/PRD mapping verified | [View image](../M7-UAT-Release-and-Hypercare/evidence/m7-stms-active-transport-routes-redacted.png) |
+
+**M7 evidence boundary:** SE09 results are limited to the selected-user filters (they cannot establish absence of every system request), and the Released-filter combination was operator-reported rather than recorded on the result screenshot. STMS route visibility is **not** proof of transport import permissions, a real transport for CHG-SD-001 or a route to JV2/100. The [REL-SD-001 release packet](../M7-UAT-Release-and-Hypercare/Release-Readiness-REL-SD-001.md) is a **simulated readiness/UAT/deployment/recovery/hypercare document**, not executed deployment evidence. No business UAT or operational sign-off was performed.
+
 ## Evidence Categories
 
 - SAP screenshots and transaction records

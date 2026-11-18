@@ -42,7 +42,7 @@ Review all nine modules.
 | M4 | Module folder and documentation | Pending |
 | M5 | Module folder and documentation | Local structure/links reviewed; technical execution partial; remote publication/privacy review pending |
 | M6 | Module folder and documentation | Local structure/relative links verified in updated ZIP; technical scope partial; GitHub publication/privacy and post-change validation pending |
-| M7 | Module folder and documentation | Pending |
+| M7 | Module folder and documentation | M7 report, original template and four transport screenshots added; local archive/links checked. Functional scope limited: real UAT/release/post-release validation absent; GitHub/privacy/publication review pending |
 | M8 | Authorization, Access and Audit | Pending |
 | M9 | Global Support and Training | Pending |
 

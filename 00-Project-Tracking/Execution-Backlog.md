@@ -1,6 +1,6 @@
 # SAP SD Support Lab — Execution Backlog and Coverage Review
 
-**Project state:** M1 has verified monitoring observations and two corrected, controlled sandbox incidents (EV-001–EV-016); its broader mandatory access audit remains **partially open**. M2 has two fully executed O2C chains through balanced FI postings (EV-017–EV-035). Billing-block negative test failed. M3 now has read-only configuration observations, two executed incident reproductions with corrected pricing/picking, and a proposed change/impact design; CBC inspection is blocked. M4 includes verified IDoc and output inspections, configured intercompany invoice routing, and documented-only recovery. M5 now has six evidence-qualified case records, three RCAs, proposed SRs, a simulated communication/reopening exercise and an open problem record; several planned negative/fix/retest cases remain unexecuted. M6–M9 retain templates and backlog work.  
+**Project state:** M1 has verified monitoring observations and two corrected, controlled sandbox incidents (EV-001–EV-016); its broader mandatory access audit remains **partially open**. M2 has two fully executed O2C chains through balanced FI postings (EV-017–EV-035). Billing-block negative test failed. M3 now has read-only configuration observations, two executed incident reproductions with corrected pricing/picking, and a proposed change/impact design; CBC inspection is blocked. M4 includes verified IDoc and output inspections, configured intercompany invoice routing, and documented-only recovery. M5 now has six evidence-qualified case records, three RCAs, proposed SRs, a simulated communication/reopening exercise and an open problem record; several planned negative/fix/retest cases remain unexecuted. M6 has a completed documentation package plus seven heterogeneous pre-change test cases (two new M6), with the proposed correction open and unimplemented. M7 has a documented NO-GO readiness/UAT/hypercare assessment and read-only T41 transport-management inspection (EV-090–EV-093); no actual release, post-change testing or business UAT. M8–M9 retain templates and backlog work.  
 
 ## Evidence and completion rules
 
@@ -23,7 +23,7 @@ Use [M1 Access Audit and Baseline](../M1-Landscape-and-Monitoring/Access-Audit-a
 - [ ] **A04** WE02/WE05, WE19, BD87: establish IDoc sample availability and safe reprocessing boundary.
 - [ ] **A05** SLG1, output monitoring and logs: establish whether representative messages can be inspected.
 - [ ] **A06** SU53, SU01/PFCG (if permitted): confirm own-user troubleshooting and read-only role visibility.
-- [ ] **A07** SE09/SE10/STMS: establish transport read-access and confirm that unauthorized imports are prohibited.
+- [ ] **A07 — Partial:** SE09 and STMS display access verified in T41/400 (EV-090–EV-093); no SE10 inspection, transport ownership beyond own-user filter or import authorization check. No import attempted; any actual import requires explicit authorization.
 - [ ] **A08** Test data isolation: verify training-only customer/material/user data, shared-client limits, reset policy, and prohibition on modifying other learners' data.
 
 **Decision:** use permitted training exercises; classify truly inaccessible operations as simulated or blocked. Do not infer permissions from a transaction being visible on a menu.
@@ -113,16 +113,16 @@ Deliverables: [workshop/change](../M6-Requirements-Enhancements-and-Testing/Requ
 
 ## M7 — UAT, release control and hypercare (R08, R09, R10)
 
-Existing: `M7-UAT-Release-and-Hypercare/Release-and-Validation-Template.md`.
+**Completed documentation/read-only-inspection scope; release NO-GO.** [M7 README](../M7-UAT-Release-and-Hypercare/README.md), [REL-SD-001 assessment](../M7-UAT-Release-and-Hypercare/Release-Readiness-REL-SD-001.md). The template remains available. This does not close the original business-control problem or satisfy actual release/UAT execution.
 
-- [ ] **M7.01** Prepare controlled **mock DEV → QAS → PRD** plan, approvals, dependencies, prechecks, ownership and go/no-go.
-- [ ] **M7.02** Inspect SE09/SE10/STMS if authorized. Never claim or execute production imports; optionally authorized training transport.
-- [ ] **M7.03** Conduct fictional UAT role-play with scripts, defects, retests and conditional/final simulated business sign-off.
-- [ ] **M7.04** Define and, where possible, run smoke checks: order, delivery, PGI, billing, FI posting, output, IDoc status; reconcile.
-- [ ] **M7.05** Document rollback versus forward-fix, incident escalation, hypercare handover and lessons learned.
-- [ ] **M7.06** Separate an actually observed SAP transport from a paper-based release simulation.
+- [x] **M7.01 — Simulated plan:** DEV → QAS → PRD workflow, dependencies, owner roles, approvals, prechecks and **NO-GO recommendation** documented. Actual landscape not established.
+- [x] **M7.02 — Executed read-only T41/400 inspection:** SE09 own-user request filtering showed no selected requests; STMS domain-controller and active route views inspected (EV-090–EV-093). SE10/import queues, import rights, released/implemented project transports **not verified**. No transports changed.
+- [ ] **M7.03 — Partial (documented UAT assessment only):** Historical TC-SD-001–007 outcomes reused and mock stakeholder concerns documented. **No actual UAT session, approval or after-fix retest;** TC-SD-008/009 unexecuted. No fictitious sign-off recorded.
+- [ ] **M7.04 — Partial (checklist only):** Eight SD/MM/FI/output/IDoc smoke validations defined; **none executed after a release** because no deployment occurred. Old M2–M6 evidence is not new smoke-test proof.
+- [x] **M7.05 — Documented plan only:** Rollback versus forward-fix, exception escalation and hypercare ownership/exit conditions prepared; no actual rollback, monitoring or operational transition.
+- [x] **M7.06 — Evidence distinction completed:** T41 SE09/STMS display and JV2 historical business-test results are identified separately from mock DEV/QAS/PRD release documentation; no actual transport or deployment claimed.
 
-Deliverables: release packet, UAT sign-off (simulated if role-play), smoke-test results, rollback plan, hypercare checklist.
+**Deliverables:** one filled REL-SD-001 no-go packet, unchanged reusable release template, four redacted/appropriate T41 screenshots (EV-090–EV-093), a documented UAT/gate matrix and unexecuted smoke/hypercare/recovery checklists. **Real UAT approval, transport, actual release, post-release smoke and support handover remain open/not executed.**
 
 ## M8 — Authorization, SoD and audit (R11, R12)
 
@@ -167,8 +167,8 @@ Deliverables: bilingual messages, training demonstration/guide, capstone, eviden
 | M3 | Configuration analysis template; filled CFG-SD-001, 2 actual incident investigations, billing-block observation, CHG-M3-001 proposal, impact matrix, EV-036–EV-052 | CBC settings and copy-control customizing inaccessible; proposed configuration not implemented; broad regression not executed |
 | M4 | Completed IDoc diagnostic record, interface trace, output checklist, recovery runbook and screenshots | Live IDoc reprocessing and target `90FR` invoice remain unverified; no extra work is claimed |
 | M5 | Six filled case records, 2 proposed SRs, 3 RCAs, simulated communications/reopening, open problem record, EV-071–EV-082 | Unverified cross-customer regression, billing-creation failure, IDoc recovery, output-failure recovery, CBC trace/fix, actual ticket reopening |
-| M6 | FS, impact and test templates | Workshop record, CHG-SD-001, traceability matrix, 6+ actual test results, defects/sign-off |
-| M7 | Release/validation template | UAT acceptance, transport observation or mock release, smoke results, rollback/hypercare |
+| M6 | Templates, workshop, proposed CHG-SD-001/FS/impact, traceability, seven heterogeneous pre-change test cases, defects and written handover | Actual change, post-change verification, real business UAT/sign-off and closed problem remain missing |
+| M7 | Preserved template, completed simulated REL-SD-001 NO-GO packet, actual T41/400 SE09/STMS inspection EV-090–EV-093, planned smoke/rollback/hypercare | No actual UAT acceptance, actual transport/import, deployment, post-release smoke, rollback or operational hypercare |
 | M8 | 5 templates/examples and README | Actual SU53/role evidence if accessible, 4-persona access review, 2 assessed SoD cases; examples remain simulations |
 | M9 | 5 substantive guides/templates and README | Specific JP/EN case, demo delivery evidence, capstone, presentation, final coverage evidence |
 | Project-wide | `Requirement-Coverage.md`, `Evidence-Register.md`, `PORTFOLIO-VALIDATION.md` | Actual EV references, all 15 R-status decisions, final validation/sign-off |

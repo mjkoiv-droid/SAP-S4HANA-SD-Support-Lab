@@ -9,7 +9,6 @@
 | Scenario Title | |
 | Scenario Type | Standard / Partial Delivery / Return / Export |
 | SAP System / Client | |
-| Execution Date | |
 | Executed By | Mikko Koivistoinen |
 | Status | Not Started |
 | Execution Type | Executed / Simulated / Blocked |
@@ -56,7 +55,6 @@
 | Material | |
 | Order Quantity | |
 | Net Value | |
-| Requested Delivery Date | |
 | Confirmed Quantity | |
 | Delivery Block | |
 | Billing Block | |
@@ -113,7 +111,6 @@
 
 | Field | Value / Result |
 |---|---|
-| PGI Posting Date | |
 | Material Document Number | |
 | Movement Type | |
 | Quantity Posted | |
@@ -135,7 +132,6 @@
 |---|---|
 | Billing Document Number | |
 | Billing Type | |
-| Billing Date | |
 | Billing Quantity | |
 | Net Amount | |
 | Tax Amount | |
@@ -158,7 +154,6 @@
 | Customer Receivables Account | |
 | Revenue Account | |
 | Tax Account, if applicable | |
-| Posting Date | |
 | Accounting Document Status | |
 
 ### FI Verification

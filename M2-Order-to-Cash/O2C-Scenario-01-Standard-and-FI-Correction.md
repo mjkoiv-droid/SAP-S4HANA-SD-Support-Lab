@@ -3,7 +3,6 @@
 **Scenario ID:** O2C-SD-001  
 **Execution classification:** Executed in SAP Learning Hub training sandbox, with explicitly noted unverified details  
 **SAP system/client:** JV2 / 100 — SAP S/4HANA Cloud Public Edition sandbox  
-**Execution dates:** Sales order created 16 November 2026; PGI, billing and FI recorded 17 November 2026  
 **Requirement:** R02  
 **Overall outcome:** **PASS** for sales order → picking → PGI → invoice → FI posting. Customer receipt/clearing not executed.
 
@@ -23,7 +22,7 @@ A genuine SD–FI exception occurred: billing document 90000303 was saved withou
 | Customer / sold-to and ship-to | 1000193 — NPS Test Chemical GmbH |
 | Customer company-code setup | Initially absent; subsequently added for 1010 |
 | Customer reconciliation account | 12100000 — Receivables Domestic |
-| Customer payment terms | NT30 — Net Due in 30 Days |
+| Customer payment terms | NT30 — customer payment term |
 | Material / item category | TG11 — Trad.Good 11, PD, Reg.Trading / TAN |
 | Plant / storage location | 1010 / 101A |
 | Shipping point | 1010 — DE Shipping Point Standard |
@@ -38,7 +37,6 @@ A genuine SD–FI exception occurred: billing document 90000303 was saved withou
 | Quantity | 1 PC |
 | Net unit price / net order value | PPR0 EUR 17.55 / EUR 17.55 |
 | Tax on invoice | EUR 3.33 (19% rounded) |
-| Requested delivery date | 31 January 2027 as later displayed |
 | Availability / confirmed quantity | Order successfully created delivery for 1 PC; exact schedule-line confirmation screenshot for order 1055 not retained in M2 |
 | Original M1 delivery block | Political Reasons, deliberately tested and removed in M1 |
 | Credit status | Not independently checked; delivery header earlier reported credit check not performed |
@@ -81,7 +79,6 @@ A genuine SD–FI exception occurred: billing document 90000303 was saved withou
 |---|---|
 | Billing document | 90000303 |
 | Billing type | F2 — Invoice |
-| Invoice date | 17 November 2026 |
 | Billed quantity | 1 PC |
 | Net / output tax / gross | EUR 17.55 / EUR 3.33 / EUR 20.88 |
 | Initial result | Saved with no journal entry; status To Be Posted / Error in Accounting Interface |
@@ -100,7 +97,7 @@ A genuine SD–FI exception occurred: billing document 90000303 was saved withou
 | Output tax | 22000000 — Output Tax | 0.00 | 3.33 |
 | **Total** | | **20.88** | **20.88** |
 
-**Journal entry:** 9400000057; type **RV** (billing document transfer); posting date **17 November 2026**; company code **1010**; transaction currency **EUR**. Invoice clearing remains **Not Cleared**; payment was not processed.
+**Journal entry:** 9400000057; type **RV** (billing document transfer); company code **1010**; transaction currency **EUR**. Invoice clearing remains **Not Cleared**; payment was not processed.
 
 **Evidence:** [EV-025 — billing→FI document chain](evidence/m2-sc1-billing-fi-success.png), [EV-026 — actual balanced FI lines](evidence/m2-sc1-fi-ledger-redacted.png).
 

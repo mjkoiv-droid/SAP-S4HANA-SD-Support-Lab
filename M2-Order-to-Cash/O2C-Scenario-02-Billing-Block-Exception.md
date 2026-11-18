@@ -3,7 +3,6 @@
 **Scenario ID:** O2C-SD-002  
 **Execution classification:** Executed in SAP training sandbox; **negative blocking test FAILED**  
 **SAP system/client:** JV2 / 100 — SAP S/4HANA Cloud Public Edition sandbox  
-**Execution dates:** Order originated 16 November 2026 (M1 pricing exercise); delivery, PGI and FI posted 17 November 2026  
 **Requirement:** R02  
 **Overall outcome:** **PASS** for second complete O2C chain; **FAIL/OPEN** for expected billing-block enforcement (separate test verdict).
 
@@ -35,9 +34,7 @@ Re-use M1 sales order **1056**, which already has corrected price **EUR 17.55**.
 | Quantity and net value | 1 PC, EUR 17.55 |
 | Pricing condition | PPR0, restored to EUR 17.55 during M1 |
 | Item category | TAN |
-| Scheduled delivery date | 31 January 2027 |
 | Confirmed quantity | 1 PC, schedule line category CP |
-| Planned GI date | 29 January 2027 (planning, **not** actual posting date) |
 | Schedule-line delivery block | Blank |
 | **Header billing block** | **04 — Check Payment Terms**, saved in VA02, still displayed after billing |
 | Credit check | Not independently verified |
@@ -48,7 +45,7 @@ Re-use M1 sales order **1056**, which already has corrected price **EUR 17.55**.
 
 | Step | Actual / qualification |
 |---|---|
-| VL01N selection | Shipping point 1010; order 1056; selection date 31 January 2027 |
+| VL01N selection | Shipping point 1010; order 1056 |
 | Delivery created | 80000785, 1 PC TG11 |
 | Delivery type | Not captured; cannot claim LF was verified |
 | Picking | 1 PC; user confirmed **Fully Picked** |
@@ -82,11 +79,10 @@ Re-use M1 sales order **1056**, which already has corrected price **EUR 17.55**.
 | Field | Verified result |
 |---|---|
 | Invoice | 90000304, F2 |
-| Invoice date | 17 November 2026 |
 | Billed quantity | 1 PC |
 | Net / output tax / gross | EUR 17.55 / EUR 3.33 / EUR 20.88 |
 | FI journal | 9400000058, type RV (billing document transfer) |
-| Company code / posting date | 1010 / 17 November 2026 |
+| Company code | 1010 |
 | FI tax code | A1 — Output Tax Domestic (Full Tax Rate), 19% |
 | AR clearing | Not Cleared |
 

@@ -1,7 +1,7 @@
 # M2 — O2C Execution and Reconciliation Checklist
 
 **System/client:** JV2 / 100 — SAP S/4HANA Cloud Public Edition training sandbox.  
-**Executed:** 16–17 November 2026.  
+**Execution:** Verified in SAP training system.  
 **Status:** Two end-to-end O2C document chains **PASS**; separate billing-block negative test **FAIL / OPEN**.  
 **Verification standard:** Captured SAP screenshot or exact contemporaneous user-reported SAP message. Distinguish fields that were not measured.
 
@@ -46,7 +46,6 @@
 ## Completeness notes
 
 - Both cases are real SAP training execution, not production transactions and not fictional simulations.
-- Dates shown as January 2027 on schedule lines are planned fulfilment dates, whereas actual PGI and billing were posted in November 2026; do not confuse planned versus actual.
 - Material documents confirmed, but independent before/after inventory quantities were not captured.
 - Additional journal entries appeared in Scenario 2 document flow; do not infer their nature without inspection.
 - The two billing-block test outcomes are not conflated: an **O2C chain PASS** is compatible with a separate **control FAIL**.

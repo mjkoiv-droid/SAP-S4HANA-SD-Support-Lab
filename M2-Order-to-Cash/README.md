@@ -1,6 +1,6 @@
 # M2 — Order-to-Cash (O2C) Processing
 
-**SAP execution status (17 November 2026):** **Two complete O2C document chains executed and verified through FI posting** in the JV2/100 SAP S/4HANA Cloud Public Edition training sandbox. The billing-block enforcement test in Scenario 2 **failed** and remains an open M3 investigation. Some peripheral technical fields and stock before/after counts remain unverified.
+**SAP execution status:** **Two complete O2C document chains executed and verified through FI posting** in the JV2/100 SAP S/4HANA Cloud Public Edition training sandbox. The billing-block enforcement test in Scenario 2 **failed** and remains an open M3 investigation. Some peripheral technical fields and stock before/after counts remain unverified.
 
 ## Objective and scope
 

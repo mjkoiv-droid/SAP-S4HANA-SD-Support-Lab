@@ -1,7 +1,7 @@
 # M2 — Executed O2C Swimlane and Exception Decision Points
 
 **System:** SAP S/4HANA Cloud Public Edition training sandbox JV2 / 100.  
-**Dates:** 16–17 November 2026. **No production client activity.**  
+**No production client activity.**  
 **Scope:** Executed **Sales → Logistics → Finance** document links for orders 1055 and 1056, with two observed exceptions.
 
 ## Process swimlane — actual document identifiers

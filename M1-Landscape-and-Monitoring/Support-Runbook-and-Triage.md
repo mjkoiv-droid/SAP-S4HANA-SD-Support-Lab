@@ -1,8 +1,7 @@
 # M1 — Support Operations Runbook and Two Controlled Triage Cases
 
-**Status:** Runbook drafted for a **fictional** global company, and two actual **SAP sandbox** practice cases executed and validated on 16 November 2026. These are not enterprise service-desk incidents.  
+**Status:** Runbook drafted for a **fictional** global company, and two actual **SAP sandbox** practice cases executed and validated. These are not enterprise service-desk incidents.  
 **Fictional business:** Atlas Components Global — Japan sales, Singapore logistics, UK finance. Operational model is a role-play; actual tested documents belong to the separate SAP sandbox NPS Test Chemical GmbH customer (1000193).  
-**Source:** Original Word guide M1 and ticket standard §6.1.
 
 ## A. Support operating model (policy design / simulated)
 
@@ -12,9 +11,9 @@ The SD support analyst coordinates Sales (JP), Warehouse/Logistics (SG), Finance
 
 | Priority | Illustrative impact/urgency test | Target initial response (fictional proposal) | Escalation route |
 |---|---|---|---|
-| P1 Critical | Multi-country order/shipping/billing stopped, no workaround | 15 min | SD lead + incident bridge + affected business owners |
-| P2 High | Key sales process blocked for several users, material financial risk | 30 min | SD lead + functional owner |
-| P3 Medium | Localized order/price issue, controlled workaround possible | 4 business hours | SD analyst + sales key user |
+| P1 Critical | Multi-country order/shipping/billing stopped, no workaround | Immediate escalation | SD lead + incident bridge + affected business owners |
+| P2 High | Key sales process blocked for several users, material financial risk | Priority escalation | SD lead + functional owner |
+| P3 Medium | Localized order/price issue, controlled workaround possible | Standard handling | SD analyst + sales key user |
 | P4 Low | Information/request with limited immediate impact | 1 business day | Service desk / feature owner |
 
 Select priority from both business impact (scope, monetary effect, deadline, compliance) and urgency (time until consequence); do not infer high severity from error-message color alone.
@@ -23,9 +22,9 @@ Select priority from both business impact (scope, monetary effect, deadline, com
 
 **States:** New → Triaged → Investigating → Mitigation/Correction → Pending Validation → Resolved → Closed; Reopened if regression fails; Blocked/Waiting for Approval where applicable.
 
-**Evidence rule:** Track user-visible symptom, reproducible steps, expected/actual, document IDs and client, timestamp/timezone, error text, hypotheses, cause, allowed correction, control/rollback, negative and positive tests, business impact, evidence IDs, final sign-off. Avoid secrets/personal data. Retain failed test and successful retest separately.
+**Evidence rule:** Track user-visible symptom, reproducible steps, expected/actual, document IDs and client, error text, hypotheses, cause, allowed correction, control/rollback, negative and positive tests, business impact, evidence IDs, final sign-off. Avoid secrets/personal data. Retain failed test and successful retest separately.
 
-**Daily handover format (fictional):** incident ID, JP/SG/UK impact, priority, first detection and last verified status (timezone explicit), owner, workaround, performed checks, next action, pending approval/dependency, next update commitment and linked evidence. Pending cases must never appear as resolved solely because symptoms stopped.
+**Daily handover format (fictional):** incident ID, JP/SG/UK impact, priority, initial symptom and last verified status, owner, workaround, performed checks, next action, pending approval/dependency, next update commitment and linked evidence. Pending cases must never appear as resolved solely because symptoms stopped.
 
 ### 2. Daily support checklist
 

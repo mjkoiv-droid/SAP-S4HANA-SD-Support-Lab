@@ -10,7 +10,6 @@
 | Incident Title | |
 | SAP Module | SD |
 | SAP System / Client | |
-| Date | |
 | Status | Not Started |
 | Execution Type | Executed / Simulated |
 | Related Evidence IDs | |
@@ -126,7 +125,6 @@
 
 **Business confirmation:**
 
-**Closure date:**
 
 | Evidence ID | Description | File / Link |
 |---|---|---|

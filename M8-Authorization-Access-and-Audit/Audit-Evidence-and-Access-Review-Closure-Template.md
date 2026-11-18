@@ -46,7 +46,6 @@ Potential scope:
 - Number of users reviewed:
 - Number of roles reviewed:
 - Review population source:
-- Population extraction date:
 - Completeness verification:
 
 ## 3. Audit Evidence Register
@@ -72,7 +71,7 @@ For each relevant evidence item, verify:
 
 - Source is identifiable
 - System and client are recorded
-- Extraction date is documented
+- Extraction scope is documented
 - Review period is appropriate
 - Population is complete
 - Information is accurate
@@ -109,7 +108,7 @@ All findings must be supported by evidence.
 
 ## 6. Corrective Action Register
 
-| Action ID | Related Finding | Required Action | Owner | Due Date | Status |
+| Action ID | Related Finding | Required Action | Owner | Control / Evidence | Status |
 |---|---|---|---|---|---|
 | ACT-001 | | | | | |
 | ACT-002 | | | | | |
@@ -165,7 +164,7 @@ Confirm that:
 
 ## 9. Outstanding Exceptions
 
-| Exception ID | Description | Risk Owner | Approval Reference | Expiration / Review Date | Status |
+| Exception ID | Description | Risk Owner | Approval Reference | Review Trigger | Status |
 |---|---|---|---|---|---|
 | EXC-001 | | | | | |
 | EXC-002 | | | | | |
@@ -201,7 +200,7 @@ Exceptions require appropriate review, approval, monitoring, and reassessment.
 
 ## 11. Final Approval
 
-| Approval Role | Name / Reference | Decision | Date |
+| Approval Role | Name / Reference | Decision | Basis / Notes |
 |---|---|---|---|
 | Business Owner | | | |
 | SAP Security Reviewer | | | |
@@ -218,7 +217,6 @@ Select one:
 
 **Final Review Status:**
 
-**Closure Date:**
 
 **Next Scheduled Review:**
 

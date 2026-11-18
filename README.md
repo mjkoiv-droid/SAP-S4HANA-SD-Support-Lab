@@ -7,9 +7,9 @@ This repository presents an independent SAP S/4HANA Sales (SD) professional deve
 
 The portfolio combines SAP functional knowledge with an international industrial business perspective.
 
-It is organized into nine modules and distinguishes **verified SAP sandbox execution**, **training-only simulation**, and **documentation/templates**. Module 1 contains actual SAP system-monitoring results and two controlled, resolved training cases. Its wider access audit retains explicitly documented gaps. Module 2 contains two executed O2C traces verified through FI posting; Module 3 contains read-only configuration observations, reproduced pricing/picking exceptions, and a proposed change with access-blocked configuration review. Modules 4–9 have not been executed.
+It is organized into nine modules and distinguishes **verified SAP sandbox execution**, **training-only simulation**, and **documentation/templates**. Module 1 contains actual SAP system-monitoring results and two controlled, resolved training cases. Its wider access audit retains explicitly documented gaps. Module 2 contains two executed O2C traces verified through FI posting; Module 3 contains read-only configuration observations, reproduced pricing/picking exceptions, and a proposed change with access-blocked configuration review. Modules 5–9 remain at planning/template stages; Module 4 contains executed inspections and documented recovery methodology.
 
-**Execution snapshot (17 November 2026):** M1 includes 16 genuine SAP training screenshots, read-only monitoring observations and two deliberately created, reproduced and corrected support cases (sales orders `1055` and `1056`). This is **not a production client engagement**. The mandatory access audit is *partially verified*, with delivery type, general SD/IDoc logging and specialized configuration/security/transport checks still outstanding or deferred. Company code **1010** was subsequently verified in M2 (EV-025–EV-026). M2 has two complete O2C document chains through FI, with an unresolved billing-block negative test. M3 reproduces the block issue at delivery level, verifies a controlled picking correction (PGI 4900001491), and documents the proposed change without claiming CBC access or implementation. See the M2 and M3 READMEs.
+**SAP evidence overview:** M1 includes 16 genuine SAP screenshots, monitoring observations and two deliberately reproduced/corrected support cases (orders `1055` and `1056`). This is **not a production client engagement**. M1 access audit is partial; M2 contains two O2C chains through FI, with a failed billing-block negative test; M3 contains verified picking correction, additional logistics observations and a proposed change without claiming configuration access. M4 documents actual IDoc error diagnosis, intercompany invoice-interface configuration, completed sales-order output and a nonexecuted recovery procedure. See module READMEs for exact evidence and limitations.
 
 **Publication:** Keep this repository **private** while executing and validating M1–M9. A downloaded ZIP cannot establish GitHub visibility settings.
 
@@ -52,7 +52,7 @@ Each module contains its own README and supporting documentation.
 
 ### M1 — System Landscape and Support Monitoring
 
-**Status:** Verified monitoring observations and two controlled, corrected SAP cases (16 November 2026). The access audit is partial, and the global support runbook is simulated. [View results and evidence](M1-Landscape-and-Monitoring/README.md).
+**Status:** Verified monitoring observations and two controlled, corrected SAP cases. The access audit is partial, and the global support runbook is simulated. [View results and evidence](M1-Landscape-and-Monitoring/README.md).
 
 Focus areas:
 
@@ -64,7 +64,7 @@ Focus areas:
 
 ### M2 — Order-to-Cash Processing
 
-**Status:** Two executed training-sandbox O2C chains through FI (17 November 2026); billing block 04 negative test failed and is an open M3 issue. [View M2 traces and evidence](M2-Order-to-Cash/README.md).
+**Status:** Two executed training-sandbox O2C chains through FI; billing block 04 negative test failed and is an open M3 issue. [View M2 traces and evidence](M2-Order-to-Cash/README.md).
 
 Focus areas:
 
@@ -90,6 +90,8 @@ Focus areas:
 - Logistics exception analysis
 
 ### M4 — IDocs, Interfaces, Application Logs and Output
+
+**Status:** Verified IDoc error diagnosis, `INVOIC` intercompany integration configuration and two completed order-confirmation outputs. Recovery/reprocessing was **not** executed. [View M4 results and evidence](M4-IDocs-Interfaces-and-Output/README.md).
 
 Focus areas:
 

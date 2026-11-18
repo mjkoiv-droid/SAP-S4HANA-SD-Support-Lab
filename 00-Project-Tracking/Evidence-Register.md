@@ -73,6 +73,32 @@ Each evidence item must be traceable to a module, requirement, and completed or 
 
 **M3 evidence limitations:** EV-036–EV-052 are contemporaneous SAP screen images, but some later save confirmations and the separate CBC Unauthorized screen were reported in the workshop conversation, not preserved as screenshot artifacts. EV-038 shows selection before saving; the after-save confirmation was reported by the user. There was **no** FI journal number captured for invoice 90000305. No screenshot establishes exact GI movement type or configuration settings.
 
+
+## M4 — IDoc, Interface and Output Evidence
+
+| Evidence ID | Module | Requirement | Description | Execution Status | Evidence File |
+|---|---|---|---|---|---|
+| EV-053 | M4 | R03 | Historical inbound DELFOR 180016, status 56, missing inbound partner-profile error | Verified SAP observation; not recovery | [View image](../M4-IDocs-Interfaces-and-Output/evidence/idoc-inbound-delfor-partner-profile-error.png) |
+| EV-054 | M4 | R03 | Standard order 374 two completed order confirmation outputs | Verified SAP observation; not recovery | [View image](../M4-IDocs-Interfaces-and-Output/evidence/sales-order-374-output-completed.png) |
+| EV-055 | M4 | R03 | Standard order 374 ORDER_CONFIRMATION detail; print queue LP01, status completed; metadata redacted | Verified SAP observation; not recovery | [View image](../M4-IDocs-Interfaces-and-Output/evidence/sales-order-374-output-details.png) |
+| EV-056 | M4 | R03 | Vendor S680-1010 FI role company code 90FR and reconciliation account 21200000 | Verified SAP observation; not recovery | [View image](../M4-IDocs-Interfaces-and-Output/evidence/bp-company-code.png) |
+| EV-057 | M4 | R03 | VV33 RD04 condition 1010 / C680-90FR, medium 6 and dispatch 4 | Verified SAP observation; not recovery | [View image](../M4-IDocs-Interfaces-and-Output/evidence/invoice-output-condition.png) |
+| EV-058 | M4 | R03 | OPD IV billing type to S4680_BILLING_DOCUMENT immediately | Verified SAP observation; not recovery | [View image](../M4-IDocs-Interfaces-and-Output/evidence/opd-output-type.png) |
+| EV-059 | M4 | R03 | OPD S4680_BILLING_DOCUMENT output channel IDOC | Verified SAP observation; not recovery | [View image](../M4-IDocs-Interfaces-and-Output/evidence/opd-channel.png) |
+| EV-060 | M4 | R03 | WE41 process SD08 assigned function module IDOC_OUTPUT_INVOIC_IV_MM | Verified SAP observation; not recovery | [View image](../M4-IDocs-Interfaces-and-Output/evidence/outbound-process-code.png) |
+| EV-061 | M4 | R03 | WE20 outbound INVOIC partner C680-90FR basic type INVOIC01 and port A000000003 | Verified SAP observation; not recovery | [View image](../M4-IDocs-Interfaces-and-Output/evidence/outbound-partner-parameters.png) |
+| EV-062 | M4 | R03 | WE20 V3 RD00 message control linked to SD08 | Verified SAP observation; not recovery | [View image](../M4-IDocs-Interfaces-and-Output/evidence/outbound-message-control.png) |
+| EV-063 | M4 | R03 | WE20 inbound S680-1010 LI INVOIC process code INVF | Verified SAP observation; not recovery | [View image](../M4-IDocs-Interfaces-and-Output/evidence/inbound-partner-parameters.png) |
+| EV-064 | M4 | R03 | WEL1 logical address 1010C680-90FR maps 90FR to S680-1010 | Verified SAP observation; not recovery | [View image](../M4-IDocs-Interfaces-and-Output/evidence/supplier-assignment.png) |
+| EV-065 | M4 | R03 | MM EDI tax conversion for supplier S680-1010 | Verified SAP observation; not recovery | [View image](../M4-IDocs-Interfaces-and-Output/evidence/tax-code-mapping.png) |
+| EV-066 | M4 | R03 | MM EDI program parameters company code 90FR, KR / KG | Verified SAP observation; not recovery | [View image](../M4-IDocs-Interfaces-and-Output/evidence/invoice-program-parameters.png) |
+| EV-067 | M4 | R03 | OBCB goods/services wildcard mapped to G/L 51600000 | Verified SAP observation; not recovery | [View image](../M4-IDocs-Interfaces-and-Output/evidence/fi-edi-gl-accounts.png) |
+| EV-068 | M4 | R03 | OBCE invoice posting keys, document types and tax code | Verified SAP observation; not recovery | [View image](../M4-IDocs-Interfaces-and-Output/evidence/fi-edi-program-parameters.png) |
+| EV-069 | M4 | R03 | FB03 KR filter, own-document search in company code 90FR returned no items | Verified SAP observation; no invoice | [View image](../M4-IDocs-Interfaces-and-Output/evidence/fb03-company-90fr-no-kr-result.png) |
+| EV-070 | M4 | R03 | Wider FB03 KR document list contained only other company codes (date columns cropped) | Verified SAP observation; no 90FR document | [View image](../M4-IDocs-Interfaces-and-Output/evidence/fb03-other-company-kr-documents-crop.png) |
+
+**Evidence boundary:** EV-053 is a pre-existing IDoc diagnosed read-only, not an induced failure. EV-054–EV-055 are completed PRINT output for a sales order, not an IDoc. EV-056–EV-068 document configuration inspected in SAP; EV-069–EV-070 document the unavailable 90FR invoice prerequisite; no new `INVOIC` message, FI invoice or successful IDoc recovery is claimed.
+
 ## Evidence Categories
 
 - SAP screenshots and transaction records
@@ -92,7 +118,7 @@ Each evidence item should record:
 1. Unique evidence ID
 2. Related module and requirement
 3. SAP transaction or Fiori application
-4. System/client and execution date
+4. System/client and evidence context
 5. Business scenario or technical problem
 6. Expected and actual results
 7. Investigation or execution details

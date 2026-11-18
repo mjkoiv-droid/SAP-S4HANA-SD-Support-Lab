@@ -10,7 +10,6 @@
 | SAP Module | SD |
 | SAP System / Client | |
 | SAP Version | |
-| Analysis Date | |
 | Analyst | Mikko Koivistoinen |
 | Status | Not Started |
 | Execution Type | Executed / Read-Only / Simulated / Blocked |

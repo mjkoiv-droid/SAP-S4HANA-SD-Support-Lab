@@ -3,7 +3,6 @@
 | Field | Result |
 |---|---|
 | System | SAP S/4HANA Cloud Public Edition, JV2 / 100 training |
-| Execution date | 17 November 2026 |
 | Sales order | **1059**, TG11, 2 PC, net EUR 35.10 |
 | Outbound delivery | **80000788**, plant 1010, storage location 101A |
 | Intended negative-test defect | Delivery 2 PC, **picked only 1 PC** |

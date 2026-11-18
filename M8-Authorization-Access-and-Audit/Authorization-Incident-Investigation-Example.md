@@ -50,7 +50,7 @@ Collect:
 - Sales document number (masked)
 - Sales organization
 - Exact error message
-- Time of occurrence
+- Scope and affected activity
 
 Confirm whether the issue is reproducible.
 

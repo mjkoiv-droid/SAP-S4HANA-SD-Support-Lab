@@ -5,7 +5,6 @@
 | Analysis ID | CFG-SD-001 |
 | Module / original requirement | M3.01–M3.02, R07 / R10 |
 | Environment | SAP S/4HANA Cloud Public Edition; training system JV2 / client 100 (as recorded in M1 inventory) |
-| Analysis date | 17 November 2026 |
 | Execution | Read-only SAP observations plus previously completed controlled transactions; **no customizing performed** |
 | Status | Partially completed / CBC inspection blocked |
 
@@ -47,7 +46,7 @@
 | Price condition | PPR0 |
 | Condition key | Sales org 1010 / distribution channel 10 / material TG11 |
 | Condition record | EUR 17.55 per 1 PC, scale starting at 0 |
-| Validity | 07 September 2023 to 31 December 9999 |
+| Validity | the maintained condition validity interval |
 | Tax pricing in order | TTX1 19%, EUR 3.33 |
 | Internal price condition | PCIP EUR 13.50 |
 | Gross/net price | EUR 17.55; inclusive of displayed output tax EUR 20.88 |

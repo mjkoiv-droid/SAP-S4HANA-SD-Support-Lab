@@ -19,7 +19,6 @@ The objective is to ensure that the receiving support team can independently mai
 | Implementation Team Lead | |
 | Receiving Support Lead | |
 | Business Process Owner | |
-| Planned Transition Date | |
 | Transition Status | Planned / In Progress / Completed |
 
 ## 3. Business Context
@@ -192,7 +191,7 @@ Cover:
 | KT-008 | Incident Investigation | Support Lead | SD Support | Planned |
 | KT-009 | Support Procedures | Support Lead | SD Support | Planned |
 
-Dates, durations, and participants should be agreed during transition planning.
+Scope, ownership and participants should be agreed during transition planning.
 
 ## 8. Documentation Handover Register
 
@@ -452,7 +451,7 @@ This checklist defines proposed acceptance requirements. It does not indicate th
 
 ## 18. Formal Handover Approval
 
-| Approval Role | Name / Reference | Decision | Date |
+| Approval Role | Name / Reference | Decision | Basis / Notes |
 |---|---|---|---|
 | Implementation Lead | | | |
 | SAP SD Support Lead | | | |
@@ -466,7 +465,6 @@ This checklist defines proposed acceptance requirements. It does not indicate th
 - [ ] Not accepted
 - [ ] Additional knowledge transfer required
 
-**Transition Effective Date:**
 
 **Outstanding Actions:**
 

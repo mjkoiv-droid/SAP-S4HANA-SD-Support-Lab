@@ -15,7 +15,6 @@
 | Execution Type | Executed / Simulated / Blocked |
 | SAP System / Client | |
 | Tester | Mikko Koivistoinen |
-| Execution Date | |
 | Evidence IDs | |
 
 ## 2. Test Objective

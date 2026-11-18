@@ -22,7 +22,7 @@ Track progress against the 15 SAP SD application support job requirements and li
 |---|---|---|---|---|
 | R01 | Daily support and monitoring | M1, M5 | In Progress | M1 monitoring baseline and runbook: EV-003–EV-007; no repeated daily production monitoring |
 | R02 | Sales orders, picking, shipment and billing | M2, M3 | Executed | Two training-sandbox O2C chains through balanced FI: 1055→80000784→4900001488→90000303→9400000057 and 1056→80000785→4900001489→90000304→9400000058 (EV-017–EV-035); billing-block control failed/open for M3; inventory balance/movement type unverified |
-| R03 | IDocs, interfaces, logs and output | M4 | Not Started | TBD |
+| R03 | IDocs, interfaces, logs and output | M4 | In Progress | Existing `DELFOR` status `56` error diagnosis, `INVOIC` configuration inspection and completed order `374` output (EV-053–EV-070); successful IDoc reprocessing and target FI invoice not verified |
 | R04 | Incidents and service requests | M5 | In Progress | Two *controlled sandbox* cases M1-TRIAGE-001/002 (EV-009–EV-016); 6-case queue and SRs pending |
 | R05 | Root cause analysis and corrective actions | M5 | In Progress | Two known root causes + corrections + retests (EV-010–EV-016); formal 3× RCA still pending |
 | R06 | Business coordination: Sales, Logistics, Finance | M6 | Not Started | TBD |
@@ -47,11 +47,10 @@ Each completed exercise should include:
 - Description of the activity
 - Expected and actual results
 - Screenshot or document reference
-- Execution date
 - Verification status
 
 ## Completion Criteria
 
-The lab is complete when all 15 requirements have been assessed and their execution status accurately recorded. **M1 demonstrates partial monitoring/incident/RCA coverage; M2 demonstrates the R02 O2C execution scope with two full FI chains. The unresolved M2 billing-block control is an explicit M3 follow-up, not a successful control test.**
+The lab is complete when all 15 requirements have been assessed and their execution status accurately recorded. **M1 demonstrates partial monitoring/incident/RCA coverage; M2 demonstrates the R02 O2C execution scope with two full FI chains; M4 has verified diagnostic, configuration and output evidence with simulated-only recovery. The unresolved M2 billing-block control is an explicit M3 follow-up, not a successful control test.**
 
 Activities that cannot be performed in the training environment must be clearly identified as simulated or blocked.

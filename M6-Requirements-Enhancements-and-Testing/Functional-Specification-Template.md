@@ -11,7 +11,6 @@
 | SAP System / Client | |
 | Author | Mikko Koivistoinen |
 | Version | 0.1 |
-| Date | |
 | Status | Draft |
 | Execution Type | Executed / Simulated / Proposed |
 
@@ -171,7 +170,7 @@ Describe the proposed SAP processing logic, determination rules, conditions, and
 
 ## 11. Acceptance and Approval
 
-| Role | Name | Approval Status | Date |
+| Role | Name | Approval Status | Basis / Notes |
 |---|---|---|---|
 | Sales Representative | | Pending | |
 | Logistics Representative | | Pending | |

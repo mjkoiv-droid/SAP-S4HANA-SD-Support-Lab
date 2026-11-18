@@ -10,7 +10,6 @@
 | SAP module | SD |
 | Priority / Severity | |
 | Region / Requester | |
-| Date | |
 | Status | Not Started |
 | Execution type | Executed / Simulated / Blocked |
 | SAP system / Client | |
@@ -115,7 +114,6 @@
 
 **Outstanding risks:**
 
-**Closure date:**
 
 ## 10. Evidence References
 

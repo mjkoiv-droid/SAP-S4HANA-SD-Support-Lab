@@ -10,7 +10,6 @@
 | Related Functional Specification | |
 | SAP Module | SD |
 | Change Type | Configuration / Master Data / Enhancement |
-| Assessment Date | |
 | Assessor | Mikko Koivistoinen |
 | Status | Draft |
 | Execution Type | Executed / Proposed / Simulated |

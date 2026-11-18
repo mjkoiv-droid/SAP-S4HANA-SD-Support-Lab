@@ -10,7 +10,6 @@
 | Release Title | |
 | SAP Module | SD |
 | SAP System / Client | |
-| Release Date | |
 | Prepared By | Mikko Koivistoinen |
 | Status | Draft |
 | Execution Type | Executed / Simulated / Blocked |
@@ -128,7 +127,7 @@
 
 ## 7. Deployment Plan
 
-| Step | Activity | Responsible Role | Planned Time | Status |
+| Step | Activity | Responsible Role | Dependency | Status |
 |---|---|---|---|---|
 | 1 | Pre-deployment checks | | | |
 | 2 | Transport verification | | | |
@@ -235,7 +234,7 @@
 
 ## 12. Approval and Sign-Off
 
-| Role | Name | Status | Date |
+| Role | Name | Status | Basis / Notes |
 |---|---|---|---|
 | Sales Representative | | Pending | |
 | Logistics Representative | | Pending | |

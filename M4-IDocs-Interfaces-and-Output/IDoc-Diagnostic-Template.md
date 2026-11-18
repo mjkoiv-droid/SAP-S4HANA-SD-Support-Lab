@@ -10,7 +10,6 @@
 | Interface Name | |
 | SAP Module | SD |
 | SAP System / Client | |
-| Analysis Date | |
 | Analyst | Mikko Koivistoinen |
 | Status | Not Started |
 | Execution Type | Executed / Read-Only / Simulated / Blocked |
@@ -45,7 +44,6 @@
 | Receiver Partner | |
 | Sender Port | |
 | Receiver Port | |
-| Creation Date / Time | |
 | Current Status | |
 | Status Description | |
 
@@ -69,7 +67,6 @@
 
 **Message class / number:**
 
-**Error timestamp:**
 
 **Relevant segment / field:**
 

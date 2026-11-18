@@ -20,7 +20,7 @@
 2. In VA01, condition amount changed manually to EUR 15.55 and standard order **1056** saved. This is a **business rule / data quality** problem, not a SAP technical message.
 3. Pricing Analysis showed reason **203** on PPR0: condition record found but value manually changed — [EV-015](../M1-Landscape-and-Monitoring/evidence/pricing-analysis-manual-override.png).
 4. Change order 1056 corrected PPR0 to EUR 17.55; VA03 verified correct condition and net amount — [EV-016](../M1-Landscape-and-Monitoring/evidence/pricing-corrected-va03.png).
-5. An independent PPR0 record check performed in M3 found sales org **1010**, DC **10**, material **TG11**, price **EUR 17.55 / 1 PC**, valid **07.09.2023–31.12.9999** — [EV-042](evidence/m3-ppr0-condition-record.png).
+5. An independent PPR0 record check performed in M3 found sales org **1010**, DC **10**, material **TG11**, price **EUR 17.55 / 1 PC**, valid **a maintained validity interval** — [EV-042](evidence/m3-ppr0-condition-record.png).
 
 ## Root cause and control recommendation
 

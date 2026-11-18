@@ -117,9 +117,9 @@ The following targets are hypothetical and are not contractual commitments.
 
 | Priority | Initial Response Target | Management Approach |
 |---|---|---|
-| P1 | 15 minutes | Immediate escalation and continuous coordination |
-| P2 | 1 hour | Urgent investigation and regular communication |
-| P3 | 4 business hours | Standard incident handling |
+| P1 | Critical priority | Immediate escalation and continuous coordination |
+| P2 | High priority | Urgent investigation and regular communication |
+| P3 | Standard priority | Standard incident handling |
 | P4 | 1 business day | Planned resolution or service response |
 
 Response targets must be defined separately from resolution targets.
@@ -248,7 +248,7 @@ A knowledge article should include:
 - Known limitations
 - Related SAP transactions
 - Document owner
-- Review date
+- Review owner
 
 Confidential customer information must not be included in publicly shared materials.
 

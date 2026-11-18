@@ -275,7 +275,6 @@ These are portfolio review areas, not claims of completed customer implementatio
 
 **Final Review Status:** Pending
 
-**Review Date:**
 
 **Reviewer:**
 

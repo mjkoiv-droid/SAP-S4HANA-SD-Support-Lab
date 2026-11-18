@@ -17,7 +17,6 @@ Objectives:
 - Review ID:
 - SAP system / client:
 - Review period:
-- Review date:
 - Business owner:
 - Security reviewer:
 - Review status: Open / In Progress / Completed
@@ -96,7 +95,7 @@ Evidence references:
 
 ## 8. Findings and Corrective Actions
 
-| Finding ID | Description | Severity | Action Owner | Due Date | Status |
+| Finding ID | Description | Severity | Action Owner | Control / Evidence | Status |
 |---|---|---|---|---|---|
 | FIND-001 | | | | | |
 | FIND-002 | | | | | |
@@ -113,9 +112,7 @@ Corrective actions may include:
 - Business owner:
 - SAP security reviewer:
 - Risk / compliance approver, if required:
-- Approval date:
 - Outstanding exceptions:
-- Next review date:
 
 ## 10. Review Conclusion
 

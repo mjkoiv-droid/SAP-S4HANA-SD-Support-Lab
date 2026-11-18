@@ -30,23 +30,19 @@ Objectives:
 | Affected region | |
 | Sales organization | |
 | Reporting user / team | |
-| Incident creation time | |
 | Current incident owner | |
 
-All timestamps should include a date, time, and time zone.
+Record verified incident facts and evidence identifiers consistently.
 
 ## 3. Handover Information
 
 | Field | Details |
 |---|---|
-| Handover date | |
-| Handover time (UTC) | |
 | Sending region | APAC / EMEA / AMER |
 | Receiving region | APAC / EMEA / AMER |
 | Sending support engineer | |
 | Receiving support engineer | |
 | Handover status | Pending / Accepted / Rejected |
-| Next agreed update time | |
 
 ### Handover Principle
 
@@ -111,7 +107,7 @@ Include:
 
 Document all relevant activities performed by the sending team.
 
-| Time (UTC) | Investigation Activity | Result | Evidence Reference |
+| Sequence | Investigation Activity | Result | Evidence Reference |
 |---|---|---|---|
 | | | | |
 | | | | |
@@ -174,7 +170,7 @@ Document any changes, workarounds, or escalations already completed.
 
 ## 9. Pending Actions
 
-| Action ID | Required Action | Assigned Owner | Priority | Target Time (UTC) |
+| Action ID | Required Action | Assigned Owner | Priority | Priority / Dependency |
 |---|---|---|---|---|
 | NEXT-001 | | | | |
 | NEXT-002 | | | | |
@@ -219,12 +215,9 @@ Record outstanding:
 | Item | Status |
 |---|---|
 | Incident priority | |
-| Applicable support calendar | |
 | SLA response target | |
 | SLA resolution target | |
 | SLA status | |
-| Last business update | |
-| Next business update | |
 | Communication owner | |
 
 ### Communication Requirements
@@ -269,7 +262,7 @@ SLA deadlines must be calculated according to the applicable contract, including
 
 ### Incident Overview
 
-**Incident ID:** INC-SD-2026-001
+**Incident ID:** INC-SD-EXAMPLE-001
 
 **Priority:** P2 (illustrative)
 

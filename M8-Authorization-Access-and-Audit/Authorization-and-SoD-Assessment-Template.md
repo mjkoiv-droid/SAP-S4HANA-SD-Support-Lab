@@ -4,7 +4,6 @@
 ## 1. Assessment Overview
 
 - Assessment ID:
-- Date:
 - SAP system / client:
 - Business process:
 - Requested by:
@@ -118,7 +117,6 @@ Evidence IDs:
 - Controls verified: Yes / No
 - Business approval obtained: Yes / No
 - Final status:
-- Closure date:
 
 ## 10. Lessons Learned
 

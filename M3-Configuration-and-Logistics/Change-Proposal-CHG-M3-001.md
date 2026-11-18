@@ -6,7 +6,6 @@
 | Document status | **Draft proposal, not approved or implemented** |
 | Environment | JV2 / 100 — S/4HANA Cloud Public Edition training system |
 | Change owner | Proposed: SAP SD configuration specialist / CBC-authorized administrator |
-| Date | 17 November 2026 |
 | Production change? | **No** |
 
 ## 1. Business requirement and observed gap

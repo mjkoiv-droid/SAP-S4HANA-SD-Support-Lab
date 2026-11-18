@@ -1,21 +1,20 @@
 # M1 — Access Audit, Landscape Inventory and Baseline Monitoring
 
-**Execution status:** M1 landscape and monitoring snapshot recorded on 16 November 2026. Tested access is evidenced; untested, restricted and later-module checks remain explicitly pending. This is **not** a blanket access-audit pass.  
+**Execution status:** M1 landscape and monitoring baseline documented. Tested access is evidenced; untested, restricted and later-module checks remain explicitly pending. This is **not** a blanket access-audit pass.  
 **System:** SAP S/4HANA Cloud, Public Edition — SAP Learning Hub Hands-on Practice sandbox, JV2 / client 100 (per supplied account inventory; not rechecked in System → Status in this M1 sequence).  
 **Evidence:** see the central [Evidence Register](../00-Project-Tracking/Evidence-Register.md) and local `evidence/` images.  
-**Source:** Original Word guide §§2.2 and 4/M1. **No scheduling assumptions apply.**
 
 ## A01. System and boundaries
 
 | Attribute | Observation | Source / certainty |
 |---|---|---|
 | SAP environment | S/4HANA Cloud Public Edition; Fiori native and GUI-style WebGUI screens both accessible | Account inventory and directly observed screenshots |
-| System ID / client | JV2 / 100 | Supplied November 16 inventory; not independently re-read in this sequence |
+| System ID / client | JV2 / 100 | Supplied account inventory; not independently re-read in this sequence |
 | User account | Training user; identifiers retained privately in source inventory, omitted here | Supplied account details; relevant role assignments verified via IAM, EV-001 |
 | Business roles | 14 assigned now; all 14 IDs match the user-supplied baseline | IAM Information System screenshot, EV-001 |
 | Roles examined in old IAM workbook | Seven of fourteen; 5,294 role-app entries from seven role exports | Supplied workbook; not evidence of current count for all roles |
 | Current IAM role-app entry count | 6,904 reported when selecting all 14 roles | User-reported current Fiori count; full export comparison not yet performed |
-| Availability / reset | Sandbox reset stated as 6 Dec 2026 | Supplied account details; not confirmed in the app |
+| Availability / reset | Not verified | No system-confirmed reset information recorded |
 | Dedicated/client isolation | Training test customer 1000193 used, but tenant-sharing and permissible configuration scope not formally established | **Pending confirmation**; no shared customizing or user roles changed |
 
 ## A02–A08. Permission/feasibility matrix
@@ -34,7 +33,7 @@
 | A07 | Transports | SE09/SE10, STMS not tested | **Unverified/deferred** to M7/alternate sandbox |
 | A08 | Data segregation | Exercises conducted against test customer 1000193, own references `M1-TEST-001`, `REF TT0234`; no master/shared customizing changed | **Test data use verified**, shared-scope policy still unverified | EV-009–EV-016 |
 
-## Access audit RAG summary (as required by original guide)
+## Access audit RAG summary
 
 **GREEN** = tested and available for the stated action; **AMBER** = partly tested, source-limited or not yet verified; **RED** = explicitly unavailable through the tested route in this sandbox. These ratings apply **only to JV2/client 100 and the specific action**, not all of SAP Learning Hub or any alternate sandbox.
 
@@ -74,7 +73,7 @@
 | Payment/terms | NT30, EXW Hamburg; shipping condition 01 Standard | EV-009, EV-012 |
 | Shipment fulfillment | Delivery 80000784: picking A not yet picked; PGI A not started; billing A not invoiced; document checked | EV-013 |
 
-## M1.03. Read-only monitoring baseline — 16 Nov 2026
+## M1.03. Read-only monitoring baseline
 
 These figures reflect SAP training data and the applied filters **at the time checked**. They are not live production metrics or a service-quality conclusion. Sources marked *reported* were read aloud from the SAP UI without a separate count screenshot.
 
@@ -90,7 +89,7 @@ These figures reflect SAP training data and the applied filters **at the time ch
 | Delivery output — completed | Manage Output Items for Deliveries (`F4455`) | **1,543** | EV-007 shows app/filter; count user-reported | Successfully processed status |
 | Delivery output — in preparation | Same | **802** | EV-007; count user-reported | Not necessarily failures |
 | Delivery output — error/pending/to be output | Same | **0 reported in each status** | User stated only Completed and In Preparation | Subject to same filters as viewed; do not infer enterprise-wide coverage |
-| Application logs | SituationDefinition-showLog, filter `SIT`, date 16 Nov 2026 | **36** log entries; Information and Warning | EV-005 | Only Situation Handling category, not general SD |
+| Application logs | SituationDefinition-showLog, filter `SIT`,  | **36** log entries; Information and Warning | EV-005 | Only Situation Handling category, not general SD |
 | Incomplete sales orders | Available filters not separately verified | **Not measured** | — | Clearly documented gap |
 | IDoc failures | IDoc monitoring not found in this sandbox | **Not measured** | — | Defer live hands-on to M4 alternate sandbox |
 | Interface monitor | No suitable monitor verified | **Not measured** | — | Do not invent a zero value |
@@ -118,10 +117,10 @@ These figures reflect SAP training data and the applied filters **at the time ch
 - [x] Record organizational values, pricing, customer, test product, shipping point.
 - [x] Capture monitored fulfillment, delivery, billing, output and SIT log counts.
 - [x] Record two genuine controlled incident investigations and positive retests.
-- [x] Company code independently confirmed later in M2 as 1010 — DE Company Code (EV-025–EV-026); not part of the original M1 snapshot.
+- [x] Company code independently confirmed later in M2 as 1010 — DE Company Code (EV-025–EV-026); not part of the initial M1 inspection.
 - [ ] Actual delivery type not independently checked; optional follow-up for complete organizational inventory.
 - [ ] No comprehensive incomplete-sales-document count; no general SD application/IDoc/interface monitoring in this tenant.
 - [ ] Shared-client write/configuration policy and A03/A06/A07 specialized permissions not fully tested; handle before restricted activities in later modules.
 - [ ] Evidence snapshots must be reviewed for publication permissions and anonymized before making repo public.
 
-**M1 classification:** Required M1 monitoring snapshot and two deliberate practice investigations executed; runbook is simulated. Specialized access checks explicitly deferred to M3/M4/M7/M8. Do not claim 100% access-audit coverage or real production support.
+**M1 classification:** Required M1 monitoring baseline and two deliberate practice investigations executed; runbook is simulated. Specialized access checks explicitly deferred to M3/M4/M7/M8. Do not claim 100% access-audit coverage or real production support.

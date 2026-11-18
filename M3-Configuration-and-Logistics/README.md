@@ -1,10 +1,10 @@
 # M3 — SD Configuration and Logistics Exceptions
 
-**Execution snapshot (17 November 2026):** Read-only configuration-dependent inspection and real sandbox transaction tests **performed**; one picking defect corrected and verified. The billing-block enforcement defect is **reproduced but configuration root cause unverified**. SAP Central Business Configuration (CBC) access is **denied**, so no configuration was changed or transported. Proposed settings, approval and regression tests are explicitly **proposed / not executed**. This is a training-sandbox portfolio, not production consulting work.
+**SAP execution status:** Read-only configuration-dependent inspection and real sandbox transaction tests **performed**; one picking defect corrected and verified. The billing-block enforcement defect is **reproduced but configuration root cause unverified**. SAP Central Business Configuration (CBC) access is **denied**, so no configuration was changed or transported. Proposed settings, approval and regression tests are explicitly **proposed / not executed**. This is a training-sandbox portfolio, not production consulting work.
 
 ## Module outcomes and boundaries
 
-| Guide step | Evidence / deliverable | Classification |
+| Workstream | Evidence / deliverable | Classification |
 |---|---|---|
 | M3.01 Document, item, schedule line, copy control, shipping / billing | OR, TAN and CP observed; plant/shipping point and blocks observed; **copy-control customizing and VOV* settings not inspected** | **Partial — read-only observation** |
 | M3.02 Pricing, conditions, account determination | PPR0 record and price checked; FI accounts observed in M2; customizing for revenue determination not inspected | **Partial — read-only observation** |

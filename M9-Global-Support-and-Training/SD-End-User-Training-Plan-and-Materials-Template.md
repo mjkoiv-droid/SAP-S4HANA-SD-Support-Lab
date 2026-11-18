@@ -28,7 +28,6 @@ Training objectives:
 | Training Coordinator | |
 | SAP SD Functional Consultant | |
 | Business Process Owner | |
-| Planned Training Dates | |
 | Training Status | Planned / In Progress / Completed |
 
 ## 3. Business Environment
@@ -179,15 +178,15 @@ Users can identify common issues and understand when to contact SAP support.
 
 ## 7. Training Delivery Plan
 
-| Session | Audience | Format | Duration | Status |
-|---|---|---|---|---|
-| SD Process Overview | All SD users | Online workshop | 60 min | Planned |
-| Sales Order Processing | Sales / Sales Support | Hands-on | 120 min | Planned |
-| Delivery Processing | Shipping Specialists | Hands-on | 90 min | Planned |
-| Billing Processing | Billing Specialists | Hands-on | 90 min | Planned |
-| Exception Handling | Key Users | Workshop | 90 min | Planned |
+| Session | Audience | Format | Status |
+|---|---|---|---|
+| SD Process Overview | All SD users | Online workshop | Planned |
+| Sales Order Processing | Sales / Sales Support | Hands-on | Planned |
+| Delivery Processing | Shipping Specialists | Hands-on | Planned |
+| Billing Processing | Billing Specialists | Hands-on | Planned |
+| Exception Handling | Key Users | Workshop | Planned |
 
-Durations are illustrative and should be adjusted based on audience needs.
+Session content can be tailored to audience needs.
 
 ## 8. Training Environment
 
@@ -256,7 +255,6 @@ A valid sales order is created and can be displayed.
 
 - Training user ID (anonymized):
 - Test sales order number:
-- Exercise date:
 - Result: Pass / Fail / Not Executed
 - Trainer comments:
 
@@ -315,7 +313,7 @@ Training materials should include:
 - Business process
 - Target user group
 - SAP system or application
-- Preparation date
+- Content owner
 - Document owner
 - Review and approval information
 

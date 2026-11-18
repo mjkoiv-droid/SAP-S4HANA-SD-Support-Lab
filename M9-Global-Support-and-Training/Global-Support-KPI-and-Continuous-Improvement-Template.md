@@ -60,7 +60,6 @@ The support model and KPI targets must be aligned with the customer's service ag
 | SAP SD Support Lead | |
 | Business Process Owner | |
 | Data Source | |
-| Report Preparation Date | |
 | Report Status | Draft / Reviewed / Approved |
 
 ### KPI Principles
@@ -139,12 +138,12 @@ Total Measured Resolution Duration / Number of Resolved Incidents
 
 Example:
 
-- Total resolution duration: 600 hours
+- Resolution intervals: use system data where permitted
 - Resolved incidents: 150
 
 Result:
 
-600 / 150 = 4 hours
+Resolution indicator = measured incident resolution intervals / resolved incident count
 
 For operational reporting, define whether elapsed time or support-calendar time is used.
 
@@ -194,7 +193,7 @@ The following figures are fictional training data.
 | Resolution SLA | 90% | 91.7% | Met |
 | First Contact Resolution | 60% | 62.5% | Met |
 | Reopened Incident Rate | <= 5% | 4% | Met |
-| Mean Time to Resolution | Baseline required | 4 hours | Monitor |
+| Mean Time to Resolution | Baseline required | Not measured | Monitor |
 | Recurring Incident Rate | Baseline required | 12% | Investigate |
 
 ### Example Management Interpretation
@@ -213,15 +212,15 @@ Repeated business process failures may justify corrective action even when suppo
 
 | Month | Sales Orders | Delivery | Billing | Master Data | Total |
 |---|---|---|---|---|---|
-| January | 40 | 25 | 30 | 15 | 110 |
-| February | 35 | 22 | 28 | 14 | 99 |
-| March | 32 | 20 | 25 | 12 | 89 |
+| Period A | 40 | 25 | 30 | 15 | 110 |
+| Period B | 35 | 22 | 28 | 14 | 99 |
+| Period C | 32 | 20 | 25 | 12 | 89 |
 
 All values are hypothetical.
 
 ### Trend Interpretation
 
-The simulated incident volume decreases from 110 in January to 89 in March.
+The illustrative incident volume decreases from 110 in Period A to 89 in Period C.
 
 Possible explanations include:
 
@@ -399,7 +398,7 @@ Document results, approvals, remaining risks, and lessons learned.
 | Metric | Before | After | Change |
 |---|---|---|---|
 | Monthly pricing incidents | 40 | 15 | -62.5% |
-| Average resolution duration | 5 hours | 3 hours | -40% |
+| Average resolution duration | Example only | Example only | Illustrative |
 | Repeated pricing incidents | 20 | 6 | -70% |
 
 All figures are fictional.
@@ -443,7 +442,6 @@ Do not attribute improvements to a specific action without sufficient supporting
 - Decisions:
 - Improvement actions:
 - Responsible owners:
-- Next review date:
 
 ## 15. Regional Performance Comparison
 

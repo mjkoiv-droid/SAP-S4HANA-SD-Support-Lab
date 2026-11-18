@@ -7,7 +7,7 @@ This module focuses on SAP S/4HANA Sales (SD) authorization troubleshooting, use
 
 The objective is to demonstrate a structured approach to investigating access issues, evaluating security risks, and supporting business controls within SAP SD processes.
 
-The module is based on independent study, reusable templates, and simulated business scenarios.
+The module combines **executed, read-only JV2/100 IAM role inspection** with a limited evidence-based training access review, two potential SoD risk analyses, retained reusable templates, and separately labeled fictional examples. No production access governance or role remediation is claimed.
 
 ## 2. Learning Objectives
 
@@ -33,13 +33,21 @@ The module is based on independent study, reusable templates, and simulated busi
 
 ### Documents
 
+- **[M8 Evidence-Based Access, Authorization and SoD Review](M8-Access-Authorization-and-SoD-Review.md)** — completed training-scope assessment, four personas, two qualified SoD risk analyses, actual CBC-denial reference, audit findings and validation limits (EV-001, EV-079–EV-080, EV-094–EV-103).
+
 1. [Authorization and SoD Assessment Template](Authorization-and-SoD-Assessment-Template.md)
 2. [Access Review Matrix](Access-Review-Matrix.md)
 3. [Authorization Incident Investigation Example](Authorization-Incident-Investigation-Example.md)
 4. [SoD Conflict Investigation and Mitigation Example](SoD-Conflict-Investigation-and-Mitigation-Example.md)
 5. [Audit Evidence and Access Review Closure Template](Audit-Evidence-and-Access-Review-Closure-Template.md)
 
-## 4. SAP Tools and Transactions
+## 4. Actual execution and tools
+
+**Executed:** In **JV2 / client 100**, the Fiori **IAM Information System**, Business Role entity, was used read-only to inspect `BR_INTERNAL_SALES_REP`, `BR_BILLING_CLERK`, `BR_BUPA_MASTER_SPECIALIST`, and `BR_PRICING_SPECIALIST`. Key evidence: [EV-094–EV-103](../00-Project-Tracking/Evidence-Register.md). The review reused M1 role-assignment evidence and M5 CBC Unauthorized evidence.
+
+**Not executed:** SU01, PFCG, SU53, STAUTHTRACE, effective-access negative tests, user-role edits, approved security changes, or business sign-off. T41/client 400 is a different SAP system and cannot diagnose JV2 CBC access.
+
+### Reference tools and transactions (methodology, not execution claims)
 
 | Transaction | Description | Application |
 |---|---|---|
@@ -137,16 +145,16 @@ The module emphasizes:
 
 | Activity | Status |
 |---|---|
-| Authorization investigation methodology | Documented |
-| User access review methodology | Documented |
-| SoD risk assessment methodology | Documented |
-| Authorization incident scenario | Simulated |
-| SoD conflict investigation | Simulated |
-| Production authorization testing | Not performed |
-| Actual role changes | Not performed |
-| Production audit | Not performed |
+| IAM role, catalog and organizational restriction inspection | **Executed read-only — JV2/100, EV-094–EV-103** |
+| Four-persona access review | **Documented analysis**; not a formal four-user access certification |
+| Two potential SoD scenarios | **Documented analysis**; no confirmed technical violation |
+| CBC authorization incident | **Actual Unauthorized result reused** from M5 EV-079–EV-080; root cause and remediation open |
+| VA02 incident example / fictional SoD example | **Simulated; preserved unchanged** |
+| SU53 / PFCG / SU01 / STAUTHTRACE | **Not executed** |
+| Production authorization testing / actual role changes | **Not performed** |
+| Formal business approval / audit closeout | **Not performed** |
 
-The documentation checklist records portfolio preparation only. It does not indicate that live SAP security activities were executed.
+The **M8 training evidence and documentation package is complete within its verified scope**, but actual access recertification, approved security remediation, end-to-end technical SoD verification and audit closure remain open.
 
 ## 9. Consultant Competencies Demonstrated
 
@@ -167,13 +175,13 @@ These competencies are particularly relevant to SAP SD application support, impl
 
 This module is part of an independent SAP S/4HANA SD professional development portfolio.
 
-All examples are fictional or illustrative unless explicitly supported by documented system evidence.
+Examples are fictional or illustrative unless explicitly supported by cited system evidence. The M8 evidence-based report is based on actual read-only JV2 IAM observations plus qualified analysis.
 
 No production authorization analysis, role modification, access review, or audit activity is claimed to have been performed.
 
 ---
 
-**Module Status:** Documentation Complete
+**Module Status:** Read-only training assessment and documentation completed; formal security verification/approvals open
 
 **Area:** SAP S/4HANA Sales (SD)
 

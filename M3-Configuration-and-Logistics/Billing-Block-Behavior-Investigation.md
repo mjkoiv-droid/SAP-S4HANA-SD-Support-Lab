@@ -1,6 +1,6 @@
 # CFG-ISS-001 — Billing block 04 did not stop F2 delivery-related invoicing
 
-**State:** Reproduced in two actual sandbox scenarios, **unresolved configuration cause**; CBC access Unauthorized. This is an investigation, **not** a successfully validated billing-block control.
+**State:** Reproduced in two actual JV2 sandbox scenarios, **unresolved JV2 configuration cause**; CBC access Unauthorized. A separate read-only T41/400 IMG inspection in M5 found block `04`→`F2` assigned in **T41 only**, not proof of JV2 customizing. This is an investigation, **not** a successfully validated billing-block control.
 
 ## Case A — Sales-order header billing block
 
@@ -39,3 +39,7 @@
 - Manage Your Solution explicitly indicated configuration was CBC-managed — [EV-040](evidence/m3-cbc-tenant-managed.png). The user reported an **Unauthorized** response opening CBC.
 
 **Proposed follow-up:** Authorized CBC specialist review of 102401, block 04 definition, delivery-related F2 billing requirements and due-list behavior; approve design and retest in dedicated sandbox before claiming resolution. See [CHG-M3-001](Change-Proposal-CHG-M3-001.md).
+
+## M5 follow-up — distinct sandbox comparison
+
+JV2 CBC access denial was reproduced ([EV-079–EV-080](../M5-Incident-and-Root-Cause-Management/README.md)). Read-only SAP GUI IMG in T41/400 showed **billing block 04 — Check Payment Terms** assigned to **billing type F2** (EV-082); block 01/F2 was also observed (EV-081). **This does not answer whether JV2 102401 has the same assignment**, nor establish whether JV2 billing requirements or block-level semantics caused the original anomaly. The problem remains **open**, without change or successful negative retest. See [M5 problem record](../M5-Incident-and-Root-Cause-Management/Problem-Record-PRB-SD-001.md).

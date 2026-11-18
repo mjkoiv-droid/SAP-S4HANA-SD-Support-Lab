@@ -41,7 +41,7 @@ Select priority from both business impact (scope, monetary effect, deadline, com
 
 **Escalation:** stop unsupervised remediation of shared roles/configuration/IDocs/transport; seek authorized sandbox and approval before replay/transport. No bulk processing of historical test artifacts.
 
-## B. M1-TRIAGE-001 — Controlled delivery-block incident (cross-reference INC-SD-002)
+## B. M1-TRIAGE-001 — Controlled delivery-block incident (M1-only case; distinct from M5 picking INC-SD-002)
 
 | Field | Verified fact or lab classification |
 |---|---|
@@ -78,7 +78,7 @@ Select priority from both business impact (scope, monetary effect, deadline, com
 | Status | **Resolved and independently verified** |
 | Evidence | EV-014–EV-016; order 1056 |
 
-**Counting rule:** These M1 controlled cases can serve as evidence for INC-SD-002 and INC-SD-001 when revisited in M5, but they must **not** be counted as four separate incidents. M5 still requires six distinct scenarios, three fuller RCAs, communication logging, regression reopening and two service requests.
+**Counting rule:** M1-TRIAGE-002 is reused for M5 pricing INC-SD-001. M1-TRIAGE-001 is a separate delivery-block control case and **must not be relabeled as M5 picking INC-SD-002**. The M5 picking incident is order 1059/delivery 80000788 (EV-045–EV-048). No case is double-counted merely for being revisited.
 
 ## C1. Reproduction and verification protocols (actual SAP exercises)
 
@@ -86,7 +86,7 @@ Select priority from both business impact (scope, monetary effect, deadline, com
 
 **M1-TRIAGE-002 / controlled manual price discrepancy:** The operator created OR sales order `1056`, customer `1000193`, material `TG11`, item 10, quantity `1 PC`, with PPR0 baseline **EUR 17.55** (EV-014). The operator manually entered PPR0 **EUR 15.55** and saved the order (save confirmation provided during the session; the incorrect saved amount was **not captured in a separate screenshot**). The subsequent Pricing Analysis displayed **PPR0 message 203** (`Condition record was found and changed manually`), proving manual intervention but **not independently displaying the earlier EUR 15.55 amount** (EV-015). The operator restored PPR0 to **EUR 17.55**, saved, and inspected order `1056` via VA03 (EV-016). The final saved PPR0 and net amount were **EUR 17.55**. **Automatic repricing, control design preventing repeat manual overrides, and cross-customer regression were not verified**; only the incorrect order amount was corrected and retested.
 
-**Training-ticket administration:** Both cases are created/owned by the sandbox operator, not actual production users. The earlier third-party purchase requisition `10000248` was observed during material selection; its eventual state/cancellation was **not checked** and must not be assumed. Priorities P3 and business impacts are illustrative; **no real SLA, customer approval, ticketing-system timestamp, or service restoration acknowledgement was obtained**. For formal M5 incident records, add impact, exact step timestamps, owner/approval, communication, prevention and broader regression checks; reuse these case IDs and references without treating them as new incidents.
+**Training-ticket administration:** Both cases are created/owned by the sandbox operator, not actual production users. The earlier third-party purchase requisition `10000248` was observed during material selection; its eventual state/cancellation was **not checked** and must not be assumed. Priorities P3 and business impacts are illustrative; **no real SLA, customer approval, ticketing-system timestamp, or service restoration acknowledgement was obtained**. For M5, carry forward only verified evidence and add documented impact assumptions, investigation, authority, prevention and regression limitations. No execution timestamps, customer approvals or real incident records are claimed.
 
 ## D. M1 closure note
 

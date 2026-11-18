@@ -1,6 +1,6 @@
 # SAP SD Support Lab — Execution Backlog and Coverage Review
 
-**Project state:** M1 has verified monitoring observations and two corrected, controlled sandbox incidents (EV-001–EV-016); its broader mandatory access audit remains **partially open**. M2 has two fully executed O2C chains through balanced FI postings (EV-017–EV-035). Billing-block negative test failed. M3 now has read-only configuration observations, two executed incident reproductions with corrected pricing/picking, and a proposed change/impact design; CBC inspection is blocked. M4 includes verified IDoc and output inspections, configured intercompany invoice routing, and documented-only recovery. M5–M9 retain templates and backlog work.  
+**Project state:** M1 has verified monitoring observations and two corrected, controlled sandbox incidents (EV-001–EV-016); its broader mandatory access audit remains **partially open**. M2 has two fully executed O2C chains through balanced FI postings (EV-017–EV-035). Billing-block negative test failed. M3 now has read-only configuration observations, two executed incident reproductions with corrected pricing/picking, and a proposed change/impact design; CBC inspection is blocked. M4 includes verified IDoc and output inspections, configured intercompany invoice routing, and documented-only recovery. M5 now has six evidence-qualified case records, three RCAs, proposed SRs, a simulated communication/reopening exercise and an open problem record; several planned negative/fix/retest cases remain unexecuted. M6–M9 retain templates and backlog work.  
 
 ## Evidence and completion rules
 
@@ -82,21 +82,21 @@ Deliverables: actual IDoc diagnosis, intercompany configuration trace, positive 
 
 ## M5 — Incident, problem and RCA (R01, R04, R05)
 
-Existing: `M5-Incident-and-Root-Cause-Management/Incident-Template.md`, `RCA-Template.md`.
+**Current state:** Documentation deliverables prepared, SAP execution **partial**, limitations identified in [M5 README](../M5-Incident-and-Root-Cause-Management/README.md). Two templates retained as original blank working forms.
 
-- [ ] **M5.01** Investigate **INC-SD-001** incorrect pricing, including procedure/condition cause and cross-customer regression.
-- [ ] **M5.02** Investigate **INC-SD-002** picking/delivery quantity mismatch with schedule, stock, status and control-safe reconciliation.
-- [ ] **M5.03** Investigate **INC-SD-003** billing creation failure: block, incompletion, copy control, SD–FI posting.
-- [ ] **M5.04** Investigate **INC-SD-004** failed IDoc; reprocessing and duplicate avoidance if permitted.
-- [ ] **M5.05** Investigate **INC-SD-005** invoice output failure, processing logs and approved recovery.
-- [ ] **M5.06** Investigate **INC-SD-006** authorization failure with SU53/trace; no unapproved role change.
-- [ ] **M5.07** Each incident: impact, scope, reproduction, document IDs, logs, hypotheses, tests, cause, workaround, permanent action, owner, validation and closure.
-- [ ] **M5.08** Produce **3 full 5-Whys or fault-tree RCAs**, separating symptom, trigger, defect and preventive control.
-- [ ] **M5.09** Draft **SR-SD-001** new billing variant and **SR-SD-002** access request with scope, approval and acceptance criteria.
-- [ ] **M5.10** High-priority incident communication sequence (initial/progress update, escalation, workaround, restored confirmation) as fictional or actual as applicable.
-- [ ] **M5.11** Demonstrate **reopening one incident after failed regression** and document a **problem record**.
+- [ ] **M5.01 — Partial:** INC-SD-001 investigated, corrected and retested; cross-customer regression not executed (EV-014–EV-016, EV-042, EV-071–EV-072).
+- [ ] **M5.02 — Partial:** INC-SD-002 negative PGI, correction and positive GI verified; stock and wider shipment/billing checks not executed (EV-045–EV-050, EV-073).
+- [ ] **M5.03 — Partial:** INC-SD-003 **billing-to-FI** failure corrected; billing-creation failure not reproduced. Separate JV2 billing-block control problem remains unresolved (EV-021–EV-026, EV-074–EV-076, PRB-SD-001).
+- [ ] **M5.04 — Partial:** INC-SD-004 earlier DELFOR status 56 diagnosed; no approved WE20 change, IDoc reprocessing or target retest (EV-053).
+- [ ] **M5.05 — Partial:** INC-SD-005 successful invoice PRINT output/ADS log inspected; no failure, correction or print confirmation (EV-077–EV-078).
+- [ ] **M5.06 — Partial:** INC-SD-006 actual CBC Unauthorized reproduced (EV-079–EV-080); T41 IMG inspected read-only (EV-081–EV-082), which does not establish JV2 configuration. No trace/root-cause verification or role change.
+- [x] **M5.07 — Documentation completed, technical closure mixed:** Six separate case records include symptom, investigation, action or unexecuted action, limits and appropriate status; not six successfully closed actual incidents.
+- [x] **M5.08 — Documentation completed:** Three detailed evidence-limited 5-Whys RCAs for pricing, picking, FI master data. Deeper unknown causes not invented.
+- [x] **M5.09 — Documentation completed:** SR-SD-001 billing variant and SR-SD-002 CBC access. Neither request submitted or approved.
+- [x] **M5.10 — Simulated/documented:** Communications sequence drafted using real FI symptom, not sent or assigned actual priority.
+- [ ] **M5.11 — Mixed:** Actual JV2 billing-block negative tests failed expected control; problem record prepared. Service-desk reopening is simulated, not executed in a ticketing system.
 
-Deliverables: **6 incidents**, **2 service requests**, **3 RCAs**, communication log, problem record and retest evidence. A drafted incident is not a resolved real incident.
+Deliverables: **Six investigation records, two proposed SRs, three RCAs, a simulated communication log, one open problem record, evidence-based failed-control and simulated reopening record**. The unexecuted failure/fix/retest scopes are explicitly open.
 
 ## M6 — Requirements, enhancement and testing (R06, R07, R08, R10)
 
@@ -166,7 +166,7 @@ Deliverables: bilingual messages, training demonstration/guide, capstone, eviden
 | M2 | O2C process trace template | 2 instantiated, executed traces, flow/swimlane and control checklist |
 | M3 | Configuration analysis template; filled CFG-SD-001, 2 actual incident investigations, billing-block observation, CHG-M3-001 proposal, impact matrix, EV-036–EV-052 | CBC settings and copy-control customizing inaccessible; proposed configuration not implemented; broad regression not executed |
 | M4 | Completed IDoc diagnostic record, interface trace, output checklist, recovery runbook and screenshots | Live IDoc reprocessing and target `90FR` invoice remain unverified; no extra work is claimed |
-| M5 | Incident and RCA templates | 6 filled incidents, 2 SRs, 3 RCAs, communication log, reopened ticket/problem record |
+| M5 | Six filled case records, 2 proposed SRs, 3 RCAs, simulated communications/reopening, open problem record, EV-071–EV-082 | Unverified cross-customer regression, billing-creation failure, IDoc recovery, output-failure recovery, CBC trace/fix, actual ticket reopening |
 | M6 | FS, impact and test templates | Workshop record, CHG-SD-001, traceability matrix, 6+ actual test results, defects/sign-off |
 | M7 | Release/validation template | UAT acceptance, transport observation or mock release, smoke results, rollback/hypercare |
 | M8 | 5 templates/examples and README | Actual SU53/role evidence if accessible, 4-persona access review, 2 assessed SoD cases; examples remain simulations |

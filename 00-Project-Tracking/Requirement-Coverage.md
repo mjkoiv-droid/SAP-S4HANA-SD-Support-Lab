@@ -23,14 +23,14 @@ Track progress against the 15 SAP SD application support job requirements and li
 | R01 | Daily support and monitoring | M1, M5 | In Progress | M1 monitoring baseline and runbook: EV-003–EV-007; no repeated daily production monitoring |
 | R02 | Sales orders, picking, shipment and billing | M2, M3 | Executed | Two training-sandbox O2C chains through balanced FI: 1055→80000784→4900001488→90000303→9400000057 and 1056→80000785→4900001489→90000304→9400000058 (EV-017–EV-035); billing-block control failed/open for M3; inventory balance/movement type unverified |
 | R03 | IDocs, interfaces, logs and output | M4 | In Progress | Existing `DELFOR` status `56` error diagnosis, `INVOIC` configuration inspection and completed order `374` output (EV-053–EV-070); successful IDoc reprocessing and target FI invoice not verified |
-| R04 | Incidents and service requests | M5 | In Progress | Two *controlled sandbox* cases M1-TRIAGE-001/002 (EV-009–EV-016); 6-case queue and SRs pending |
-| R05 | Root cause analysis and corrective actions | M5 | In Progress | Two known root causes + corrections + retests (EV-010–EV-016); formal 3× RCA still pending |
+| R04 | Incidents and service requests | M5 | In Progress | Six evidence-qualified investigation records; 3 resolved training defects, 1 IDoc diagnosis only, 1 positive invoice-output baseline, 1 open CBC denial. Proposed SR-SD-001/002 not submitted. EV-014–EV-016, EV-045–EV-048, EV-021–EV-026, EV-053, EV-071–EV-082 |
+| R05 | Root cause analysis and corrective actions | M5 | In Progress | Three completed, evidence-limited RCA documents: manual PPR0 override, partial picking/VLMOVE 030, missing customer company-code data. All three have case-level corrections/retests. Wider prevention, IDoc/CBC root cause and actual reopening remain unverified. |
 | R06 | Business coordination: Sales, Logistics, Finance | M6 | Not Started | TBD |
-| R07 | Enhancements, configuration and impact assessment | M3, M6 | In Progress | Read-only M3 pricing/shipping inspection EV-041–EV-044, picking exception EV-045–EV-048, billing block 04 negative tests EV-036–EV-039 / EV-051–EV-052; CHG-M3-001 proposed and impact matrix prepared; CBC configuration unverified, no implementation |
+| R07 | Enhancements, configuration and impact assessment | M3, M6 | In Progress | Read-only M3 pricing/shipping inspection EV-041–EV-044, picking exception EV-045–EV-048, billing block 04 negative tests EV-036–EV-039 / EV-051–EV-052; CHG-M3-001 proposed and impact matrix prepared; JV2 CBC configuration unverified; T41/400 block 04/F2 observed read-only (EV-082) but not JV2 proof; no implementation |
 | R08 | Unit, integration and UAT testing | M6, M7 | Not Started | TBD |
 | R09 | Release and post-release validation | M7 | Not Started | TBD |
 | R10 | Functional, configuration and test documentation | M3, M6, M7 | In Progress | Filled M3 CFG-SD-001, CHG-M3-001 proposal, incident investigations and impact/regression matrix; M6/M7 not started |
-| R11 | User, role and authorization support | M8 | Not Started | TBD |
+| R11 | User, role and authorization support | M5, M8 | In Progress | JV2 CBC Unauthorized reproduced (EV-079–EV-080); proposed SR-SD-002. No authorization trace, role change or M8 security assessment completed |
 | R12 | Access review, SoD and audit | M8 | Not Started | TBD |
 | R13 | Key-user training | M9 | Not Started | TBD |
 | R14 | Global support environment | M9 | Not Started | TBD |

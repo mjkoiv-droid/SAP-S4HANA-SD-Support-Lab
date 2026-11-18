@@ -40,7 +40,7 @@ Review all nine modules.
 | M2 | Module folder and documentation | Pending |
 | M3 | Module folder and documentation | Pending |
 | M4 | Module folder and documentation | Pending |
-| M5 | Module folder and documentation | Pending |
+| M5 | Module folder and documentation | Local structure/links reviewed; technical execution partial; remote publication/privacy review pending |
 | M6 | Module folder and documentation | Pending |
 | M7 | Module folder and documentation | Pending |
 | M8 | Authorization, Access and Audit | Pending |

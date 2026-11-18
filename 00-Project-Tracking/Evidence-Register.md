@@ -21,12 +21,12 @@ Each evidence item must be traceable to a module, requirement, and completed or 
 | EV-005 | M1 | A05 / M1.03 | SIT log view: 36 entries | Executed | [View image](../M1-Landscape-and-Monitoring/evidence/situation-log-sit.png) |
 | EV-006 | M1 | M1.03 | Billing posting status filter menu; counts supplied in chat | Executed - count not screenshot-proven | [View image](../M1-Landscape-and-Monitoring/evidence/billing-posting-status-filter.png) |
 | EV-007 | M1 | M1.03 | Delivery output filters; counts supplied in chat | Executed - count not screenshot-proven | [View image](../M1-Landscape-and-Monitoring/evidence/delivery-output-status-filter.png) |
-| EV-008 | M1 | Triage / INC-SD-002 | Third-party item category CB1/purchase requisition diagnostic | Executed | [View image](../M1-Landscape-and-Monitoring/evidence/third-party-item-cb1-pr.png) |
-| EV-009 | M1 | Triage / INC-SD-002 | Order 1055 TG11 item TAN and plant 1010 | Executed | [View image](../M1-Landscape-and-Monitoring/evidence/stock-material-tg11-tan.png) |
-| EV-010 | M1 | Triage / INC-SD-002 | Negative test: Political Reasons delivery-block error | Executed | [View image](../M1-Landscape-and-Monitoring/evidence/delivery-block-error.png) |
-| EV-011 | M1 | Triage / INC-SD-002 | Positive test: sales order 1055 to outbound delivery 80000784 in document flow | Executed | [View image](../M1-Landscape-and-Monitoring/evidence/delivery-positive-document-flow.png) |
-| EV-012 | M1 | M1.02 / INC-SD-002 | Outbound delivery 80000784 shipping point 1010 | Executed | [View image](../M1-Landscape-and-Monitoring/evidence/delivery-shipping-point.png) |
-| EV-013 | M1 | Triage / INC-SD-002 | Outbound delivery 80000784 checked, not picked, GI not started, not invoiced | Executed | [View image](../M1-Landscape-and-Monitoring/evidence/delivery-processing-status.png) |
+| EV-008 | M1 | Triage / M1-TRIAGE-001 | Third-party item category CB1/purchase requisition diagnostic | Executed | [View image](../M1-Landscape-and-Monitoring/evidence/third-party-item-cb1-pr.png) |
+| EV-009 | M1 | Triage / M1-TRIAGE-001 | Order 1055 TG11 item TAN and plant 1010 | Executed | [View image](../M1-Landscape-and-Monitoring/evidence/stock-material-tg11-tan.png) |
+| EV-010 | M1 | Triage / M1-TRIAGE-001 | Negative test: Political Reasons delivery-block error | Executed | [View image](../M1-Landscape-and-Monitoring/evidence/delivery-block-error.png) |
+| EV-011 | M1 | Triage / M1-TRIAGE-001 | Positive test: sales order 1055 to outbound delivery 80000784 in document flow | Executed | [View image](../M1-Landscape-and-Monitoring/evidence/delivery-positive-document-flow.png) |
+| EV-012 | M1 | M1.02 / M1-TRIAGE-001 | Outbound delivery 80000784 shipping point 1010 | Executed | [View image](../M1-Landscape-and-Monitoring/evidence/delivery-shipping-point.png) |
+| EV-013 | M1 | Triage / M1-TRIAGE-001 | Outbound delivery 80000784 checked, not picked, GI not started, not invoiced | Executed | [View image](../M1-Landscape-and-Monitoring/evidence/delivery-processing-status.png) |
 | EV-014 | M1 | Triage / INC-SD-001 | Pricing baseline PPR0 EUR 17.55, tax and internal price | Executed | [View image](../M1-Landscape-and-Monitoring/evidence/pricing-baseline.png) |
 | EV-015 | M1 | Triage / INC-SD-001 | Pricing Analysis Y10101 PPR0 message 203 manual override | Executed | [View image](../M1-Landscape-and-Monitoring/evidence/pricing-analysis-manual-override.png) |
 | EV-016 | M1 | Triage / INC-SD-001 | VA03 order 1056 corrected PPR0 EUR 17.55 | Executed | [View image](../M1-Landscape-and-Monitoring/evidence/pricing-corrected-va03.png) |
@@ -98,6 +98,26 @@ Each evidence item must be traceable to a module, requirement, and completed or 
 | EV-070 | M4 | R03 | Wider FB03 KR document list contained only other company codes (date columns cropped) | Verified SAP observation; no 90FR document | [View image](../M4-IDocs-Interfaces-and-Output/evidence/fb03-other-company-kr-documents-crop.png) |
 
 **Evidence boundary:** EV-053 is a pre-existing IDoc diagnosed read-only, not an induced failure. EV-054–EV-055 are completed PRINT output for a sales order, not an IDoc. EV-056–EV-068 document configuration inspected in SAP; EV-069–EV-070 document the unavailable 90FR invoice prerequisite; no new `INVOIC` message, FI invoice or successful IDoc recovery is claimed.
+
+
+## M5 — Additional execution evidence
+
+| Evidence ID | Module | Requirement / Case | Description | Execution Status | Evidence File |
+|---|---|---|---|---|---|
+| EV-071 | M5 | R04 / R05 / INC-SD-001 | JV2/100: order 1056 flow shows completed invoice 90000304 and FI journal 9400000058 | Executed read-only verification | [View image](../M5-Incident-and-Root-Cause-Management/evidence/order1056-document-flow.png) |
+| EV-072 | M5 | R04 / R05 / INC-SD-001 | JV2/100: order 1056 item 10 PPR0 and net EUR 17.55 retained | Executed read-only verification | [View image](../M5-Incident-and-Root-Cause-Management/evidence/order1056-pricing-retained.png) |
+| EV-073 | M5 | R04 / R05 / INC-SD-002 | JV2/100: order 1059 picking request 2 PC Completed and GI 4900001491 Complete; delivery In Process | Executed read-only verification | [View image](../M5-Incident-and-Root-Cause-Management/evidence/order1059-picking-goods-issue-flow.png) |
+| EV-074 | M5 | R04 / R05 / INC-SD-003 | JV2/100: invoice 90000303 to FI journal 9400000057; FI status Not Cleared | Executed read-only verification | [View image](../M5-Incident-and-Root-Cause-Management/evidence/invoice90000303-fi-flow.png) |
+| EV-075 | M5 | R04 / R05 / INC-SD-003 | JV2/100: F2 90000303 item, 1 PC, net EUR 17.55 and output tax EUR 3.33 | Executed read-only verification | [View image](../M5-Incident-and-Root-Cause-Management/evidence/invoice90000303-overview.png) |
+| EV-076 | M5 | R04 / R05 / INC-SD-003 | JV2/100: billing 90000303 accounting links include FI journal 9400000057 | Executed read-only verification | [View image](../M5-Incident-and-Root-Cause-Management/evidence/invoice90000303-accounting-links.png) |
+| EV-077 | M5 | R03 / R04 / INC-SD-005 | JV2/100: invoice output BILLING_DOCUMENT/PRINT Completed, receiver 1000193 | Executed read-only verification | [View image](../M5-Incident-and-Root-Cause-Management/evidence/invoice90000303-output-status.png) |
+| EV-078 | M5 | R03 / R04 / INC-SD-005 | JV2/100: output message log shows successful ADS rendering, print queue and channel forwarding (operator/time redacted) | Executed read-only verification | [View image](../M5-Incident-and-Root-Cause-Management/evidence/invoice90000303-output-log-redacted.png) |
+| EV-079 | M5 | R04 / R11 / INC-SD-006 | JV2/100: Manage Your Solution confirms CBC-managed configuration | Executed read-only verification | [View image](../M5-Incident-and-Root-Cause-Management/evidence/jv2-cbc-management.png) |
+| EV-080 | M5 | R04 / R11 / INC-SD-006 | JV2/100: CBC link returns Unauthorized | Executed read-only verification | [View image](../M5-Incident-and-Root-Cause-Management/evidence/jv2-cbc-unauthorized.png) |
+| EV-081 | M5 | R07 / R04 / PRB-SD-001 | T41/400: IMG read-only table shows block 01 Calculation Missing assigned to F2 (not JV2) | Executed read-only verification | [View image](../M5-Incident-and-Root-Cause-Management/evidence/t41-img-billing-block01-f2.png) |
+| EV-082 | M5 | R07 / R04 / PRB-SD-001 | T41/400: IMG read-only table shows block 04 Check Payment Terms assigned to F2 (not JV2) | Executed read-only verification | [View image](../M5-Incident-and-Root-Cause-Management/evidence/t41-img-billing-block04-f2.png) |
+
+**M5 evidence boundary:** EV-071–EV-082 are new read-only follow-up system observations. EV-079–EV-080 do not establish the security root cause; EV-081–EV-082 describe T41 settings, not JV2 settings. EV-077–EV-078 show a successful invoice output and must not be used to claim a recovered output failure. EV-078 redacts operator/time details from the log header only.
 
 ## Evidence Categories
 

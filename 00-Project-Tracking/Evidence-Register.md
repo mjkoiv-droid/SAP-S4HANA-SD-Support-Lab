@@ -140,6 +140,23 @@ Each evidence item must be traceable to a module, requirement, and completed or 
 
 **M7 evidence boundary:** SE09 results are limited to the selected-user filters (they cannot establish absence of every system request), and the Released-filter combination was operator-reported rather than recorded on the result screenshot. STMS route visibility is **not** proof of transport import permissions, a real transport for CHG-SD-001 or a route to JV2/100. The [REL-SD-001 release packet](../M7-UAT-Release-and-Hypercare/Release-Readiness-REL-SD-001.md) is a **simulated readiness/UAT/deployment/recovery/hypercare document**, not executed deployment evidence. No business UAT or operational sign-off was performed.
 
+## M8 — IAM Business Role read-only inspection (JV2 / client 100)
+
+| Evidence ID | Module | Requirement | Description | Execution Status | Evidence File |
+|---|---|---|---|---|---|
+| EV-094 | M8 | R11 / R12 / M8.02 | Internal Sales Representative (`BR_INTERNAL_SALES_REP`): **84** business catalogs | Executed read-only IAM filtered result; catalog count is not effective access | [View image](../M8-Authorization-Access-and-Audit/evidence/m8-internal-sales-business-catalogs.png) |
+| EV-095 | M8 | R11 / R12 / M8.02 | Internal Sales: Sales Organization **15** restriction rows (6 Read, 4 Write, 5 Value Help), each Unrestricted; Value Count 0 | Executed read-only IAM result; field-specific metadata only | [View image](../M8-Authorization-Access-and-Audit/evidence/m8-internal-sales-sales-org-restrictions.png) |
+| EV-096 | M8 | R11 / R12 / M8.02 | Billing Clerk: Sales Organization **32** rows returned; **visible** Read/Write/Value Help rows show Unrestricted | Executed read-only IAM result; remaining rows not individually inspected | [View image](../M8-Authorization-Access-and-Audit/evidence/m8-billing-sales-org-restrictions.png) |
+| EV-097 | M8 | R11 / R12 / M8.02 | `*Billing*` catalog search across Billing Clerk and Internal Sales roles: **18** matching assignments, including Sales - Billing Documents in each role | Executed read-only IAM result; not proof of credit approval | [View image](../M8-Authorization-Access-and-Audit/evidence/m8-billing-catalog-comparison.png) |
+| EV-098 | M8 | R11 / R12 / M8.02 | Business Partner Master Data Specialist: **5** `*Customer*` catalogs incl. Master Data - Customer Master | Executed read-only IAM result; no actual maintenance test | [View image](../M8-Authorization-Access-and-Audit/evidence/m8-bupa-customer-catalogs.png) |
+| EV-099 | M8 | R11 / R12 / M8.02 | Business Partner Master Data Specialist: **3** Sales Organization rows (Read/Write/Value Help), all Unrestricted | Executed read-only IAM result; not full access proof | [View image](../M8-Authorization-Access-and-Audit/evidence/m8-bupa-sales-org-restrictions.png) |
+| EV-100 | M8 | R11 / R12 / M8.02 | Pricing Specialist: **2** `*Pricing*` catalogs — Sales - Pricing Inbox and Sales - Pricing Scheduling | Executed read-only IAM result; pricing-maintenance rights unverified | [View image](../M8-Authorization-Access-and-Audit/evidence/m8-pricing-specialist-catalogs.png) |
+| EV-101 | M8 | R11 / M8.02 | Internal Sales: **Business Role - Restriction Value** view returns `No results found` | Executed read-only filtered result; absence not proven | [View image](../M8-Authorization-Access-and-Audit/evidence/m8-internal-sales-restriction-values-no-results.png) |
+| EV-102 | M8 | R11 / M8.02 | Internal Sales: **Business Role - Application** view returns `No results found` | Executed read-only filtered result; absence not proven | [View image](../M8-Authorization-Access-and-Audit/evidence/m8-internal-sales-application-no-results.png) |
+| EV-103 | M8 | R11 / R12 / M8.02 | Billing Clerk (`BR_BILLING_CLERK`): **153** total business catalogs | Executed read-only IAM result; list size not proof of actual billing privileges | [View image](../M8-Authorization-Access-and-Audit/evidence/m8-billing-business-catalogs.png) |
+
+**M8 evidence boundary:** M8 captures read-only JV2 Fiori IAM role metadata; the M1 training-user role list (EV-001) and M5 CBC denial (EV-079–EV-080) are reused, **not newly executed**. Catalog entries and Unrestricted Sales Organization restriction rows do not establish every effective authorization or a confirmed SoD violation. No SU53/STAUTHTRACE, role modification, security sign-off, remediation or post-change retest. The training four-persona review does not assess four identified user accounts.
+
 ## Evidence Categories
 
 - SAP screenshots and transaction records

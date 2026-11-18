@@ -43,7 +43,7 @@ Review all nine modules.
 | M5 | Module folder and documentation | Local structure/links reviewed; technical execution partial; remote publication/privacy review pending |
 | M6 | Module folder and documentation | Local structure/relative links verified in updated ZIP; technical scope partial; GitHub publication/privacy and post-change validation pending |
 | M7 | Module folder and documentation | M7 report, original template and four transport screenshots added; local archive/links checked. Functional scope limited: real UAT/release/post-release validation absent; GitHub/privacy/publication review pending |
-| M8 | Authorization, Access and Audit | Pending |
+| M8 | Authorization, Access and Audit | Ten new JV2 IAM screenshots EV-094–EV-103, M8-SD-001 training assessment and five original templates/examples reviewed; local links/archive checked. No effective access proof, sign-off, changes, remediation or formal audit closure |
 | M9 | Global Support and Training | Pending |
 
 ### Validation Checklist
@@ -71,13 +71,14 @@ Review all nine modules.
 
 ### Review Checklist
 
-- [ ] All expected documents exist
-- [ ] README links work correctly
-- [ ] Authorization investigation methodology is documented
-- [ ] SoD conflict assessment methodology is documented
-- [ ] Audit evidence requirements are explained
-- [ ] Simulated scenarios are clearly identified
-- [ ] No actual production security activities are falsely claimed
+- [x] All six original M8 documents exist; new evidence-based M8-SD-001 report added
+- [x] README relative links resolve locally
+- [x] Authorization investigation methodology is documented; CBC denial reused with unresolved cause
+- [x] Two SoD risk assessments documented, with potential versus proven access distinguished
+- [x] Audit evidence requirements, remaining sign-offs and limitation statements explained
+- [x] Original simulated VA02 and SoD examples remain clearly identified
+- [x] No actual production security activities are falsely claimed; no live security remediation asserted
+- [ ] Formal access recertification, effective-permission validation and risk-owner sign-off **not performed**
 
 ## 5. Module 9 Validation
 

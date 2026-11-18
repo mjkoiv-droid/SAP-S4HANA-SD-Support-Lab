@@ -1,6 +1,6 @@
 # SAP SD Support Lab — Execution Backlog and Coverage Review
 
-**Project state:** M1 has verified monitoring observations and two corrected, controlled sandbox incidents (EV-001–EV-016); its broader mandatory access audit remains **partially open**. M2 has two fully executed O2C chains through balanced FI postings (EV-017–EV-035). Billing-block negative test failed. M3 now has read-only configuration observations, two executed incident reproductions with corrected pricing/picking, and a proposed change/impact design; CBC inspection is blocked. M4 includes verified IDoc and output inspections, configured intercompany invoice routing, and documented-only recovery. M5 now has six evidence-qualified case records, three RCAs, proposed SRs, a simulated communication/reopening exercise and an open problem record; several planned negative/fix/retest cases remain unexecuted. M6 has a completed documentation package plus seven heterogeneous pre-change test cases (two new M6), with the proposed correction open and unimplemented. M7 has a documented NO-GO readiness/UAT/hypercare assessment and read-only T41 transport-management inspection (EV-090–EV-093); no actual release, post-change testing or business UAT. M8–M9 retain templates and backlog work.  
+**Project state:** M1 has verified monitoring observations and two corrected, controlled sandbox incidents (EV-001–EV-016); its broader mandatory access audit remains **partially open**. M2 has two fully executed O2C chains through balanced FI postings (EV-017–EV-035). Billing-block negative test failed. M3 now has read-only configuration observations, two executed incident reproductions with corrected pricing/picking, and a proposed change/impact design; CBC inspection is blocked. M4 includes verified IDoc and output inspections, configured intercompany invoice routing, and documented-only recovery. M5 now has six evidence-qualified case records, three RCAs, proposed SRs, a simulated communication/reopening exercise and an open problem record; several planned negative/fix/retest cases remain unexecuted. M6 has a completed documentation package plus seven heterogeneous pre-change test cases (two new M6), with the proposed correction open and unimplemented. M7 has a documented NO-GO readiness/UAT/hypercare assessment and read-only T41 transport-management inspection (EV-090–EV-093); no actual release, post-change testing or business UAT. M8 now has executed JV2 read-only IAM observations (EV-094–EV-103), a four-persona training access review and two qualified SoD risk analyses; M9 retains templates and backlog work. Formal access recertification and security approvals are open.  
 
 ## Evidence and completion rules
 
@@ -126,15 +126,15 @@ Deliverables: [workshop/change](../M6-Requirements-Enhancements-and-Testing/Requ
 
 ## M8 — Authorization, SoD and audit (R11, R12)
 
-Existing: access-review, authorization, SoD, incident-example and audit templates/examples in `M8-Authorization-Access-and-Audit/`. Existing examples are **already clearly hypothetical**; keep them as examples.
+**Status:** **Executed read-only IAM inspection + completed evidence-bounded training review**. See [M8-SD-001 assessment](../M8-Authorization-Access-and-Audit/M8-Access-Authorization-and-SoD-Review.md); **EV-094–EV-103**. Original authorization, access, SoD and audit templates and fictional examples remain clearly labeled.
 
-- [ ] **M8.01** Investigate actual own-user SU53/authorization trace only if feasible and appropriate; no unauthorized denial induction.
-- [ ] **M8.02** SU01/PFCG role inspection only where permitted; propose least-privilege and maker-checker access request.
-- [ ] **M8.03** Access review covering Sales Clerk, Warehouse Operator, Billing Specialist, SD Support Analyst, flagging risks.
-- [ ] **M8.04** Evaluate **2 SoD conflicts** and compensating controls, distinguishing potential from confirmed effective access.
-- [ ] **M8.05** Compile audit packet: request, approval, role review, SoD, mitigation, change log, periodic sign-off (fictional approval not real).
+- [ ] **M8.01 — Partial:** Actual JV2 CBC **Unauthorized** already reproduced (EV-079–EV-080) and investigated at symptom level in M5; reused for an authorization case. SU53/STAUTHTRACE not executed and root cause remains unverified; no denial deliberately induced.
+- [x] **M8.02 — Executed read-only substitute:** JV2 Fiori **IAM Information System** used to inspect catalogs and restriction metadata for four business roles (EV-094–EV-103). No SU01/PFCG modification or confirmed effective-access test. Least-privilege and maker-checker recommendations documented.
+- [x] **M8.03 — Analytical review completed:** Four representative personas — Sales Clerk, Warehouse Operator, Billing Specialist and SD Support Analyst — documented against roles, business needs and limitations. **Not** four individually audited users or formal recertification.
+- [x] **M8.04 — Two risk assessments documented:** Customer master versus sensitive billing (**potential**) and pricing versus sales processing (**conditional/unverified maintenance entitlement**). **No proven technical violation** or verified control mitigation.
+- [x] **M8.05 — Training audit packet documented:** Evidence provenance, findings, recommended actions, change/approval/sign-off status and outstanding items provided. **No actual approval, authorization change, security validation or formal closure**.
 
-Deliverables: authorization case, access matrix, **2 SoD assessments**, audit packet; retain original fictional example labels.
+**Deliverables:** New evidence-based M8-SD-001 review, ten IAM screenshots (EV-094–EV-103), updated M8 README, retained five templates/examples and original simulated-case labels. **Business owner approval, trace, effective SoD confirmation, correction/retest and actual audit certification remain open.**
 
 ## M9 — Global support, bilingual, training and capstone (R13, R14, R15)
 
@@ -169,7 +169,7 @@ Deliverables: bilingual messages, training demonstration/guide, capstone, eviden
 | M5 | Six filled case records, 2 proposed SRs, 3 RCAs, simulated communications/reopening, open problem record, EV-071–EV-082 | Unverified cross-customer regression, billing-creation failure, IDoc recovery, output-failure recovery, CBC trace/fix, actual ticket reopening |
 | M6 | Templates, workshop, proposed CHG-SD-001/FS/impact, traceability, seven heterogeneous pre-change test cases, defects and written handover | Actual change, post-change verification, real business UAT/sign-off and closed problem remain missing |
 | M7 | Preserved template, completed simulated REL-SD-001 NO-GO packet, actual T41/400 SE09/STMS inspection EV-090–EV-093, planned smoke/rollback/hypercare | No actual UAT acceptance, actual transport/import, deployment, post-release smoke, rollback or operational hypercare |
-| M8 | 5 templates/examples and README | Actual SU53/role evidence if accessible, 4-persona access review, 2 assessed SoD cases; examples remain simulations |
+| M8 | 5 retained templates/examples, README, new JV2 IAM read-only evidence EV-094–EV-103 and M8-SD-001 review | Actual SU53/trace, effective-access/SoD proof, user recertification, change approval, mitigation and formal audit closure remain open |
 | M9 | 5 substantive guides/templates and README | Specific JP/EN case, demo delivery evidence, capstone, presentation, final coverage evidence |
 | Project-wide | `Requirement-Coverage.md`, `Evidence-Register.md`, `PORTFOLIO-VALIDATION.md` | Actual EV references, all 15 R-status decisions, final validation/sign-off |
 

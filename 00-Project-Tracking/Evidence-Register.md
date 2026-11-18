@@ -157,6 +157,18 @@ Each evidence item must be traceable to a module, requirement, and completed or 
 
 **M8 evidence boundary:** M8 captures read-only JV2 Fiori IAM role metadata; the M1 training-user role list (EV-001) and M5 CBC denial (EV-079–EV-080) are reused, **not newly executed**. Catalog entries and Unrestricted Sales Organization restriction rows do not establish every effective authorization or a confirmed SoD violation. No SU53/STAUTHTRACE, role modification, security sign-off, remediation or post-change retest. The training four-persona review does not assess four identified user accounts.
 
+## M9 — Documentation artifacts, not new SAP screenshots
+
+**No EV-104 or other new M9 SAP evidence ID was assigned.** M9 reuses prior evidence only. The following Markdown documents are training **outputs**, not evidence of new SAP transaction execution, delivered courses or accepted handover.
+
+| Document ID | Requirement | Artifact | Classification | Reused evidence |
+|---|---|---|---|---|
+| M9-SD-001 | R14, R15 | [Simulated global handover and bilingual communications](../M9-Global-Support-and-Training/M9-Global-Handover-and-Bilingual-Communication.md) | **Simulation / unsent drafts** | INC-SD-003, EV-017–EV-026, EV-074–EV-076 |
+| M9-TRN-001 | R13 | [Prepared key-user screenshot walkthrough / FAQ](../M9-Global-Support-and-Training/M9-Key-User-Training-Guide.md) | **Training guide, not delivered** | M2 EV-017–EV-026, M1 EV-014–EV-016, M3 EV-045–EV-048, M5 EV-073 |
+| M9-CAP-001 | R13–R15; M9.04–M9.06 | [Analytical capstone, simulated KT/KPI and mock portfolio walkthrough](../M9-Global-Support-and-Training/M9-Capstone-Knowledge-Transfer-and-Improvement.md) | **Analytical; new unfamiliar execution not performed** | PRB-SD-001; EV-027–EV-039, EV-051–EV-052, EV-079–EV-089; M7/M8 context |
+
+**M9 limits:** The resolved training FI error is repurposed only as a retrospective fictional global handover. The unresolved billing-block case is reused for an **existing-case analytical capstone**, not a newly discovered defect. No user training, external language evaluation, handover acceptance, real KPI, live KT, authorized control change, release, audit sign-off or new SAP execution is asserted.
+
 ## Evidence Categories
 
 - SAP screenshots and transaction records

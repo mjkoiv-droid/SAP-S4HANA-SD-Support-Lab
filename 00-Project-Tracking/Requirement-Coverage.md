@@ -2,7 +2,7 @@
 # SAP SD Lab — Requirement Coverage Matrix
 
 **Project:** SAP S/4HANA SD Application Support Lab  
-**Status:** In progress
+**Status:** All R01–R15 assessed; operational coverage remains partial (classification is not customer acceptance)
 
 ## Purpose
 
@@ -32,9 +32,9 @@ Track progress against the 15 SAP SD application support job requirements and li
 | R10 | Functional, configuration and test documentation | M3, M6, M7 | In Progress | M3 analysis/proposal; M6 proposed functional specification, simulated workshop, traceability, impact and test/defect records; M7 release/UAT/smoke/rollback/hypercare **documented** in REL-SD-001; no approved or implemented change |
 | R11 | User, role and authorization support | M5, M8 | In Progress | JV2 CBC Unauthorized reproduced (EV-079–EV-080); read-only JV2 IAM role/catalog and restriction assessment completed for four business roles (EV-094–EV-103; [M8-SD-001](../M8-Authorization-Access-and-Audit/M8-Access-Authorization-and-SoD-Review.md)). No trace, root-cause confirmation, role remediation, approved access request or retest |
 | R12 | Access review, SoD and audit | M8 | In Progress | [M8-SD-001](../M8-Authorization-Access-and-Audit/M8-Access-Authorization-and-SoD-Review.md): training-scope four-persona review, two bounded potential SoD analyses and audit findings packet, supported by role assignment EV-001 and IAM screenshots EV-094–EV-103. Not a complete user-population certification, proven SoD violation, approved mitigation or formally closed audit |
-| R13 | Key-user training | M9 | Not Started | TBD |
-| R14 | Global support environment | M9 | Not Started | TBD |
-| R15 | Japanese and English support | M9 | Not Started | TBD |
+| R13 | Key-user training | M9 | Simulated | [M9-TRN-001](../M9-Global-Support-and-Training/M9-Key-User-Training-Guide.md): screenshot-based O2C key-user walkthrough, safe actions, FAQ and unanswered trainee-assessment prompts; uses existing EV-014–EV-026, EV-045–EV-048, EV-073. No class delivered, recording, trainee attendance or sign-off |
+| R14 | Global support environment | M9 | Simulated | [M9-SD-001](../M9-Global-Support-and-Training/M9-Global-Handover-and-Bilingual-Communication.md): fictional APAC/EMEA owner/escalation and handover based on historical INC-SD-003 EV-017–EV-026; [M9-CAP-001 KT/KPI plan](../M9-Global-Support-and-Training/M9-Capstone-Knowledge-Transfer-and-Improvement.md). No actual multinational support case, ownership acceptance, KPI sample or support transition |
+| R15 | Japanese and English support | M9 | Simulated | [M9-SD-001](../M9-Global-Support-and-Training/M9-Global-Handover-and-Bilingual-Communication.md): actual drafted Japanese user communication and English technical escalation; recipient/reviewer, transmission and live bilingual support are unverified |
 
 ## Evidence Tracking
 
@@ -51,6 +51,6 @@ Each completed exercise should include:
 
 ## Completion Criteria
 
-The lab is complete when all 15 requirements have been assessed and their execution status accurately recorded. **M1 demonstrates partial monitoring/incident/RCA coverage; M2 demonstrates the R02 O2C execution scope with two full FI chains; M4 has verified diagnostic, configuration and output evidence with simulated-only recovery. The unresolved M2 billing-block control is an explicit M3 follow-up, not a successful control test.**
+**All 15 requirements have a recorded, evidence-qualified classification; this satisfies documentation-level coverage review, not operational execution of all requirements.** **M1 demonstrates partial monitoring/incident/RCA coverage; M2 demonstrates the R02 O2C execution scope with two full FI chains; M4 has verified diagnostic, configuration and output evidence with simulated-only recovery. The unresolved M2 billing-block control is an explicit M3 follow-up, not a successful control test.**
 
 Activities that cannot be performed in the training environment must be clearly identified as simulated or blocked.

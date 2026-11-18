@@ -7,7 +7,7 @@ This module focuses on global SAP S/4HANA Sales (SD) application support, incide
 
 The objective is to demonstrate a structured understanding of how multinational manufacturing organizations operate and maintain SAP SD business processes across regions.
 
-The module contains professional templates and simulated scenarios developed through independent study.
+The module contains the original professional methodology templates **plus three worked, evidence-referenced exercises** grounded in M1–M8 training-system results. All new M9 handover, training and capstone work is **documented/simulated**; there were **no new SAP transactions or screenshots**. Actual global support, real end-user training and new unfamiliar-failure execution are not claimed.
 
 ## 2. Learning Objectives
 
@@ -22,24 +22,23 @@ The module contains professional templates and simulated scenarios developed thr
 - Identify recurring problems and improvement opportunities
 - Document governance, ownership, and escalation procedures
 
-## 3. Module Deliverables
+## 3. Worked M9 portfolio documents
 
-| Step | Document | Purpose |
+| Working document | Demonstration | Classification |
 |---|---|---|
-| 37 | Global SD Support Operating Model | Define global support responsibilities and procedures |
-| 38 | Global SD Incident Handover Template | Support cross-regional incident continuity |
-| 39 | SD End-User Training Plan and Materials Template | Plan SAP SD end-user training |
-| 40 | SD Knowledge Transfer and Support Transition Template | Prepare operational knowledge transfer |
-| 41 | Global Support KPI and Continuous Improvement Template | Measure service performance and plan improvements |
-| 42 | README and Module Completion Summary | Summarize documentation and learning objectives |
+| [M9-SD-001 — Global Handover and Bilingual Communication](M9-Global-Handover-and-Bilingual-Communication.md) | Fictional Japan Sales → Singapore Logistics → UK Finance handover, with a drafted English technical escalation and Japanese user response; based on the **resolved historical** billing–FI master-data incident | **Simulated**, evidence reused; no messages sent / ownership accepted |
+| [M9-TRN-001 — Key-User Training Guide](M9-Key-User-Training-Guide.md) | Screenshot-based order→delivery→PGI→F2→FI demonstration, three exception scenarios, FAQ and safe actions | **Scripted/undelivered**; no trainees or new SAP work |
+| [M9-CAP-001 — Capstone, KT and Improvement](M9-Capstone-Knowledge-Transfer-and-Improvement.md) | Existing unresolved billing-block control case, hypothesis matrix, proposed authorized next steps, KT pack, fictional KPI calculations and mock hiring-manager walkthrough | **Analytical**, not a newly reproduced unfamiliar failure or an implemented change |
 
-### Documents
+### Original reusable methodology and templates
 
 1. [Global SD Support Operating Model](Global-SD-Support-Operating-Model.md)
 2. [Global SD Incident Handover Template](Global-SD-Incident-Handover-Template.md)
 3. [SD End-User Training Plan and Materials Template](SD-End-User-Training-Plan-and-Materials-Template.md)
 4. [SD Knowledge Transfer and Support Transition Template](SD-Knowledge-Transfer-and-Support-Transition-Template.md)
 5. [Global Support KPI and Continuous Improvement Template](Global-Support-KPI-and-Continuous-Improvement-Template.md)
+
+The hypothetical organizations, service targets, response metrics and support examples in these templates are **not measured operations or actual customer commitments**.
 
 ## 4. Global SAP SD Support Model
 
@@ -205,36 +204,36 @@ The proposed improvement process follows these stages:
 
 Improvements should be supported by reliable operational data.
 
-## 10. Module Completion Summary
+## 10. Module Documentation and Exercise Status
 
-### Documentation Checklist
+### Completed preparation
 
-- [x] Global support operating model prepared
-- [x] Incident handover template prepared
-- [x] End-user training plan prepared
-- [x] Knowledge transfer template prepared
-- [x] KPI and continuous improvement template prepared
-- [x] Module README prepared
+- [x] Global support operating model and five original reusable methodology documents retained.
+- [x] M9.01: fictional Japan Sales → Singapore Logistics → UK Finance case, routing, ownership and escalation roles prepared in M9-SD-001.
+- [x] M9.02: Japanese user-response **draft** and English technical handover **draft** prepared (no recipient/reviewer or actual communication).
+- [x] M9.03: screenshot-based **script** and FAQ prepared in M9-TRN-001 using previously verified JV2 evidence; not delivered or recorded with trainees.
+- [x] M9.04: evidence-limited **analytical capstone** prepared in M9-CAP-001, with unverified hypotheses and exact closure dependencies.
+- [x] M9.05: mock hiring-manager walkthrough prepared in M9-CAP-001; not presented to a real audience.
+- [x] M9.06: R01–R15 assessed in [requirement coverage](../00-Project-Tracking/Requirement-Coverage.md) with limitations; local archive/link checks reported separately in [portfolio validation](../PORTFOLIO-VALIDATION.md).
 
-### Practical Experience Status
+### Activities **not** completed
 
-| Activity | Status |
+- [ ] **M9.03 actual delivery/recording:** No training was delivered or trainee proficiency evaluated.
+- [ ] **M9.04 original unfamiliar-failure execution:** No genuinely unfamiliar new failure was reproduced, no authorized remediation/retest/closure. The existing billing-block issue remains **unresolved**.
+- [ ] Actual global support case, handover acceptance, service desk SLA measurement, business owner validation or support transition.
+- [ ] Actual client security approval, UAT acceptance, change implementation, transport/release or formal audit closure.
+
+### Evidence classification
+
+| Evidence / claim | Status |
 |---|---|
-| Global support model design | Documented |
-| Incident handover methodology | Documented |
-| End-user training methodology | Documented |
-| Knowledge transfer methodology | Documented |
-| KPI reporting methodology | Documented |
-| Continuous improvement methodology | Documented |
-| Global support scenarios | Simulated |
-| Actual customer support delivery | Not performed |
-| Actual end-user training delivery | Not performed |
-| Production support transition | Not performed |
-| Actual customer KPI reporting | Not performed |
+| M1–M8 screenshots EV-001–EV-103 | **Previously executed / inspected in the specific cases and within stated limits** |
+| M9-SD-001 regional handover and JP/EN communication | **New simulated documents**, not sent |
+| M9-TRN-001 O2C screenshot demo and FAQ | **New training script**, not delivered |
+| M9-CAP-001 analysis, KT, KPIs, walkthrough | **New analytical/simulated documents**, not operational work |
+| New M9 SAP actions or EV identifiers | **None** |
 
-The completed documentation demonstrates conceptual understanding and methodology preparation.
-
-It does not represent completed customer implementation or production support experience.
+**Module result:** **M9 documentation package prepared within its verified scope**. The original unfamiliar-case live diagnostic and real training/handover remain **unfulfilled**. This is not customer production support experience or completion of every practical job requirement.
 
 ## 11. Consultant Competencies Demonstrated
 
@@ -265,7 +264,7 @@ No production support engagement, customer training delivery, global support tra
 
 ---
 
-**Module Status:** Documentation Complete
+**Module Status:** M9 documented exercises prepared; operational training/handover and unfamiliar live case not performed
 
 **Area:** SAP S/4HANA Sales (SD)
 

@@ -1,6 +1,6 @@
 # SAP SD Support Lab — Execution Backlog and Coverage Review
 
-**Project state:** M1 has verified monitoring observations and two corrected, controlled sandbox incidents (EV-001–EV-016); its broader mandatory access audit remains **partially open**. M2 has two fully executed O2C chains through balanced FI postings (EV-017–EV-035). Billing-block negative test failed. M3 now has read-only configuration observations, two executed incident reproductions with corrected pricing/picking, and a proposed change/impact design; CBC inspection is blocked. M4 includes verified IDoc and output inspections, configured intercompany invoice routing, and documented-only recovery. M5 now has six evidence-qualified case records, three RCAs, proposed SRs, a simulated communication/reopening exercise and an open problem record; several planned negative/fix/retest cases remain unexecuted. M6 has a completed documentation package plus seven heterogeneous pre-change test cases (two new M6), with the proposed correction open and unimplemented. M7 has a documented NO-GO readiness/UAT/hypercare assessment and read-only T41 transport-management inspection (EV-090–EV-093); no actual release, post-change testing or business UAT. M8 now has executed JV2 read-only IAM observations (EV-094–EV-103), a four-persona training access review and two qualified SoD risk analyses; M9 retains templates and backlog work. Formal access recertification and security approvals are open.  
+**Project state:** M1 has verified monitoring observations and two corrected, controlled sandbox incidents (EV-001–EV-016); its broader mandatory access audit remains **partially open**. M2 has two fully executed O2C chains through balanced FI postings (EV-017–EV-035). Billing-block negative test failed. M3 now has read-only configuration observations, two executed incident reproductions with corrected pricing/picking, and a proposed change/impact design; CBC inspection is blocked. M4 includes verified IDoc and output inspections, configured intercompany invoice routing, and documented-only recovery. M5 now has six evidence-qualified case records, three RCAs, proposed SRs, a simulated communication/reopening exercise and an open problem record; several planned negative/fix/retest cases remain unexecuted. M6 has a completed documentation package plus seven heterogeneous pre-change test cases (two new M6), with the proposed correction open and unimplemented. M7 has a documented NO-GO readiness/UAT/hypercare assessment and read-only T41 transport-management inspection (EV-090–EV-093); no actual release, post-change testing or business UAT. M8 now has executed JV2 read-only IAM observations (EV-094–EV-103), a four-persona training access review and two qualified SoD risk analyses; M9 now contains three evidence-based **documented/simulated** outputs (bilingual handover, screenshot training script, analytical capstone/KT/KPIs); **no new SAP execution**, customer training or live unfamiliar-failure resolution. Formal access recertification and security approvals are open.  
 
 ## Evidence and completion rules
 
@@ -138,24 +138,24 @@ Deliverables: [workshop/change](../M6-Requirements-Enhancements-and-Testing/Requ
 
 ## M9 — Global support, bilingual, training and capstone (R13, R14, R15)
 
-Existing: detailed global operations model, handover, training, knowledge-transfer and KPI templates in `M9-Global-Support-and-Training/` (documentation preparation does not count as executed training).
+**Status:** M9 **documentation and simulated exercises prepared**, using earlier M1–M8 evidence only. Original operating model and five templates preserved. See [M9 README](../M9-Global-Support-and-Training/README.md), [M9-SD-001](../M9-Global-Support-and-Training/M9-Global-Handover-and-Bilingual-Communication.md), [M9-TRN-001](../M9-Global-Support-and-Training/M9-Key-User-Training-Guide.md) and [M9-CAP-001](../M9-Global-Support-and-Training/M9-Capstone-Knowledge-Transfer-and-Improvement.md).
 
-- [ ] **M9.01** Fictional Japan Sales → Singapore Logistics → UK Finance dependency and timezone/owner/escalation/handover exercise.
-- [ ] **M9.02** Write an actual Japanese response and English escalation/handover for the chosen case; language review where available.
-- [ ] **M9.03** Prepare and deliver/record a **key-user demo** using validated SAP order-to-billing screenshots, FAQ and safe actions; if only scripted, label simulated.
-- [ ] **M9.04** Diagnose an unfamiliar O2C failure as capstone: impact, reproduction, competing hypotheses, corrective proposal, authorized validation and closure.
-- [ ] **M9.05** Prepare **mock hiring-manager portfolio demonstration**: landscape, 3 incidents, change, security/controls, limits.
-- [ ] **M9.06** Finalize each of **R01–R15** with true classification and evidence IDs; complete final sign-off review.
+- [x] **M9.01 — Fictional, documented:** Japan Sales → Singapore Logistics → UK Finance responsibilities, impact, ownership, escalation and handover design. This **does not** reclassify German company code/sales org 1010 as a Japanese SAP organization.
+- [x] **M9.02 — Messages prepared:** Original Japanese end-user response and English technical escalation/handover written for the selected case. **No actual recipients, reviewer assessment, transmission, or accepted owner.**
+- [x] **M9.03 — Script prepared only:** Evidence-based O2C key-user screenshot guide, exception FAQ and safe-actions checklist. **Actual trainee demonstration/recording not performed.**
+- [ ] **M9.04 — Original unfamiliar-execution criterion NOT met:** An **existing** unresolved billing-block case was analyzed as a capstone. No new unfamiliar failure reproduced, verified JV2 cause, correction, approval, retest or closure.
+- [x] **M9.05 — Mock walkthrough drafted:** Landscape, three corrected sandbox cases, proposed change, authorization/control risk and limits. **Not actually presented.**
+- [x] **M9.06 — Documentation review completed, external sign-off pending:** R01–R15 have evidence-qualified statuses; local structure and link checks recorded in validation document. **No real project sign-off, publication/privacy approval or external audit acceptance.**
 
-Deliverables: bilingual messages, training demonstration/guide, capstone, evidence index, requirement coverage and interview portfolio.
+**Deliverables:** Two-language drafted incident communications, an undelivered key-user walkthrough, analytical capstone, hypothetical KPIs/KT, mock interview narrative, updated evidence index and requirement coverage. **No new EV screenshot IDs.** The billing-block control and CBC authorization denial remain **open**.
 
 ## Portfolio completion review
 
 - [ ] Verify acceptance conditions for the incident, change and audit case set.
 - [ ] Check incident, functional specification and test-case completeness and evidence quality.
-- [ ] Prepare interview scenarios with defensible case-specific answers.
+- [x] Prepare interview scenarios with defensible case-specific answers — M9-CAP-001 script; not presented.
 - [ ] Draft CV/profile language only after verifying completed exercises; do not claim commercial production experience based on lab work.
-- [ ] Check final quantitative gate: **2 O2C traces, 6 incident records, 3 RCAs, 1 enhancement, at least 6 tests, 1 UAT/release packet, 1 access review, 2 SoD analyses, 1 bilingual handover, 1 training guide, all 15 requirements**.
+- [x] Check **documentation/count** gate: **2 O2C traces, 6 incident/case records (with differing results), 3 RCAs, 1 proposed enhancement, at least 6 historical pre-change tests, 1 simulated UAT/release packet, 1 evidence-limited access review, 2 potential SoD analyses, 1 simulated bilingual handover, 1 undelivered training guide, all 15 requirements assessed**. **This is not proof of all requirements operationally met.**
 - [ ] Execute `PORTFOLIO-VALIDATION.md` checklist, inspect all relative links and screenshots, anonymize, verify privacy settings before any public release.
 
 ## Existing repository mapping / missing deliverables
@@ -170,7 +170,7 @@ Deliverables: bilingual messages, training demonstration/guide, capstone, eviden
 | M6 | Templates, workshop, proposed CHG-SD-001/FS/impact, traceability, seven heterogeneous pre-change test cases, defects and written handover | Actual change, post-change verification, real business UAT/sign-off and closed problem remain missing |
 | M7 | Preserved template, completed simulated REL-SD-001 NO-GO packet, actual T41/400 SE09/STMS inspection EV-090–EV-093, planned smoke/rollback/hypercare | No actual UAT acceptance, actual transport/import, deployment, post-release smoke, rollback or operational hypercare |
 | M8 | 5 retained templates/examples, README, new JV2 IAM read-only evidence EV-094–EV-103 and M8-SD-001 review | Actual SU53/trace, effective-access/SoD proof, user recertification, change approval, mitigation and formal audit closure remain open |
-| M9 | 5 substantive guides/templates and README | Specific JP/EN case, demo delivery evidence, capstone, presentation, final coverage evidence |
-| Project-wide | `Requirement-Coverage.md`, `Evidence-Register.md`, `PORTFOLIO-VALIDATION.md` | Actual EV references, all 15 R-status decisions, final validation/sign-off |
+| M9 | 5 original guides/templates, README, new M9-SD-001 bilingual handover, M9-TRN-001 screenshot guide, M9-CAP-001 analysis/KT/KPI/mock walkthrough; trackers updated | Actual training demonstration/recording, real global handover acceptance, new unfamiliar-case execution/fix/retest and stakeholder approval not performed |
+| Project-wide | Updated `Requirement-Coverage.md` (R01–R15 assessed), `Evidence-Register.md` (M9 paper artifacts separated from EV), `PORTFOLIO-VALIDATION.md` (local checks) | Independent technical/customer review, public-GitHub/privacy verification and real sign-off remain outstanding |
 
 **Current verified M1 controlled incident exercises: 2.** Orders 1055 and 1056 were intentionally faulted, diagnosed and corrected in SAP, with verified retests; see EV-009–EV-016. Monitoring/authorization inspections are separately evidenced in EV-001–EV-007. **Two M2 O2C chains through FI are executed and evidenced (EV-017–EV-035). The billing-block negative test failed. No M3 live configuration change, production support or M4 IDoc recovery is claimed. M4 inspections and positive sales-order output are evidenced.**

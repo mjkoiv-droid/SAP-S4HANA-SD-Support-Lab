@@ -36,25 +36,25 @@ Review all nine modules.
 
 | Module | Review Item | Validation Status |
 |---|---|---|
-| M1 | Module folder and documentation | Pending |
-| M2 | Module folder and documentation | Pending |
-| M3 | Module folder and documentation | Pending |
-| M4 | Module folder and documentation | Pending |
+| M1 | Module folder and documentation | Local folder/README/relative-link integrity verified; historical SAP execution coverage and limitations remain as documented in M1 |
+| M2 | Module folder and documentation | Local folder/README/relative-link integrity verified; historical SAP execution coverage and limitations remain as documented in M2 |
+| M3 | Module folder and documentation | Local folder/README/relative-link integrity verified; historical SAP execution coverage and limitations remain as documented in M3 |
+| M4 | Module folder and documentation | Local folder/README/relative-link integrity verified; historical SAP execution coverage and limitations remain as documented in M4 |
 | M5 | Module folder and documentation | Local structure/links reviewed; technical execution partial; remote publication/privacy review pending |
 | M6 | Module folder and documentation | Local structure/relative links verified in updated ZIP; technical scope partial; GitHub publication/privacy and post-change validation pending |
 | M7 | Module folder and documentation | M7 report, original template and four transport screenshots added; local archive/links checked. Functional scope limited: real UAT/release/post-release validation absent; GitHub/privacy/publication review pending |
 | M8 | Authorization, Access and Audit | Ten new JV2 IAM screenshots EV-094–EV-103, M8-SD-001 training assessment and five original templates/examples reviewed; local links/archive checked. No effective access proof, sign-off, changes, remediation or formal audit closure |
-| M9 | Global Support and Training | Pending |
+| M9 | Global Support and Training | Five original methodology docs + README and three worked M9 outputs reviewed; local relative-link and archive validation performed. Exercises simulated/documented; no new SAP evidence, training delivery, unfamiliar live-case remediation, global handover acceptance or independent sign-off |
 
-### Validation Checklist
+### Validation Checklist — Local File Structure
 
-- [ ] All intended module directories exist
-- [ ] Every module contains a README.md
-- [ ] Module documentation is accessible
-- [ ] Filenames are consistent
-- [ ] No unintended duplicate documents exist
-- [ ] Repository structure is understandable
-- [ ] Main README provides clear navigation
+- [x] All nine intended module directories exist in the local repository copy.
+- [x] Each module has a README.md.
+- [x] Original and added Markdown documents are present and readable.
+- [x] Filenames and relative references for the nine modified/added M9-related files are consistent.
+- [x] No original file or image was deleted; all **103** original image files are byte-for-byte unchanged.
+- [x] Main README includes navigation to all nine module READMEs.
+- [ ] GitHub web rendering, live repository settings, public accessibility and confidentiality **not verified from local ZIP**.
 
 ## 4. Module 8 Validation
 
@@ -82,27 +82,40 @@ Review all nine modules.
 
 ## 5. Module 9 Validation
 
-**Module:** Global Support and Training
+**Module:** Global Support and Training  
+**Result:** **Local documentation package validated; actual operational experience not established**.
 
-### Expected Documents
+### Original methodology files retained
 
-- Global-SD-Support-Operating-Model.md
-- Global-SD-Incident-Handover-Template.md
-- SD-End-User-Training-Plan-and-Materials-Template.md
-- SD-Knowledge-Transfer-and-Support-Transition-Template.md
-- Global-Support-KPI-and-Continuous-Improvement-Template.md
-- README.md
+- [Global SD Support Operating Model](M9-Global-Support-and-Training/Global-SD-Support-Operating-Model.md)
+- [Global SD Incident Handover Template](M9-Global-Support-and-Training/Global-SD-Incident-Handover-Template.md)
+- [SD End-User Training Plan and Materials Template](M9-Global-Support-and-Training/SD-End-User-Training-Plan-and-Materials-Template.md)
+- [SD Knowledge Transfer and Support Transition Template](M9-Global-Support-and-Training/SD-Knowledge-Transfer-and-Support-Transition-Template.md)
+- [Global Support KPI and Continuous Improvement Template](M9-Global-Support-and-Training/Global-Support-KPI-and-Continuous-Improvement-Template.md)
+- [M9 README](M9-Global-Support-and-Training/README.md)
 
-### Review Checklist
+### New documented exercises
 
-- [ ] All expected documents exist
-- [ ] README links work correctly
-- [ ] Global support responsibilities are documented
-- [ ] Incident handover procedures are explained
-- [ ] End-user training methodology is documented
-- [ ] Knowledge transfer procedures are documented
-- [ ] KPI calculations and examples are consistent
-- [ ] Hypothetical service results are clearly labeled
+- [M9-SD-001 — fictional regional handover + JP/EN drafts](M9-Global-Support-and-Training/M9-Global-Handover-and-Bilingual-Communication.md)
+- [M9-TRN-001 — prepared O2C key-user demo/FAQ](M9-Global-Support-and-Training/M9-Key-User-Training-Guide.md)
+- [M9-CAP-001 — unresolved control diagnostic, KT, fictional KPIs, mock walkthrough](M9-Global-Support-and-Training/M9-Capstone-Knowledge-Transfer-and-Improvement.md)
+
+### Evidence and acceptance review
+
+- [x] Original six M9 files and three new outputs are present.
+- [x] M9 README and new cross-module relative links resolve in local repository copy.
+- [x] Global L1/L2/L3 roles, fictional regional ownership and escalation modeled.
+- [x] English handover and Japanese end-user draft included; **not actually sent**.
+- [x] Key-user order-to-FI demo is screenshot-based and clearly marked **not delivered**.
+- [x] Known billing-block case reused as analysis; **not** misclassified as genuinely unfamiliar live-fault execution.
+- [x] Existing SAP evidence EV-001–EV-103 is reused and not recounted as new M9 SAP execution.
+- [x] Fictional KPI arithmetic is internally consistent; MTTR not fabricated.
+- [x] Actual and simulated work are distinguished; CBC denial and billing-block issue remain open.
+- [ ] Live course/recording, actual cross-regional handover, real KT acceptance and trainee validation **not performed**.
+- [ ] Original M9.04 unfamiliar SAP fault, fix, authorized retest and closure **not performed**.
+- [ ] Customer sign-off, independent technical review, SAP authorization changes or actual release **not obtained**.
+
+**Publication boundary:** Local file/link checks are **not** a public GitHub deployment, privacy review of every image, or customer audit approval. The source ZIP does not verify repository visibility.
 
 ## 6. Documentation Quality Review
 
@@ -188,14 +201,15 @@ Any real system screenshots should be reviewed and anonymized before publication
 
 ## 9. GitHub Navigation and Formatting Review
 
-### Main README
+### Main README — Content Review
 
-- [ ] Explains the portfolio purpose
-- [ ] Identifies SAP SD as the primary focus
-- [ ] Summarizes the module structure
-- [ ] Provides working module links
-- [ ] Explains the nature of the training work
-- [ ] Includes an appropriate portfolio disclaimer
+- [x] Explains the portfolio purpose.
+- [x] Identifies SAP SD as the primary focus.
+- [x] Summarizes the module structure.
+- [x] Provides locally resolving module links.
+- [x] Distinguishes system exercises from training-only simulations.
+- [x] Includes a portfolio disclaimer.
+- [ ] Rendered display on live GitHub has not been reviewed.
 
 ### Module READMEs
 
@@ -208,12 +222,11 @@ Any real system screenshots should be reviewed and anonymized before publication
 
 ### Markdown Validation
 
-- [ ] Headings display correctly
-- [ ] Tables render correctly
-- [ ] Links resolve to existing files
-- [ ] Code blocks render properly
-- [ ] Checklists display correctly
-- [ ] No broken Markdown formatting
+- [x] **464** local Markdown/image link targets checked and resolved; **0** missing paths in the extracted repository.
+- [x] **74 Markdown files** present: 71 original files plus 3 new M9 exercises.
+- [x] **103 original evidence PNGs** preserved without content changes.
+- [ ] GitHub's rendered headings, tables, code blocks and checklists have not been visually tested.
+- [ ] Privacy-sensitive content in each original image has not been independently approved for public posting.
 
 ## 10. Consultant Competency Review
 
@@ -238,46 +251,43 @@ These are portfolio review areas, not claims of completed customer implementatio
 
 ## 11. Portfolio Review Findings
 
-| Finding ID | Description | Priority | Corrective Action | Status |
+| Finding ID | Description | Impact | Required action | Status |
 |---|---|---|---|---|
-| VAL-001 | | | | |
-| VAL-002 | | | | |
-| VAL-003 | | | | |
+| VAL-001 | Billing block 04 did not enforce the proposed JV2 F2 hold in historical scenarios; technical/business-rule cause unknown | Potential billing-control exposure if a real owner approves this as a required hold | Authorized JV2 CBC/functional review, design approval, actual negative/positive retest | **Open** — PRB-SD-001, DEF-M6-001 |
+| VAL-002 | CBC access denied; M8 catalog inspection did not verify actual permissions or approved SoD mitigation | Configuration investigation and security closure incomplete | Authorized identity/role review; least-privilege access or specialist diagnostic path | **Open** — INC-SD-006, M8-SD-001 |
+| VAL-003 | Local ZIP does not prove GitHub visibility, screenshot publication approval or external technical validation | Publication and professional claims require final human review | Check live repository permissions, image privacy, render quality and external reviewer feedback | **Pending** |
 
-### Suggested Priority Levels
-
-- High — Incorrect technical information, broken essential navigation, or confidentiality risk
-- Medium — Missing documentation or inconsistent terminology
-- Low — Formatting, readability, or minor presentation issue
+**M9-specific residual:** The original unfamiliar O2C case, delivered key-user training and accepted cross-regional support handover are **not** executed. They are not concealed or marked as operationally complete.
 
 ## 12. Final Review Summary
 
-### Documentation
+### Locally verified artifact integrity
 
-- Total intended modules: 9
-- Modules verified:
-- Documents reviewed:
-- Broken links found:
-- Outstanding corrections:
+- Intended modules: **9**; each folder and README present.
+- Markdown documents present: **74** (71 source + 3 new M9).
+- Source PNG evidence preserved: **103**, all byte-for-byte unchanged.
+- Local internal Markdown/image links checked: **464**; missing destinations: **0**.
+- New files: **3** M9 worked exercises. Existing Markdown files updated: **6**. Deletions: **0**.
+- Requirement matrix: **R01–R15 all assigned an evidence-qualified status**; this does **not** mean all operational requirements were executed.
+- Historical quantitative evidence: two O2C traces, six case records of mixed outcomes, three RCAs, seven historical/pre-change tests, a proposed functional change, simulated UAT/release packet and bounded M8 access/SoD review. The M9 bilingual handover, guide and analytical capstone are **documentation only**.
 
-### Technical Review
+### Not established by local checks
 
-- Technical accuracy verified: Yes / No
-- SAP terminology reviewed: Yes / No
-- Examples properly classified: Yes / No
-- Confidentiality review completed: Yes / No
+- Independent SAP technical audit or successful JV2 billing-block control remediation.
+- Actual customer UAT, SAP change/release, security acceptance, audit closure, support handover or end-user training delivery.
+- Per-image publication/privacy permission, live GitHub visibility and displayed Markdown rendering.
+- External professional or client sign-off.
 
-### Final Decision
+### Final decision for this local review
 
-- [ ] Ready for professional portfolio use
-- [ ] Ready with documented limitations
-- [ ] Further corrections required
-- [ ] Review not yet completed
+- [x] **Documentation structure and local links validated**, with explicit evidence and execution limits.
+- [ ] Ready for unrestricted/public publication — **pending privacy, visual and permissions review**.
+- [ ] Operational requirements fully satisfied — **not demonstrated**.
+- [ ] Independent business/technical reviewer acceptance — **not obtained**.
 
-**Final Review Status:** Pending
+**Final Review Status:** Local repository integrity passed; external technical, privacy/publication and operational acceptance review remains pending.
 
-
-**Reviewer:**
+**Reviewer/signature:** None — no formal approval claimed.
 
 ## 13. Portfolio Positioning
 
@@ -310,4 +320,4 @@ The portfolio validation process must be completed before claiming that the repo
 
 **Modules in Scope:** M1–M9
 
-**Validation Status:** Pending Review
+**Validation Status:** Local document/relative-link verification complete with documented limitations; external and publication checks pending

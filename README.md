@@ -7,7 +7,7 @@ This repository presents an independent SAP S/4HANA Sales (SD) professional deve
 
 The portfolio combines SAP functional knowledge with an international industrial business perspective.
 
-It is organized into nine modules and distinguishes **verified SAP sandbox execution**, **training-only simulation**, and **documentation/templates**. Module 1 contains actual SAP system-monitoring results and two controlled, resolved training cases. Its wider access audit retains explicitly documented gaps. Module 2 contains two executed O2C traces verified through FI posting; Module 3 contains read-only configuration observations, reproduced pricing/picking exceptions, and a proposed change with access-blocked configuration review. Module 4 contains executed inspections and documented recovery methodology; Module 5 now contains six evidence-qualified investigations, three RCAs and support-operation records, with partial technical execution; Modules 6–9 remain at planning/template stages.
+It is organized into nine modules and distinguishes **verified SAP sandbox execution**, **training-only simulation**, and **documentation/templates**. Module 1 contains actual SAP system-monitoring results and two controlled, resolved training cases. Its wider access audit retains explicitly documented gaps. Module 2 contains two executed O2C traces verified through FI posting; Module 3 contains read-only configuration observations, reproduced pricing/picking exceptions, and a proposed change with access-blocked configuration review. Module 4 contains executed inspections and documented recovery methodology; Module 5 now contains six evidence-qualified investigations, three RCAs and support-operation records, with partial technical execution; Module 6 now contains a documented requirements/change/test package with two new negative billing-control tests (EV-083–EV-089), while the proposed fix remains unimplemented; Modules 7–9 remain at planning/template stages.
 
 **SAP evidence overview:** M1 includes 16 genuine SAP screenshots, monitoring observations and two deliberately reproduced/corrected support cases (orders `1055` and `1056`). This is **not a production client engagement**. M1 access audit is partial; M2 contains two O2C chains through FI, with a failed billing-block negative test; M3 contains verified picking correction, additional logistics observations and a proposed change without claiming configuration access. M4 documents actual IDoc error diagnosis, intercompany invoice-interface configuration, completed sales-order output and a nonexecuted recovery procedure. M5 reuses verified earlier evidence plus twelve new screenshot observations, records three resolved training defects, diagnosed but unresolved IDoc/CBC cases, successful invoice output (not an error), and a documented-only communication/reopening workflow. See module READMEs for exact evidence and limitations.
 
@@ -117,6 +117,8 @@ Focus areas:
 - Incident closure
 
 ### M6 — Requirements, Enhancements and Testing
+
+**Status:** Documentary deliverables prepared; actual JV2 control tests TC-SD-004/005 executed (failed expected hold) and relevant earlier test cases reused. No approved configuration change, post-change regression or actual UAT. [See M6 evidence and deliverables](M6-Requirements-Enhancements-and-Testing/README.md).
 
 Focus areas:
 

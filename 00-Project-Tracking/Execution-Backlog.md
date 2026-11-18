@@ -100,16 +100,16 @@ Deliverables: **Six investigation records, two proposed SRs, three RCAs, a simul
 
 ## M6 — Requirements, enhancement and testing (R06, R07, R08, R10)
 
-Existing: functional specification, change impact and test case templates in `M6-Requirements-Enhancements-and-Testing/`.
+**Document package prepared; actual SAP tests partial/pre-change; business control and change open.** See [M6 README](../M6-Requirements-Enhancements-and-Testing/README.md).
 
-- [ ] **M6.01** Role-play Sales/Logistics/Finance workshop: pain point, goal, constraints, assumptions, in/out scope and fictional sign-off.
-- [ ] **M6.02** **CHG-SD-001**: functional specification with as-is/to-be, config/data, output/interfaces, role impacts, exceptions, acceptance and rollback.
-- [ ] **M6.03** Map requirements ↔ design ↔ test IDs ↔ evidence in a **traceability matrix**.
-- [ ] **M6.04** Design unit, integration (SD/MM/FI/interface) and UAT scripts incl. negative/boundary tests.
-- [ ] **M6.05** Execute **6+ test cases** where feasible; record actual results, defects, regression and simulated cross-module steps separately.
-- [ ] **M6.06** Complete change impact, effort/risk, dependencies, approval-style record and knowledge transfer.
+- [x] **M6.01 — Simulated/documented:** Role-play Sales/Logistics/Finance viewpoints, goal, constraints, assumptions and business decisions. **No real meeting or sign-off**.
+- [x] **M6.02 — Proposed functional design:** CHG-SD-001 and completed functional specification, as-is/to-be, configuration unknowns, outputs/interfaces, roles, exceptions, acceptance and recovery. **No implementation**.
+- [x] **M6.03 — Documentation completed:** Requirement/design/test/evidence traceability matrix with actual status distinctions.
+- [x] **M6.04 — Test design completed:** Unit, integration, negative, source-level boundary, regression and UAT scripts; post-change/UAT unexecuted.
+- [x] **M6.05 — Seven evidence-backed pre-change cases, mixed results:** TC-SD-001–007 documented. New JV2 TC-SD-004 and 005 demonstrate failure of expected block 04 control; earlier M2/M3/M5 tests reused. **No post-fix regression**; TC-SD-008/009 not executed. EV-083–EV-089 plus cited earlier evidence.
+- [x] **M6.06 — Analytical record completed:** Cross-module impact, risk/complexity, pending authorization/approval, proposed rollback and written knowledge-transfer. **No actual approval, delivery or corrective action**.
 
-Deliverables: workshop notes, CHG-SD-001, filled FS, traceability matrix, **6+ tested cases**, defect log and approvals clearly labeled as fictional where simulated.
+Deliverables: [workshop/change](../M6-Requirements-Enhancements-and-Testing/Requirements-Workshop-and-CHG-SD-001.md), [functional specification](../M6-Requirements-Enhancements-and-Testing/Functional-Specification-CHG-SD-001.md), [impact assessment](../M6-Requirements-Enhancements-and-Testing/Change-Impact-Assessment-CHG-SD-001.md), [traceability](../M6-Requirements-Enhancements-and-Testing/Requirements-Traceability-Matrix.md), [test/defect register](../M6-Requirements-Enhancements-and-Testing/Test-Execution-and-Defect-Register.md), [handover](../M6-Requirements-Enhancements-and-Testing/Knowledge-Transfer-and-Approval-Record.md). **Problem PRB-SD-001 remains open**.
 
 ## M7 — UAT, release control and hypercare (R08, R09, R10)
 

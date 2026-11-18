@@ -119,6 +119,18 @@ Each evidence item must be traceable to a module, requirement, and completed or 
 
 **M5 evidence boundary:** EV-071–EV-082 are new read-only follow-up system observations. EV-079–EV-080 do not establish the security root cause; EV-081–EV-082 describe T41 settings, not JV2 settings. EV-077–EV-078 show a successful invoice output and must not be used to claim a recovered output failure. EV-078 redacts operator/time details from the log header only.
 
+## M6 evidence — new controlled cases (TC-SD-004/005)
+
+| EV-083 | M6 | R07 / R08 / R10 | JV2/100: Order 1060 item 10 billing block 04 selected; screenshot before order save; header blank reported later, not screenshot-proven | Executed — SAP screenshot, with stated limitations | [View image](../M6-Requirements-Enhancements-and-Testing/evidence/m6-order1060-item-block04-before-save.png) |
+| EV-084 | M6 | R07 / R08 / R10 | JV2/100: Delivery 80000789 item 10 Financial Processing displays blank billing-block field | Executed — SAP screenshot, with stated limitations | [View image](../M6-Requirements-Enhancements-and-Testing/evidence/m6-delivery80000789-item-block-blank.png) |
+| EV-085 | M6 | R07 / R08 / R10 | JV2/100: Order 1060 document flow shows delivery 80000789 and PGI material document 4900001496 | Executed — SAP screenshot, with stated limitations | [View image](../M6-Requirements-Enhancements-and-Testing/evidence/m6-order1060-pgi-document-flow.png) |
+| EV-086 | M6 | R07 / R08 / R10 | JV2/100: Saved F2 invoice 90000306 displays TG11 1 PC, net EUR 17.55 | Executed — SAP screenshot, with stated limitations | [View image](../M6-Requirements-Enhancements-and-Testing/evidence/m6-invoice90000306-f2-overview.png) |
+| EV-087 | M6 | R07 / R08 / R10 | JV2/100: Invoice 90000306 accounting-links popup displays 0L 0100000736 and 2L 7000000127 | Executed — SAP screenshot, with stated limitations | [View image](../M6-Requirements-Enhancements-and-Testing/evidence/m6-invoice90000306-accounting-links.png) |
+| EV-088 | M6 | R07 / R08 / R10 | JV2/100: Delivery 80000790 item 10 Financial Processing shows block 04; user confirmed save | Executed — SAP screenshot, with stated limitations | [View image](../M6-Requirements-Enhancements-and-Testing/evidence/m6-delivery80000790-item-block04.png) |
+| EV-089 | M6 | R07 / R08 / R10 | JV2/100: Accounting-links popup after invoice 90000307 shows 0L 0100000737 and 2L 7000000128; invoice number from user save confirmation | Executed — SAP screenshot, with stated limitations | [View image](../M6-Requirements-Enhancements-and-Testing/evidence/m6-invoice90000307-accounting-links.png) |
+
+**M6 evidence boundary:** Some final save, header-clearance, delivery-block persistence, invoice 90000307 and PGI confirmations were verbal messages in the workshop chat rather than independent post-save screenshots. The accounting-list screenshots establish listed documents, not verified ledger balances. No successful billing-block remediation was demonstrated.
+
 ## Evidence Categories
 
 - SAP screenshots and transaction records

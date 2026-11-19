@@ -1,31 +1,43 @@
-
 # SAP S/4HANA SD Support Lab
 
-## SAP Sales (SD) Functional Consulting and Application Support Portfolio
+**SAP Sales (SD) Functional Consulting & Application Support | Independent hands-on portfolio**
 
-This repository presents an independent SAP S/4HANA Sales (SD) professional development portfolio focused on practical order-to-cash business processes, functional troubleshooting, application support, implementation methodology, and system governance.
+## Executive Summary
 
-The portfolio combines SAP functional knowledge with an international industrial business perspective.
+An independent, nine-module SAP SD application support portfolio combining actual training-system execution, incident diagnosis, testing and functional documentation—grounded in **30+ years of international industrial business experience**.
 
-**Portfolio status: COMPLETE — M1–M9.** All nine independent training-lab module packages, the 103-item evidence index, 15 requirement-coverage assessments and the final scope review are finished. This statement describes **completed portfolio deliverables**, not nine real customer projects or universal successful SAP execution.
+**Selected results**
+- **Two executed O2C chains** from sales order through delivery, picking, PGI, billing and FI posting.
+- **Three corrected and retested cases:** pricing override, incomplete picking/PGI rejection and missing customer FI data.
+- **Further investigations:** inbound IDoc partner-profile error and unsuccessful billing-block control tests.
 
-**Execution basis:** Real sandbox work includes two O2C chains through FI, controlled pricing/picking/master-data corrections, and read-only interface, transport and IAM inspections. Work that could not appropriately be performed as an actual business activity—release, customer UAT, formal access recertification, actual global support, end-user training and KT—is completed as documented **simulation or analysis**. The billing-block observation and CBC denial are deliberately retained as unresolved *technical findings*, not as unfinished portfolio documents.
+### Six examples — reports and SAP evidence
 
-**Publication:** **Public-facing GitHub portfolio.** The author has completed the portfolio's self-review and accepts the nine modules as finished within the documented training-lab scope. SAP execution, simulations and unresolved technical observations are identified individually; no third-party or customer endorsement is implied. [Read the completed author review](PORTFOLIO-VALIDATION.md).
-
-## Start Here — Evidence Highlights
-
-For a quick assessment, begin with these **training-sandbox results**. These are not customer production engagement claims.
-
-| Demonstration | What was verified or prepared | Start with |
+| Example | What it demonstrates | Report / execution evidence |
 |---|---|---|
-| Two order-to-cash chains | Sales order, picking, PGI, invoice and FI posting, with explicit boundary on payment clearing | [M2 trace 01](M2-Order-to-Cash/O2C-Scenario-01-Standard-and-FI-Correction.md) · [M2 trace 02](M2-Order-to-Cash/O2C-Scenario-02-Billing-Block-Exception.md) |
-| Three corrected training incidents | Pricing override, incomplete picking / PGI rejection and missing customer company-code data for FI transfer | [M5 incident overview](M5-Incident-and-Root-Cause-Management/README.md) |
-| Open billing-control investigation | Four pre-change negative scenarios did not enforce the *proposed* hold; actual JV2 cause and intended business rule remain unconfirmed | [M6 test and defect register](M6-Requirements-Enhancements-and-Testing/Test-Execution-and-Defect-Register.md) |
-| Read-only interface, transport and IAM investigations | Actual diagnostic inspections, with no claim of successful IDoc recovery, deployment, effective-access certification or SoD violation | [M4](M4-IDocs-Interfaces-and-Output/README.md) · [M7](M7-UAT-Release-and-Hypercare/README.md) · [M8](M8-Authorization-Access-and-Audit/README.md) |
-| Professional support deliverables | Change/test/release documents and bilingual support/training materials; the release, global handover and training exercises are simulated | [M6](M6-Requirements-Enhancements-and-Testing/README.md) · [M9](M9-Global-Support-and-Training/README.md) |
+| **O2C and SD–FI posting** | Order through FI journal; balanced accounting | [Executed process trace](M2-Order-to-Cash/O2C-Scenario-01-Standard-and-FI-Correction.md) · [FI journal screenshot](M2-Order-to-Cash/evidence/m2-sc1-fi-ledger-redacted.png) |
+| **Pricing correction** | Manual PPR0 override identified, corrected and verified | [Root cause analysis](M5-Incident-and-Root-Cause-Management/RCA-SD-001-Pricing.md) · [Corrected order screenshot](M1-Landscape-and-Monitoring/evidence/pricing-corrected-va03.png) |
+| **Delivery and PGI exception** | Incomplete picking, VLMOVE 030 rejection and PGI retest | [Root cause analysis](M5-Incident-and-Root-Cause-Management/RCA-SD-002-Picking.md) · [PGI error screenshot](M3-Configuration-and-Logistics/evidence/m3-pgi-error-vlmove030.png) · [PGI retest screenshot](M3-Configuration-and-Logistics/evidence/m3-pgi-post-correction-document-flow.png) |
+| **Billing-to-FI incident** | Missing company-code data corrected; FI posting verified | [Root cause analysis](M5-Incident-and-Root-Cause-Management/RCA-SD-003-Billing-FI.md) · [SAP error screenshot](M2-Order-to-Cash/evidence/m2-sc1-fi-master-error.png) |
+| **IDoc interface diagnosis** | Inbound DELFOR status 56 / partner-profile error diagnosis | [Diagnostic record](M4-IDocs-Interfaces-and-Output/IDoc-Diagnostic-Record.md) · [IDoc screenshot](M4-IDocs-Interfaces-and-Output/evidence/idoc-inbound-delfor-partner-profile-error.png) |
+| **Negative-test and defect analysis** | Documented failed proposed hold tests; cause unresolved | [Test and defect register](M6-Requirements-Enhancements-and-Testing/Test-Execution-and-Defect-Register.md) · [Invoice/FI evidence](M6-Requirements-Enhancements-and-Testing/evidence/m6-invoice90000306-accounting-links.png) |
 
-**Final assessment:** [Portfolio Validation and Author Self-Review](PORTFOLIO-VALIDATION.md) — **complete as an independent public-facing training portfolio**. The author is the reviewer and acceptance authority for this personal portfolio; any real customer approval or SAP operational acceptance belongs to a separate business engagement.
+### SAP SD Application Support — competency mapping
+
+| Typical responsibility | Demonstrated in this portfolio |
+|---|---|
+| O2C and SD–FI support | Executed sales/delivery/billing/FI chains |
+| Incident investigation and RCA | Three confirmed training-case corrections and retests |
+| Pricing, logistics and master-data troubleshooting | Corrected pricing, PGI and FI data issues |
+| Interface and output monitoring | Read-only IDoc diagnosis; output-status checks |
+| Functional testing and change analysis | Negative tests, defect register, proposed specification |
+| Global support, release and training methods | Bilingual support materials; simulated release assessment |
+
+**Scope:** All cases distinguish executed SAP work, read-only analysis and simulations. No configuration remediation, IDoc recovery, actual release/UAT or delivered training is claimed. Billing-block behavior and CBC access remain unresolved findings.
+
+**M1–M9 completed within documented lab scope** · **103 evidence screenshots** · [All modules](#2-portfolio-navigation) · [Author self-review](PORTFOLIO-VALIDATION.md)
+
+---
 
 ## 1. Portfolio Objectives
 
@@ -354,7 +366,7 @@ The checklist covers:
 - Confidentiality
 - Professional presentation
 
-The final review records both tests actually completed and the outcome of matters that cannot be asserted (live public GitHub access, rights to distribute screenshots, customer approval). The independent portfolio is finished under the restricted distribution classification stated there.
+The final review records the documented execution scope, author self-review and evidence boundaries. This is a public-facing independent portfolio; SAP screenshot use remains subject to applicable intellectual-property conditions.
 
 ## 10. Intended Audience
 

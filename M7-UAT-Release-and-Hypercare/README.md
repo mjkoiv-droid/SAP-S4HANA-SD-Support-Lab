@@ -35,6 +35,6 @@ Assess readiness to release proposed **CHG-SD-001**, the payment-terms billing h
 - T41 / 400 is **not** the JV2 / 100 tenant where the billing behavior was tested. STMS display **does not** establish a transport to JV2, production access, import rights or successful import.
 - M6 TC-SD-001–007 are distinct pre-change baselines/negative tests, **not** seven post-fix regression passes or actual UAT. The four block scenarios failed the *proposed business-control expectation*; this is not proof of a software defect.
 - No correction was implemented. No signed business acceptance, operational release, ledger reconciliation after deployment or real hypercare is claimed.
-- User identifiers in the SE09 images and unrelated route-label metadata in STMS are redacted for portfolio use. Publication assessment completed with **private/controlled-distribution outcome**; see [portfolio validation](../PORTFOLIO-VALIDATION.md).
+- User identifiers in the SE09 images and unrelated route-label metadata in STMS are redacted for portfolio illustration. The [completed author review](../PORTFOLIO-VALIDATION.md) records the public-facing portfolio context and SAP attribution.
 
 **Portfolio sequence:** [M8 — Authorization, Access and Audit](../M8-Authorization-Access-and-Audit/README.md) is also complete as a bounded lab module.

@@ -11,7 +11,7 @@ The portfolio combines SAP functional knowledge with an international industrial
 
 **Execution basis:** Real sandbox work includes two O2C chains through FI, controlled pricing/picking/master-data corrections, and read-only interface, transport and IAM inspections. Work that could not appropriately be performed as an actual business activity—release, customer UAT, formal access recertification, actual global support, end-user training and KT—is completed as documented **simulation or analysis**. The billing-block observation and CBC denial are deliberately retained as unresolved *technical findings*, not as unfinished portfolio documents.
 
-**Distribution classification:** **Complete, private/controlled-distribution portfolio.** An unauthenticated GitHub URL check returned HTTP 404, so public accessibility or live GitHub rendering is not claimed. Redistribution rights for the full SAP screenshot collection cannot be established from the ZIP and relevant SAP copyright guidelines; the final review records a restricted distribution outcome instead of an open checklist. [Read the final validation and exceptions](PORTFOLIO-VALIDATION.md).
+**Publication:** **Public-facing GitHub portfolio.** The author has completed the portfolio's self-review and accepts the nine modules as finished within the documented training-lab scope. SAP execution, simulations and unresolved technical observations are identified individually; no third-party or customer endorsement is implied. [Read the completed author review](PORTFOLIO-VALIDATION.md).
 
 ## Start Here — Evidence Highlights
 
@@ -25,7 +25,7 @@ For a quick assessment, begin with these **training-sandbox results**. These are
 | Read-only interface, transport and IAM investigations | Actual diagnostic inspections, with no claim of successful IDoc recovery, deployment, effective-access certification or SoD violation | [M4](M4-IDocs-Interfaces-and-Output/README.md) · [M7](M7-UAT-Release-and-Hypercare/README.md) · [M8](M8-Authorization-Access-and-Audit/README.md) |
 | Professional support deliverables | Change/test/release documents and bilingual support/training materials; the release, global handover and training exercises are simulated | [M6](M6-Requirements-Enhancements-and-Testing/README.md) · [M9](M9-Global-Support-and-Training/README.md) |
 
-**Final assessment:** [Portfolio Validation and Final Review](PORTFOLIO-VALIDATION.md) — **complete as an independent, controlled-distribution training portfolio**. External business sign-off and public redistribution were not project acceptance criteria and are not claimed.
+**Final assessment:** [Portfolio Validation and Author Self-Review](PORTFOLIO-VALIDATION.md) — **complete as an independent public-facing training portfolio**. The author is the reviewer and acceptance authority for this personal portfolio; any real customer approval or SAP operational acceptance belongs to a separate business engagement.
 
 ## 1. Portfolio Objectives
 

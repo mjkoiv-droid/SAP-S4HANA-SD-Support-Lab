@@ -237,7 +237,7 @@ The following *real-world operations* were not part of the executed training-lab
 | M9-CAP-001 analysis, KT, KPIs, walkthrough | **New analytical/simulated documents**, not operational work |
 | New M9 SAP actions or EV identifiers | **None** |
 
-**Module result: COMPLETE — M9 documentary/simulated training-lab deliverables.** The original unfamiliar-live-case execution and actual training/handover were *not performed* and are transparently classified as outside the accepted portfolio execution scope. No customer production work is claimed.
+**Module result: COMPLETE — M9 documentary/simulated training-lab deliverables.** The original unfamiliar-live-case execution and actual training/handover were *not performed* and are transparently classified as outside the accepted portfolio execution scope. No customer production work is claimed. **Author review and acceptance of the M9 portfolio deliverables are complete.**
 
 ## 11. Consultant Competencies Demonstrated
 

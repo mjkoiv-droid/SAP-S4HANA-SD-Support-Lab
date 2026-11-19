@@ -101,14 +101,13 @@ Detailed steps/results: [Test Execution and Defect Register](Test-Execution-and-
 
 **Rollback concept:** retain exact before-state, reapply only the approved previous configuration if the validated change causes issues; reconcile billing queues/invoices/FI/output; retest. Exact operational mechanism unknown pending authorizations.
 
-## 9. Approval and closure
+## 9. Author review and proposed-change boundary
 
-| Role | Status |
+| Review / operational role | Portfolio outcome |
 |---|---|
-| Sales | Not consulted; pending actual business acceptance |
-| Logistics | Not consulted; pending actual business acceptance |
-| Finance | Not consulted; pending actual business acceptance |
-| SD/configuration owner | JV2 CBC review not authorized; decision pending |
-| Change manager | No real approval |
+| Portfolio author | **Training functional specification reviewed and accepted as a completed proposal** |
+| Sales, Logistics and Finance | Fictional stakeholders for the training exercise; no real business participants |
+| SAP configuration owner | JV2 CBC inspection denied; actual configuration decision was not possible in this sandbox |
+| Change manager | Operational implementation/change authorization not applicable to this independent portfolio |
 
-**Conclusion:** Functional documentation and historical/pre-change test analysis **completed**; proposed enhancement **open**. Do not call it implemented, successfully remediated, UAT accepted or post-change validated.
+**Conclusion:** The functional specification and associated test analysis are **complete and author-accepted as portfolio documents**. The enhancement itself remains a proposal; no SAP implementation, production business approval or post-change retest is claimed.

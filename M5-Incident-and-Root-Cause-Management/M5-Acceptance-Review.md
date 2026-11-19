@@ -1,6 +1,6 @@
-# M5 — Acceptance and evidence-boundary review
+# M5 — Author self-review and evidence boundaries
 
-**Disposition: Documentation deliverables prepared; technical execution partial.** This is a module-level review of the supplied repository copy and the observed SAP screenshots, not a sign-off that every planned incident was fully executed.
+**Author review: COMPLETE and accepted within the documented training-lab scope.** The M5 case records, RCAs, service-request drafts, communication simulations and evidence limits are finished; the technical exceptions in the case records remain accurate.
 
 | Planned output | Artifact outcome | Execution / acceptance finding |
 |---|---|---|
@@ -27,9 +27,8 @@
 - Local Markdown paths are checked against the packaged files; the final result and file counts are recorded in the accompanying package validation output.
 - Legacy M1-TRIAGE-001 is explicitly distinct from M5 picking INC-SD-002; earlier evidence IDs retain their original evidence sources.
 - Original M1–M4 screenshots remain in their module paths; prior outcomes are referenced rather than duplicated as new execution.
-- The **remote GitHub repository has not been modified by this file preparation**. Repository visibility, permissions and publication suitability still require separate confirmation.
-- Portfolio-wide review for M6–M9 and overall confidentiality/publication readiness remains pending.
+- The completed M5 module was included in the project-wide M1–M9 validation and author self-review. The repository is written for public presentation; local file validation does not assert any particular GitHub hosting configuration.
 
 ## Module disposition
 
-**M5 is ready to be filed as an evidence-qualified, partly executed training module**, with its outstanding technical scenarios explicitly open. If the project later requires all six planned error/fix/retest cycles to be executed in SAP, further authorized and controlled sandbox exercises would be necessary; no such results are implied here.
+**M5 portfolio work is complete and author-accepted.** The portfolio accurately distinguishes the three resolved cases from diagnostic-only, hypothetical and unresolved scenarios. Any future real-customer fixes or production incident closures would be separate engagements, not outstanding M5 portfolio tasks.

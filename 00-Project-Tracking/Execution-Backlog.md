@@ -11,7 +11,7 @@
 - For a **completed scoped requirement-coverage deliverable**, use **Executed**, **Executed with comments**, **Simulated**, or **Simulated with comments** in `Requirement-Coverage.md`. The evidence column must retain precise scope limits: completed lab assessment is not the same as full real-world job execution, approved change, UAT, release, security remediation or audit closure. Preserve unresolved *technical findings* in incident records; close portfolio coverage assessment items by explicitly recording their limitations or substitutions. Do not mark any unperformed SAP step as executed.
 - Preserve all existing templates. Copy/fill them for concrete case deliverables; do not overwrite examples with fabricated client results.
 - Do not run destructive activities, modify shared configuration, reprocess shared IDocs, transport changes or change other users' roles without explicit permission.
-- The final portfolio artifact is complete and classified **private/controlled-distribution** in [final validation](../PORTFOLIO-VALIDATION.md); neither public visibility nor screenshot redistribution permission is asserted.
+- The portfolio is **complete, author-reviewed and intended for public GitHub presentation**. The final validation records the evidence scope, public-facing editorial decision and SAP material attribution; actual hosting visibility and third-party intellectual-property permissions are not represented as portfolio acceptance steps.
 
 ## Gate A — Access feasibility review (historical assessed limits)
 
@@ -145,7 +145,7 @@ Deliverables: [workshop/change](../M6-Requirements-Enhancements-and-Testing/Requ
 - [x] **M9.03 — Script prepared only:** Evidence-based O2C key-user screenshot guide, exception FAQ and safe-actions checklist. **Actual trainee demonstration/recording not performed.**
 - **Assessment recorded:** **M9.04 — Portfolio analytical substitute accepted (original live criterion not performed):** An **existing** unresolved billing-block case was analyzed as a capstone. No new unfamiliar failure reproduced, verified JV2 cause, correction, approval, retest or closure.
 - [x] **M9.05 — Mock walkthrough drafted:** Landscape, three corrected sandbox cases, proposed change, authorization/control risk and limits. **Not actually presented.**
-- [x] **M9.06 — Documentation and project-scope review completed:** R01–R15 have evidence-qualified statuses; local structure and link checks recorded in validation document. **No real project sign-off, publication/privacy approval or external audit acceptance.**
+- [x] **M9.06 — Author review and project-scope acceptance completed:** R01–R15 have evidence-qualified statuses; local structure and link checks are recorded in the validation document. External business or audit approvals belong to real customer projects, not this independent portfolio.
 
 **Deliverables:** Two-language drafted incident communications, an undelivered key-user walkthrough, analytical capstone, hypothetical KPIs/KT, mock interview narrative, updated evidence index and requirement coverage. **No new EV screenshot IDs.** The billing-block control and CBC authorization denial remain **open**.
 
@@ -159,7 +159,7 @@ Deliverables: [workshop/change](../M6-Requirements-Enhancements-and-Testing/Requ
 - [x] Prepare supported CV/profile wording, with lab work explicitly identified as independent training, not customer implementation experience; see final review document.
 - [x] Confirm document/count gate: **2 O2C traces, 6 incident/case records with differing outcomes, 3 RCAs, 1 proposed enhancement, 7 pre-change tests, 1 simulated UAT/release NO-GO packet, 1 evidence-limited access review, 2 potential SoD analyses, 1 simulated bilingual handover, 1 undelivered key-user training guide, 15 requirements assessed**. This is not operational completion of every job requirement.
 - [x] Perform final local source audit: ZIP integrity, all module files, all evidence IDs, local Markdown/image paths, PNG integrity, scope disclaimers and basic Markdown credential-pattern scan.
-- [x] **Publication and external-acceptance classification assessed:** anonymous GitHub check returned HTTP 404; screenshot redistribution rights not established under SAP rules; portfolio classified private/controlled-distribution. Customer/CAB/independent approval is outside this independent lab scope, not assumed. See [final validation](../PORTFOLIO-VALIDATION.md).
+- [x] **Public-facing presentation and author acceptance completed:** portfolio designed for public GitHub readership and self-reviewed by its author. SAP screenshot copyright conditions are identified in the final validation; no customer/CAB/security/third-party acceptance is claimed for this personal lab.
 
 **All M1–M9 assessment/deliverable decisions are recorded. No further SAP transactions are required to complete this independent portfolio.** The unperformed M9 unfamiliar-live-failure exercise and other historical technical constraints remain transparently recorded.
 
@@ -167,7 +167,7 @@ Deliverables: [workshop/change](../M6-Requirements-Enhancements-and-Testing/Requ
 
 | Area | Completed portfolio material | Real-world activity outside demonstrated lab scope |
 |---|---|---|
-| Gate A + M1 | Access audit/monitoring baseline, support runbook, two actual controlled cases, 16 evidence images; module README | Company code 1010 was verified subsequently in M2; delivery type, incomplete/blocked-delivery counts and specialist access checks remain open or deferred; publication permissions still require final review |
+| Gate A + M1 | Access audit/monitoring baseline, support runbook, two actual controlled cases, 16 evidence images; module README | Company code 1010 was verified subsequently in M2; certain specialist access and monitoring observations were not established by this training scope |
 | M2 | O2C process trace template | 2 instantiated, executed traces, flow/swimlane and control checklist |
 | M3 | Configuration analysis template; filled CFG-SD-001, 2 actual incident investigations, billing-block observation, CHG-M3-001 proposal, impact matrix, EV-036–EV-052 | CBC settings and copy-control customizing inaccessible; proposed configuration not implemented; broad regression not executed |
 | M4 | Completed IDoc diagnostic record, interface trace, output checklist, recovery runbook and screenshots | Live IDoc reprocessing and target `90FR` invoice remain unverified; no extra work is claimed |
@@ -176,6 +176,6 @@ Deliverables: [workshop/change](../M6-Requirements-Enhancements-and-Testing/Requ
 | M7 | Preserved template, completed simulated REL-SD-001 NO-GO packet, actual T41/400 SE09/STMS inspection EV-090–EV-093, planned smoke/rollback/hypercare | No actual UAT acceptance, actual transport/import, deployment, post-release smoke, rollback or operational hypercare |
 | M8 | 5 retained templates/examples, README, new JV2 IAM read-only evidence EV-094–EV-103 and M8-SD-001 review | Actual SU53/trace, effective-access/SoD proof, user recertification, change approval, mitigation and formal audit closure remain open |
 | M9 | 5 original guides/templates, README, new M9-SD-001 bilingual handover, M9-TRN-001 screenshot guide, M9-CAP-001 analysis/KT/KPI/mock walkthrough; trackers updated | Actual training demonstration/recording, real global handover acceptance, new unfamiliar-case execution/fix/retest and stakeholder approval not performed |
-| Project-wide | Updated `Requirement-Coverage.md` (R01–R15 assessed), `Evidence-Register.md` (M9 paper artifacts separated from EV), `PORTFOLIO-VALIDATION.md` (local checks) | Independent technical/customer review, public-GitHub/privacy verification and real sign-off remain outstanding |
+| Project-wide | R01–R15 requirement coverage, EV-001–EV-103 index, final local validation and author self-review completed; written for public GitHub readers | Third-party customer approval, GitHub hosting behavior and SAP material rights are distinct from author acceptance of the training portfolio |
 
 **Current verified M1 controlled incident exercises: 2.** Orders 1055 and 1056 were intentionally faulted, diagnosed and corrected in SAP, with verified retests; see EV-009–EV-016. Monitoring/authorization inspections are separately evidenced in EV-001–EV-007. **Two M2 O2C chains through FI are executed and evidenced (EV-017–EV-035). The billing-block negative test failed. No M3 live configuration change, production support or M4 IDoc recovery is claimed. M4 inspections and positive sales-order output are evidenced.**

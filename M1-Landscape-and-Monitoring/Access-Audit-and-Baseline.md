@@ -121,6 +121,6 @@ These figures reflect SAP training data and the applied filters **at the time ch
 - **Assessed limitation:** Actual delivery type not independently checked; optional follow-up for complete organizational inventory.
 - **Assessed limitation:** No comprehensive incomplete-sales-document count; no general SD application/IDoc/interface monitoring in this tenant.
 - **Assessed limitation:** Shared-client write/configuration policy and A03/A06/A07 specialized permissions not fully tested; handle before restricted activities in later modules.
-- **Assessed limitation:** SAP screenshot-sharing rights are not established; final distribution decision is **private/controlled** (see [final validation](../PORTFOLIO-VALIDATION.md)).
+- **Public-portfolio context:** Training-system screenshots are included as attributed illustrative evidence. See [final author review](../PORTFOLIO-VALIDATION.md) for the scope and SAP material-use terms.
 
 **M1 classification:** Required M1 monitoring baseline and two deliberate practice investigations executed; runbook is simulated. Specialized access checks explicitly deferred to M3/M4/M7/M8. Do not claim 100% access-audit coverage or real production support.

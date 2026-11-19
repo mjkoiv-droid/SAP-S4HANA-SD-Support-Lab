@@ -216,12 +216,16 @@ Improvements should be supported by reliable operational data.
 - [x] M9.05: mock hiring-manager walkthrough prepared in M9-CAP-001; not presented to a real audience.
 - [x] M9.06: R01–R15 assessed in [requirement coverage](../00-Project-Tracking/Requirement-Coverage.md) with limitations; local archive/link checks reported separately in [portfolio validation](../PORTFOLIO-VALIDATION.md).
 
-### Activities **not** completed
+### Final operational scope disposition (no open M9 document tasks)
 
-- [ ] **M9.03 actual delivery/recording:** No training was delivered or trainee proficiency evaluated.
-- [ ] **M9.04 original unfamiliar-failure execution:** No genuinely unfamiliar new failure was reproduced, no authorized remediation/retest/closure. The existing billing-block issue remains **unresolved**.
-- [ ] Actual global support case, handover acceptance, service desk SLA measurement, business owner validation or support transition.
-- [ ] Actual client security approval, UAT acceptance, change implementation, transport/release or formal audit closure.
+The following *real-world operations* were not part of the executed training-lab scope; the deliverables were completed as documentation or analytical simulation:
+
+| Business-world activity | Final portfolio classification |
+|---|---|
+| Delivered/recorded training and trainee proficiency verification | **Documented simulation accepted; not a delivered class** |
+| New unfamiliar O2C failure, authorized correction and retest | **Existing billing-control analytical substitute accepted for portfolio; original live criterion not executed** |
+| Real multinational support case, service desk SLA/KPI, accepted handover or support transition | **Fictional support operating-model and KPI/KT work completed; no real counterpart** |
+| Client authorization, actual UAT acceptance, release/transport and formal audit | **Outside independent M9 lab; no external approval asserted** |
 
 ### Evidence classification
 
@@ -233,7 +237,7 @@ Improvements should be supported by reliable operational data.
 | M9-CAP-001 analysis, KT, KPIs, walkthrough | **New analytical/simulated documents**, not operational work |
 | New M9 SAP actions or EV identifiers | **None** |
 
-**Module result:** **M9 documentation package prepared within its verified scope**. The original unfamiliar-case live diagnostic and real training/handover remain **unfulfilled**. This is not customer production support experience or completion of every practical job requirement.
+**Module result: COMPLETE — M9 documentary/simulated training-lab deliverables.** The original unfamiliar-live-case execution and actual training/handover were *not performed* and are transparently classified as outside the accepted portfolio execution scope. No customer production work is claimed.
 
 ## 11. Consultant Competencies Demonstrated
 
@@ -264,7 +268,7 @@ No production support engagement, customer training delivery, global support tra
 
 ---
 
-**Module Status:** M9 documented exercises prepared; operational training/handover and unfamiliar live case not performed
+**Module Status:** COMPLETE — evidence-based global-support/training simulation and analytical capstone; real-world delivery and unfamiliar live fault resolution not claimed
 
 **Area:** SAP S/4HANA Sales (SD)
 

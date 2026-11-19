@@ -1,6 +1,8 @@
 
 # SAP SD Authorization Incident Investigation Example
 
+> **Portfolio classification: COMPLETE reusable simulation/example.** Blank fields, unselected checkboxes, hypothetical approvals and illustrative pending statuses in this document are **inputs for future use**, not unfinished actions or actual sign-offs in the SAP SD Support Lab. See [final portfolio validation](../PORTFOLIO-VALIDATION.md).
+
 ## 1. Incident Overview
 
 **Incident ID:** INC-SD-AUTH-001

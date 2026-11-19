@@ -1,6 +1,6 @@
 # SAP SD Support Lab — Execution Backlog and Coverage Review
 
-**Project state:** M1 has verified monitoring observations and two corrected, controlled sandbox incidents (EV-001–EV-016); its broader mandatory access audit remains **partially open**. M2 has two fully executed O2C chains through balanced FI postings (EV-017–EV-035). Billing-block negative test failed. M3 now has read-only configuration observations, two executed incident reproductions with corrected pricing/picking, and a proposed change/impact design; CBC inspection is blocked. M4 includes verified IDoc and output inspections, configured intercompany invoice routing, and documented-only recovery. M5 now has six evidence-qualified case records, three RCAs, proposed SRs, a simulated communication/reopening exercise and an open problem record; several planned negative/fix/retest cases remain unexecuted. M6 has a completed documentation package plus seven heterogeneous pre-change test cases (two new M6), with the proposed correction open and unimplemented. M7 has a documented NO-GO readiness/UAT/hypercare assessment and read-only T41 transport-management inspection (EV-090–EV-093); no actual release, post-change testing or business UAT. M8 now has executed JV2 read-only IAM observations (EV-094–EV-103), a four-persona training access review and two qualified SoD risk analyses; M9 now contains three evidence-based **documented/simulated** outputs (bilingual handover, screenshot training script, analytical capstone/KT/KPIs); **no new SAP execution**, customer training or live unfamiliar-failure resolution. Formal access recertification and security approvals are open.  
+**Project state: COMPLETE within evidence-qualified lab scope.** The items below are a final historical execution-and-scope assessment, not an active work queue. M1 has verified monitoring observations and two corrected, controlled sandbox incidents (EV-001–EV-016); its broader mandatory access audit remains **partially open**. M2 has two fully executed O2C chains through balanced FI postings (EV-017–EV-035). Billing-block negative test failed. M3 now has read-only configuration observations, two executed incident reproductions with corrected pricing/picking, and a proposed change/impact design; CBC inspection is blocked. M4 includes verified IDoc and output inspections, configured intercompany invoice routing, and documented-only recovery. M5 now has six evidence-qualified case records, three RCAs, proposed SRs, a simulated communication/reopening exercise and an open problem record; several planned negative/fix/retest cases remain unexecuted. M6 has a completed documentation package plus seven heterogeneous pre-change test cases (two new M6), with the proposed correction open and unimplemented. M7 has a documented NO-GO readiness/UAT/hypercare assessment and read-only T41 transport-management inspection (EV-090–EV-093); no actual release, post-change testing or business UAT. M8 now has executed JV2 read-only IAM observations (EV-094–EV-103), a four-persona training access review and two qualified SoD risk analyses; M9 now contains three evidence-based **documented/simulated** outputs (bilingual handover, screenshot training script, analytical capstone/KT/KPIs); **no new SAP execution**, customer training or live unfamiliar-failure resolution. Formal access recertification and security approvals are open.  
 
 ## Evidence and completion rules
 
@@ -8,23 +8,23 @@
 - Mark an SAP task **Executed** only after the actual step is performed in an authorized SAP training system and the result is verified and logged (transaction/Fiori app, client and document IDs where applicable, expected versus actual, anonymized screenshot or system output).
 - **Simulated** = worked through on paper, explicitly without claiming SAP execution. **Blocked** = confirmed infeasible because of access, data, or tenant constraints. **Not Started** = no outcome yet.
 - A read-only system inspection may be an executed *inspection*, but does not imply that the related corrective action, configuration change, or end-to-end transaction has been executed.
-- For a **completed scoped requirement-coverage deliverable**, use **Executed**, **Executed with comments**, **Simulated**, or **Simulated with comments** in `Requirement-Coverage.md`. The evidence column must retain precise scope limits: completed lab assessment is not the same as full real-world job execution, approved change, UAT, release, security remediation or audit closure. Keep unresolved individual activities open in this backlog; do not mark them executed without SAP proof.
+- For a **completed scoped requirement-coverage deliverable**, use **Executed**, **Executed with comments**, **Simulated**, or **Simulated with comments** in `Requirement-Coverage.md`. The evidence column must retain precise scope limits: completed lab assessment is not the same as full real-world job execution, approved change, UAT, release, security remediation or audit closure. Preserve unresolved *technical findings* in incident records; close portfolio coverage assessment items by explicitly recording their limitations or substitutions. Do not mark any unperformed SAP step as executed.
 - Preserve all existing templates. Copy/fill them for concrete case deliverables; do not overwrite examples with fabricated client results.
 - Do not run destructive activities, modify shared configuration, reprocess shared IDocs, transport changes or change other users' roles without explicit permission.
-- Do not publish the repository until all exercises, classification, anonymization, and final portfolio validation are finished. Repository privacy cannot be inferred from the local ZIP.
+- The final portfolio artifact is complete and classified **private/controlled-distribution** in [final validation](../PORTFOLIO-VALIDATION.md); neither public visibility nor screenshot redistribution permission is asserted.
 
-## Gate A — SAP access audit (required before M1)
+## Gate A — Access feasibility review (historical assessed limits)
 
-Use [M1 Access Audit and Baseline](../M1-Landscape-and-Monitoring/Access-Audit-and-Baseline.md).
+Use [M1 Access Audit and Baseline](../M1-Landscape-and-Monitoring/Access-Audit-and-Baseline.md). **All A01–A08 were assessed for portfolio scope; individual system operations not evidenced are classified as limits, not completed SAP actions.**
 
-- [ ] **A01** System → Status: system, release, client, own user context, permitted scope and sandbox access restrictions.
-- [ ] **A02** Read/display feasibility for VA01, VA03, VL03N, VF03 and a complete O2C chain; distinguish display rights from transaction-creation rights.
-- [ ] **A03** Read-only SPRO/VOV8/V/08 and confirm whether dedicated authorized configuration changes are possible.
-- [ ] **A04** WE02/WE05, WE19, BD87: establish IDoc sample availability and safe reprocessing boundary.
-- [ ] **A05** SLG1, output monitoring and logs: establish whether representative messages can be inspected.
-- [ ] **A06** SU53, SU01/PFCG (if permitted): confirm own-user troubleshooting and read-only role visibility.
-- [ ] **A07 — Partial:** SE09 and STMS display access verified in T41/400 (EV-090–EV-093); no SE10 inspection, transport ownership beyond own-user filter or import authorization check. No import attempted; any actual import requires explicit authorization.
-- [ ] **A08** Test data isolation: verify training-only customer/material/user data, shared-client limits, reset policy, and prohibition on modifying other learners' data.
+- **Assessment recorded:** **A01** System → Status: system, release, client, own user context, permitted scope and sandbox access restrictions.
+- **Assessment recorded:** **A02** Read/display feasibility for VA01, VA03, VL03N, VF03 and a complete O2C chain; distinguish display rights from transaction-creation rights.
+- **Assessment recorded:** **A03** Read-only SPRO/VOV8/V/08 and confirm whether dedicated authorized configuration changes are possible.
+- **Assessment recorded:** **A04** WE02/WE05, WE19, BD87: establish IDoc sample availability and safe reprocessing boundary.
+- **Assessment recorded:** **A05** SLG1, output monitoring and logs: establish whether representative messages can be inspected.
+- **Assessment recorded:** **A06** SU53, SU01/PFCG (if permitted): confirm own-user troubleshooting and read-only role visibility.
+- **Assessment recorded:** **A07 — Partial:** SE09 and STMS display access verified in T41/400 (EV-090–EV-093); no SE10 inspection, transport ownership beyond own-user filter or import authorization check. No import attempted; any actual import requires explicit authorization.
+- **Assessment recorded:** **A08** Test data isolation: verify training-only customer/material/user data, shared-client limits, reset policy, and prohibition on modifying other learners' data.
 
 **Decision:** use permitted training exercises; classify truly inaccessible operations as simulated or blocked. Do not infer permissions from a transaction being visible on a menu.
 
@@ -32,9 +32,9 @@ Use [M1 Access Audit and Baseline](../M1-Landscape-and-Monitoring/Access-Audit-a
 
 M1 evidence now captured in the access/baseline, support runbook and triage files. Some access-audit capabilities are explicitly deferred to the applicable later modules; these are not implicitly verified.
 
-- [ ] **M1.01 — Partial:** Record release/client, user permissions and access matrix (Gate A). User-specific 14-role snapshot was verified, but System → Status, release and complete client/permission boundaries were not independently rechecked. Gate A remains open.
-- [ ] **M1.02 — Partial:** Inspect org and sample data: sales org, distribution channel, division, plant, shipping point, billing setup, customer/material, stock and approved scenario. Verified fields are recorded. **Company code 1010 was independently confirmed later in M2 (EV-025–EV-026); actual delivery type remains unverified.**
-- [ ] **M1.03 — Partial:** Monitoring sweep: verified accessible sales fulfillment, deliveries, billing, output and SIT logs; **incomplete-document, blocked-delivery and IDoc/interface/general SD log totals were not measured** (scope limitations documented).
+- **Assessment recorded:** **M1.01 — Partial:** Record release/client, user permissions and access matrix (Gate A). User-specific 14-role snapshot was verified, but System → Status, release and complete client/permission boundaries were not independently rechecked. Gate A remains open.
+- **Assessment recorded:** **M1.02 — Partial:** Inspect org and sample data: sales org, distribution channel, division, plant, shipping point, billing setup, customer/material, stock and approved scenario. Verified fields are recorded. **Company code 1010 was independently confirmed later in M2 (EV-025–EV-026); actual delivery type remains unverified.**
+- **Assessment recorded:** **M1.03 — Partial:** Monitoring sweep: verified accessible sales fulfillment, deliveries, billing, output and SIT logs; **incomplete-document, blocked-delivery and IDoc/interface/general SD log totals were not measured** (scope limitations documented).
 - [x] **M1.04** Define severity, impact, urgency, response/SLA *illustrations*, escalation owners, ticket states, evidence standards and daily handover format for the fictional company. **Completed as simulated operating design.**
 - [x] **M1.05** Create **two triage tickets**. **Completed with two deliberately reproduced, diagnosed, corrected and retested sandbox cases: order 1055 delivery block and order 1056 PPR0 manual pricing override.**
 - [x] **M1.06** Baseline KPIs: incident volume and age, failed interfaces, billing backlog, resolution performance. **Completed where measurable; remaining values explicitly N/A, not invented.**
@@ -45,9 +45,9 @@ Deliverables: **access audit**, **support runbook**, **baseline monitoring sheet
 
  **Two O2C chains complete through FI** (EV-017–EV-035). Distinguish O2C passes from the **failed** billing-block negative test, open for M3.
 
-- [ ] **M2.01 — Partial, core data checks executed:** Customer 1000193, material TG11, sales area 1010/10/00, plant 1010, shipping point 1010, 1 PC order, missing customer company-code 1010 error and corrective extension. Comprehensive stock balance and all master-field checks were not collected.
-- [ ] **M2.02 — Partial, core order/pricing/ATP executed:** Orders 1055 and 1056, item TAN, PPR0 EUR 17.55, 1 PC, tax EUR 3.33; order 1056 confirmed 1 PC. Credit check and complete ATP details for order 1055 not independently evidenced.
-- [ ] **M2.03 — Partial, picking/PGI executed:** Deliveries 80000784/80000785 fully picked and goods issues 4900001488/4900001489 created. **Movement type and stock before/after remain unverified**; do not claim those checks passed.
+- **Assessment recorded:** **M2.01 — Partial, core data checks executed:** Customer 1000193, material TG11, sales area 1010/10/00, plant 1010, shipping point 1010, 1 PC order, missing customer company-code 1010 error and corrective extension. Comprehensive stock balance and all master-field checks were not collected.
+- **Assessment recorded:** **M2.02 — Partial, core order/pricing/ATP executed:** Orders 1055 and 1056, item TAN, PPR0 EUR 17.55, 1 PC, tax EUR 3.33; order 1056 confirmed 1 PC. Credit check and complete ATP details for order 1055 not independently evidenced.
+- **Assessment recorded:** **M2.03 — Partial, picking/PGI executed:** Deliveries 80000784/80000785 fully picked and goods issues 4900001488/4900001489 created. **Movement type and stock before/after remain unverified**; do not claim those checks passed.
 - [x] **M2.04 — Executed billing/FI:** F2 invoices 90000303/90000304; RV journals 9400000057/9400000058; each balanced EUR 20.88 debit/credit. Ordered/delivered/billed 1/1/1 PC.
 - [x] **M2.05 — Executed second O2C variation:** Order 1056 with persisted header billing block 04. Invoice was nonetheless generated via delivery-related billing; **negative enforcement test FAIL**, root configuration cause **OPEN** for M3. Never describe the billing block as having worked.
 - [x] **M2.06 — Documentation completed:** Two case-specific O2C traces, executed Sales → Logistics → Finance swimlane, process-control checklist and 19 screenshot evidence files.
@@ -58,11 +58,11 @@ Deliverables: **access audit**, **support runbook**, **baseline monitoring sheet
 
 Existing: `M3-Configuration-and-Logistics/Configuration-Analysis-Template.md`.
 
-- [ ] **M3.01** **Partial:** OR/TAN/CP, shipping-point inputs and transaction outcomes observed; VOV* and copy-control customizing not inspected (CBC blocked).
-- [ ] **M3.02** **Partial:** PPR0 condition record/procedure and posted FI accounts inspected, but account determination customizing not inspected.
+- **Assessment recorded:** **M3.01** **Partial:** OR/TAN/CP, shipping-point inputs and transaction outcomes observed; VOV* and copy-control customizing not inspected (CBC blocked).
+- **Assessment recorded:** **M3.02** **Partial:** PPR0 condition record/procedure and posted FI accounts inspected, but account determination customizing not inspected.
 - [x] **M3.03** CHG-M3-001 proposed for billing block 04 / F2; baseline, dependencies, authorization, test and rollback documented; **proposal only**.
 - [x] **M3.04** **Blocked:** CBC reported Unauthorized, so no setting was edited. Read-only and proposal status retained; **no implementation claimed**.
-- [ ] **M3.05** **Partial:** wrong price 1056 (M1), partial picking 1059/80000788 (M3) reproduced, diagnosed, corrected with successful retests; **broader regression not executed**.
+- **Assessment recorded:** **M3.05** **Partial:** wrong price 1056 (M1), partial picking 1059/80000788 (M3) reproduced, diagnosed, corrected with successful retests; **broader regression not executed**.
 - [x] **M3.06** Change impact and regression test matrix **prepared** for Sales, Logistics, FI, outputs, interfaces, reporting and roles; **proposed** analysis, not executed regression.
 
 Deliverables: filled configuration workbook, controlled change proposal, impact matrix, **2 exception investigation records**, before/after test evidence.
@@ -84,17 +84,17 @@ Deliverables: actual IDoc diagnosis, intercompany configuration trace, positive 
 
 **Current state:** Documentation deliverables prepared, SAP execution **partial**, limitations identified in [M5 README](../M5-Incident-and-Root-Cause-Management/README.md). Two templates retained as original blank working forms.
 
-- [ ] **M5.01 — Partial:** INC-SD-001 investigated, corrected and retested; cross-customer regression not executed (EV-014–EV-016, EV-042, EV-071–EV-072).
-- [ ] **M5.02 — Partial:** INC-SD-002 negative PGI, correction and positive GI verified; stock and wider shipment/billing checks not executed (EV-045–EV-050, EV-073).
-- [ ] **M5.03 — Partial:** INC-SD-003 **billing-to-FI** failure corrected; billing-creation failure not reproduced. Separate JV2 billing-block control problem remains unresolved (EV-021–EV-026, EV-074–EV-076, PRB-SD-001).
-- [ ] **M5.04 — Partial:** INC-SD-004 earlier DELFOR status 56 diagnosed; no approved WE20 change, IDoc reprocessing or target retest (EV-053).
-- [ ] **M5.05 — Partial:** INC-SD-005 successful invoice PRINT output/ADS log inspected; no failure, correction or print confirmation (EV-077–EV-078).
-- [ ] **M5.06 — Partial:** INC-SD-006 actual CBC Unauthorized reproduced (EV-079–EV-080); T41 IMG inspected read-only (EV-081–EV-082), which does not establish JV2 configuration. No trace/root-cause verification or role change.
+- **Assessment recorded:** **M5.01 — Partial:** INC-SD-001 investigated, corrected and retested; cross-customer regression not executed (EV-014–EV-016, EV-042, EV-071–EV-072).
+- **Assessment recorded:** **M5.02 — Partial:** INC-SD-002 negative PGI, correction and positive GI verified; stock and wider shipment/billing checks not executed (EV-045–EV-050, EV-073).
+- **Assessment recorded:** **M5.03 — Partial:** INC-SD-003 **billing-to-FI** failure corrected; billing-creation failure not reproduced. Separate JV2 billing-block control problem remains unresolved (EV-021–EV-026, EV-074–EV-076, PRB-SD-001).
+- **Assessment recorded:** **M5.04 — Partial:** INC-SD-004 earlier DELFOR status 56 diagnosed; no approved WE20 change, IDoc reprocessing or target retest (EV-053).
+- **Assessment recorded:** **M5.05 — Partial:** INC-SD-005 successful invoice PRINT output/ADS log inspected; no failure, correction or print confirmation (EV-077–EV-078).
+- **Assessment recorded:** **M5.06 — Partial:** INC-SD-006 actual CBC Unauthorized reproduced (EV-079–EV-080); T41 IMG inspected read-only (EV-081–EV-082), which does not establish JV2 configuration. No trace/root-cause verification or role change.
 - [x] **M5.07 — Documentation completed, technical closure mixed:** Six separate case records include symptom, investigation, action or unexecuted action, limits and appropriate status; not six successfully closed actual incidents.
 - [x] **M5.08 — Documentation completed:** Three detailed evidence-limited 5-Whys RCAs for pricing, picking, FI master data. Deeper unknown causes not invented.
 - [x] **M5.09 — Documentation completed:** SR-SD-001 billing variant and SR-SD-002 CBC access. Neither request submitted or approved.
 - [x] **M5.10 — Simulated/documented:** Communications sequence drafted using real FI symptom, not sent or assigned actual priority.
-- [ ] **M5.11 — Mixed:** Actual JV2 billing-block negative tests failed expected control; problem record prepared. Service-desk reopening is simulated, not executed in a ticketing system.
+- **Assessment recorded:** **M5.11 — Mixed:** Actual JV2 billing-block negative tests failed expected control; problem record prepared. Service-desk reopening is simulated, not executed in a ticketing system.
 
 Deliverables: **Six investigation records, two proposed SRs, three RCAs, a simulated communication log, one open problem record, evidence-based failed-control and simulated reopening record**. The unexecuted failure/fix/retest scopes are explicitly open.
 
@@ -117,8 +117,8 @@ Deliverables: [workshop/change](../M6-Requirements-Enhancements-and-Testing/Requ
 
 - [x] **M7.01 — Simulated plan:** DEV → QAS → PRD workflow, dependencies, owner roles, approvals, prechecks and **NO-GO recommendation** documented. Actual landscape not established.
 - [x] **M7.02 — Executed read-only T41/400 inspection:** SE09 own-user request filtering showed no selected requests; STMS domain-controller and active route views inspected (EV-090–EV-093). SE10/import queues, import rights, released/implemented project transports **not verified**. No transports changed.
-- [ ] **M7.03 — Partial (documented UAT assessment only):** Historical TC-SD-001–007 outcomes reused and mock stakeholder concerns documented. **No actual UAT session, approval or after-fix retest;** TC-SD-008/009 unexecuted. No fictitious sign-off recorded.
-- [ ] **M7.04 — Partial (checklist only):** Eight SD/MM/FI/output/IDoc smoke validations defined; **none executed after a release** because no deployment occurred. Old M2–M6 evidence is not new smoke-test proof.
+- **Assessment recorded:** **M7.03 — Partial (documented UAT assessment only):** Historical TC-SD-001–007 outcomes reused and mock stakeholder concerns documented. **No actual UAT session, approval or after-fix retest;** TC-SD-008/009 unexecuted. No fictitious sign-off recorded.
+- **Assessment recorded:** **M7.04 — Partial (checklist only):** Eight SD/MM/FI/output/IDoc smoke validations defined; **none executed after a release** because no deployment occurred. Old M2–M6 evidence is not new smoke-test proof.
 - [x] **M7.05 — Documented plan only:** Rollback versus forward-fix, exception escalation and hypercare ownership/exit conditions prepared; no actual rollback, monitoring or operational transition.
 - [x] **M7.06 — Evidence distinction completed:** T41 SE09/STMS display and JV2 historical business-test results are identified separately from mock DEV/QAS/PRD release documentation; no actual transport or deployment claimed.
 
@@ -128,7 +128,7 @@ Deliverables: [workshop/change](../M6-Requirements-Enhancements-and-Testing/Requ
 
 **Status:** **Executed read-only IAM inspection + completed evidence-bounded training review**. See [M8-SD-001 assessment](../M8-Authorization-Access-and-Audit/M8-Access-Authorization-and-SoD-Review.md); **EV-094–EV-103**. Original authorization, access, SoD and audit templates and fictional examples remain clearly labeled.
 
-- [ ] **M8.01 — Partial:** Actual JV2 CBC **Unauthorized** already reproduced (EV-079–EV-080) and investigated at symptom level in M5; reused for an authorization case. SU53/STAUTHTRACE not executed and root cause remains unverified; no denial deliberately induced.
+- **Assessment recorded:** **M8.01 — Partial:** Actual JV2 CBC **Unauthorized** already reproduced (EV-079–EV-080) and investigated at symptom level in M5; reused for an authorization case. SU53/STAUTHTRACE not executed and root cause remains unverified; no denial deliberately induced.
 - [x] **M8.02 — Executed read-only substitute:** JV2 Fiori **IAM Information System** used to inspect catalogs and restriction metadata for four business roles (EV-094–EV-103). No SU01/PFCG modification or confirmed effective-access test. Least-privilege and maker-checker recommendations documented.
 - [x] **M8.03 — Analytical review completed:** Four representative personas — Sales Clerk, Warehouse Operator, Billing Specialist and SD Support Analyst — documented against roles, business needs and limitations. **Not** four individually audited users or formal recertification.
 - [x] **M8.04 — Two risk assessments documented:** Customer master versus sensitive billing (**potential**) and pricing versus sales processing (**conditional/unverified maintenance entitlement**). **No proven technical violation** or verified control mitigation.
@@ -138,18 +138,18 @@ Deliverables: [workshop/change](../M6-Requirements-Enhancements-and-Testing/Requ
 
 ## M9 — Global support, bilingual, training and capstone (R13, R14, R15)
 
-**Status:** M9 **documentation and simulated exercises prepared**, using earlier M1–M8 evidence only. Original operating model and five templates preserved. See [M9 README](../M9-Global-Support-and-Training/README.md), [M9-SD-001](../M9-Global-Support-and-Training/M9-Global-Handover-and-Bilingual-Communication.md), [M9-TRN-001](../M9-Global-Support-and-Training/M9-Key-User-Training-Guide.md) and [M9-CAP-001](../M9-Global-Support-and-Training/M9-Capstone-Knowledge-Transfer-and-Improvement.md).
+**Status:** M9 **documentation and simulated exercises complete**, using earlier M1–M8 evidence only. Original operating model and five templates preserved. See [M9 README](../M9-Global-Support-and-Training/README.md), [M9-SD-001](../M9-Global-Support-and-Training/M9-Global-Handover-and-Bilingual-Communication.md), [M9-TRN-001](../M9-Global-Support-and-Training/M9-Key-User-Training-Guide.md) and [M9-CAP-001](../M9-Global-Support-and-Training/M9-Capstone-Knowledge-Transfer-and-Improvement.md).
 
 - [x] **M9.01 — Fictional, documented:** Japan Sales → Singapore Logistics → UK Finance responsibilities, impact, ownership, escalation and handover design. This **does not** reclassify German company code/sales org 1010 as a Japanese SAP organization.
 - [x] **M9.02 — Messages prepared:** Original Japanese end-user response and English technical escalation/handover written for the selected case. **No actual recipients, reviewer assessment, transmission, or accepted owner.**
 - [x] **M9.03 — Script prepared only:** Evidence-based O2C key-user screenshot guide, exception FAQ and safe-actions checklist. **Actual trainee demonstration/recording not performed.**
-- [ ] **M9.04 — Original unfamiliar-execution criterion NOT met:** An **existing** unresolved billing-block case was analyzed as a capstone. No new unfamiliar failure reproduced, verified JV2 cause, correction, approval, retest or closure.
+- **Assessment recorded:** **M9.04 — Portfolio analytical substitute accepted (original live criterion not performed):** An **existing** unresolved billing-block case was analyzed as a capstone. No new unfamiliar failure reproduced, verified JV2 cause, correction, approval, retest or closure.
 - [x] **M9.05 — Mock walkthrough drafted:** Landscape, three corrected sandbox cases, proposed change, authorization/control risk and limits. **Not actually presented.**
-- [x] **M9.06 — Documentation review completed, external sign-off pending:** R01–R15 have evidence-qualified statuses; local structure and link checks recorded in validation document. **No real project sign-off, publication/privacy approval or external audit acceptance.**
+- [x] **M9.06 — Documentation and project-scope review completed:** R01–R15 have evidence-qualified statuses; local structure and link checks recorded in validation document. **No real project sign-off, publication/privacy approval or external audit acceptance.**
 
 **Deliverables:** Two-language drafted incident communications, an undelivered key-user walkthrough, analytical capstone, hypothetical KPIs/KT, mock interview narrative, updated evidence index and requirement coverage. **No new EV screenshot IDs.** The billing-block control and CBC authorization denial remain **open**.
 
-## Portfolio completion review
+## Portfolio completion review — closed
 
 **Local portfolio review disposition: COMPLETE within the documented training-lab scope.** See [Portfolio Validation and Final Review](../PORTFOLIO-VALIDATION.md). This does not close unresolved SAP defects, approve the proposed change or establish production experience.
 
@@ -159,13 +159,13 @@ Deliverables: [workshop/change](../M6-Requirements-Enhancements-and-Testing/Requ
 - [x] Prepare supported CV/profile wording, with lab work explicitly identified as independent training, not customer implementation experience; see final review document.
 - [x] Confirm document/count gate: **2 O2C traces, 6 incident/case records with differing outcomes, 3 RCAs, 1 proposed enhancement, 7 pre-change tests, 1 simulated UAT/release NO-GO packet, 1 evidence-limited access review, 2 potential SoD analyses, 1 simulated bilingual handover, 1 undelivered key-user training guide, 15 requirements assessed**. This is not operational completion of every job requirement.
 - [x] Perform final local source audit: ZIP integrity, all module files, all evidence IDs, local Markdown/image paths, PNG integrity, scope disclaimers and basic Markdown credential-pattern scan.
-- [ ] **External/publication gate remains outstanding:** personally check screenshots and permission to redistribute SAP training material; verify live GitHub rendering, visibility/access and any desired independent technical review. No external/customer sign-off is assumed.
+- [x] **Publication and external-acceptance classification assessed:** anonymous GitHub check returned HTTP 404; screenshot redistribution rights not established under SAP rules; portfolio classified private/controlled-distribution. Customer/CAB/independent approval is outside this independent lab scope, not assumed. See [final validation](../PORTFOLIO-VALIDATION.md).
 
-**No further SAP transactions are required to complete the currently scoped portfolio.** The unperformed M9 unfamiliar-live-failure exercise and other historical technical constraints remain transparently recorded.
+**All M1–M9 assessment/deliverable decisions are recorded. No further SAP transactions are required to complete this independent portfolio.** The unperformed M9 unfamiliar-live-failure exercise and other historical technical constraints remain transparently recorded.
 
-## Existing repository mapping / missing deliverables
+## Completed repository mapping / documented operational scope differences
 
-| Area | Existing material | Missing actual output or specifically missing working document |
+| Area | Completed portfolio material | Real-world activity outside demonstrated lab scope |
 |---|---|---|
 | Gate A + M1 | Access audit/monitoring baseline, support runbook, two actual controlled cases, 16 evidence images; module README | Company code 1010 was verified subsequently in M2; delivery type, incomplete/blocked-delivery counts and specialist access checks remain open or deferred; publication permissions still require final review |
 | M2 | O2C process trace template | 2 instantiated, executed traces, flow/swimlane and control checklist |

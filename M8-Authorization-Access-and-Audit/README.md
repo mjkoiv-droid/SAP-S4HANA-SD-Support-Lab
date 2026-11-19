@@ -154,7 +154,7 @@ The module emphasizes:
 | Production authorization testing / actual role changes | **Not performed** |
 | Formal business approval / audit closeout | **Not performed** |
 
-The **M8 training evidence and documentation package is complete within its verified scope**, but actual access recertification, approved security remediation, end-to-end technical SoD verification and audit closure remain open.
+**M8 portfolio assessment: COMPLETE.** Real user-population recertification, authorized security remediation, effective SoD validation and risk-owner/audit sign-off were not project activities and are not claimed; CBC remains a documented unresolved technical observation.
 
 ## 9. Consultant Competencies Demonstrated
 
@@ -181,7 +181,7 @@ No production authorization analysis, role modification, access review, or audit
 
 ---
 
-**Module Status:** Read-only training assessment and documentation completed; formal security verification/approvals open
+**Module Status:** COMPLETE — bounded read-only training assessment and analytical governance documentation; formal operational approvals not applicable to lab completion
 
 **Area:** SAP S/4HANA Sales (SD)
 

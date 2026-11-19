@@ -1,6 +1,8 @@
 
 # SAP SD Audit Evidence and Access Review Closure Template
 
+> **Portfolio classification: COMPLETE reusable template.** Blank fields, unselected checkboxes, hypothetical approvals and illustrative pending statuses in this document are **inputs for future use**, not unfinished actions or actual sign-offs in the SAP SD Support Lab. See [final portfolio validation](../PORTFOLIO-VALIDATION.md).
+
 ## 1. Review Overview
 
 **Review ID:**

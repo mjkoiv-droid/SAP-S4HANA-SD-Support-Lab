@@ -51,7 +51,7 @@ Each evidence item must be traceable to a module, requirement, and completed or 
 | EV-034 | M2 | R02 / O2C-SD-002 | Scenario 2: VA03 shows header billing block still present after invoicing | Executed — SAP screenshot | [View image](../M2-Order-to-Cash/evidence/m2-sc2-header-block-retained.png) |
 | EV-035 | M2 | R02 / O2C-SD-002 | Scenario 2: block 04 persists; fully delivered, GI complete, fully invoiced | Executed — SAP screenshot | [View image](../M2-Order-to-Cash/evidence/m2-sc2-final-status-with-block.png) |
 
-**Evidence limitations:** For EV-017–EV-035, evidence images are captured SAP sandbox screens; original user-facing save confirmations remain in the workshop conversation, not all in screenshots. FI creator user IDs are masked in the two ledger images. The material-document movement type and stock before/after balances are not shown. The negative billing-block test failed and is not a passed control.  Some aggregate monitor counts were supplied as contemporaneous SAP UI readouts rather than preserved screenshot counts. Do not characterize them as screenshot-verified. The cropped IAM screenshot omits user identity. Review all images for publication rights and other sensitive data before making the repo public.
+**Evidence limitations:** For EV-017–EV-035, evidence images are captured SAP sandbox screens; original user-facing save confirmations remain in the workshop conversation, not all in screenshots. FI creator user IDs are masked in the two ledger images. The material-document movement type and stock before/after balances are not shown. The negative billing-block test failed and is not a passed control.  Some aggregate monitor counts were supplied as contemporaneous SAP UI readouts rather than preserved screenshot counts. Do not characterize them as screenshot-verified. The cropped IAM screenshot omits user identity. Final publication assessment classifies the full evidence repository as **private/controlled-distribution**; no blanket public screenshot permission is claimed (see [portfolio validation](../PORTFOLIO-VALIDATION.md)).
 
 | EV-036 | M3 | R07 | Delivery 80000785 financial processing shows billing block blank and fully invoiced | Executed — SAP screenshot | [View image](../M3-Configuration-and-Logistics/evidence/m3-order1056-delivery-no-billing-block.png) |
 | EV-037 | M3 | R07 | Sales order 1056 item 10 billing document tab shows billing block blank | Executed — SAP screenshot | [View image](../M3-Configuration-and-Logistics/evidence/m3-order1056-item-no-billing-block.png) |
@@ -210,6 +210,6 @@ Each recorded screenshot is linked from this register; related module documents 
 
 ## Confidentiality
 
-Only anonymized and publication-permitted SAP training evidence should be stored in this repository.
+The finished evidence inventory is for **private/controlled distribution**; no unrestricted SAP screenshot redistribution license is asserted. See [final validation](../PORTFOLIO-VALIDATION.md).
 
 Passwords, credentials, personal data, and confidential system information must not be included.

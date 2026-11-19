@@ -1,6 +1,8 @@
 
 # SAP SD Knowledge Transfer and Support Transition Template
 
+> **Portfolio classification: COMPLETE reusable template.** Blank fields, unselected checkboxes, hypothetical approvals and illustrative pending statuses in this document are **inputs for future use**, not unfinished actions or actual sign-offs in the SAP SD Support Lab. See [final portfolio validation](../PORTFOLIO-VALIDATION.md).
+
 ## 1. Purpose
 
 This document provides a structured framework for transferring SAP S/4HANA Sales (SD) process knowledge, system knowledge, and operational support responsibilities from an implementation or project team to a permanent application support organization.

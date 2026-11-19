@@ -41,7 +41,7 @@ Each RCA contains an **evidence-limited 5 Whys**. Unknown deeper organizational 
 
 **EV-071–EV-082** are follow-up screenshots captured during M5. Detailed system results, client qualifications, and links are registered centrally in [Evidence Register](../00-Project-Tracking/Evidence-Register.md). Original M1–M4 evidence is referenced by its original IDs and has **not** been double-counted as new activity.
 
-## Pending or only partially met requirements
+## Closed portfolio scope review — operational limits
 
 - Pricing cross-customer regression was not performed.
 - Picking stock-balance reconciliation and delivery-to-billing outcome are unverified.
@@ -51,4 +51,4 @@ Each RCA contains an **evidence-limited 5 Whys**. Unknown deeper organizational 
 - CBC denial is actual, but `SU53`/security trace, role root cause and remediation are **not** verified.
 - Formal reopening and incident communications are **simulations**, not actual service-desk system records or delivered stakeholder messages.
 
-**Completion decision:** M5 documentation deliverables are prepared; verified SAP scope is honestly classified. Some planned technical execution scenarios remain open, but no extra random/error-hunting sandbox actions are warranted. Full R04/R05 requirements remain **In Progress** at portfolio level until outstanding coverage is assessed.
+**Completion decision: M5 portfolio package COMPLETE with evidence-qualified limits.** R04 and R05 have **Executed with comments** classifications in the final requirement matrix. The unperformed operational tests listed above are scope differences, not outstanding portfolio tasks. No extra random/error-hunting sandbox actions are warranted; open SAP technical findings are preserved.

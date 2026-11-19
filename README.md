@@ -7,11 +7,11 @@ This repository presents an independent SAP S/4HANA Sales (SD) professional deve
 
 The portfolio combines SAP functional knowledge with an international industrial business perspective.
 
-It is organized into nine modules and distinguishes **verified SAP sandbox execution**, **training-only simulation**, and **documentation/templates**. Module 1 contains actual SAP system-monitoring results and two controlled, resolved training cases. Its wider access audit retains explicitly documented gaps. Module 2 contains two executed O2C traces verified through FI posting; Module 3 contains read-only configuration observations, reproduced pricing/picking exceptions, and a proposed change with access-blocked configuration review. Module 4 contains executed inspections and documented recovery methodology; Module 5 now contains six evidence-qualified investigations, three RCAs and support-operation records, with partial technical execution; Module 6 contains a documented requirements/change/test package with two new negative billing-control tests (EV-083–EV-089), while the proposed fix remains unimplemented; Module 7 contains a new T41 read-only SE09/STMS inspection (EV-090–EV-093) and a **simulated NO-GO release/UAT/hypercare assessment** without actual UAT, change, transport, deployment or post-release testing; Module 8 includes a verified, read-only JV2 IAM role/restriction inspection (EV-094–EV-103), a four-persona training access review and two qualified potential SoD analyses; security approvals, effective-access tests and audit closure are not claimed. Module 9 now adds a **simulated bilingual global handover**, an **undelivered screenshot-based training guide**, and an **analytical capstone/KT/KPI walkthrough** built from M1–M8 evidence. No M9 SAP execution or real global-support/training delivery is claimed; the unfamiliar live-failure exercise remains unexecuted.
+**Portfolio status: COMPLETE — M1–M9.** All nine independent training-lab module packages, the 103-item evidence index, 15 requirement-coverage assessments and the final scope review are finished. This statement describes **completed portfolio deliverables**, not nine real customer projects or universal successful SAP execution.
 
-**SAP evidence overview:** M1 includes 16 genuine SAP screenshots, monitoring observations and two deliberately reproduced/corrected support cases (orders `1055` and `1056`). This is **not a production client engagement**. M1 access audit is partial; M2 contains two O2C chains through FI, with a failed billing-block negative test; M3 contains verified picking correction, additional logistics observations and a proposed change without claiming configuration access. M4 documents actual IDoc error diagnosis, intercompany invoice-interface configuration, completed sales-order output and a nonexecuted recovery procedure. M5 reuses verified earlier evidence plus twelve new screenshot observations, records three resolved training defects, diagnosed but unresolved IDoc/CBC cases, successful invoice output (not an error), and a documented-only communication/reopening workflow. M6 retains the unresolved billing-control problem. M7 adds four read-only transport-management screenshots and a mock NO-GO decision, without implying any deployed correction. M8 adds filtered business-role catalog and Sales Organization restriction evidence, while reusing the unresolved CBC access denial from M5; no role changes, SoD violation proof, or formal audit certification. M9 reuses the existing EV-001–EV-103 evidence only; the new communications, key-user guide and capstone are documentation/simulations, **not new executed SAP evidence**. See module READMEs for exact evidence and limitations.
+**Execution basis:** Real sandbox work includes two O2C chains through FI, controlled pricing/picking/master-data corrections, and read-only interface, transport and IAM inspections. Work that could not appropriately be performed as an actual business activity—release, customer UAT, formal access recertification, actual global support, end-user training and KT—is completed as documented **simulation or analysis**. The billing-block observation and CBC denial are deliberately retained as unresolved *technical findings*, not as unfinished portfolio documents.
 
-**Publication:** The local M1–M9 documentation/evidence audit is complete. Keep the repository **private until the owner confirms** training-system screenshot sharing permissions, privacy/redaction suitability and live GitHub rendering/visibility. A downloaded ZIP cannot establish these settings.
+**Distribution classification:** **Complete, private/controlled-distribution portfolio.** An unauthenticated GitHub URL check returned HTTP 404, so public accessibility or live GitHub rendering is not claimed. Redistribution rights for the full SAP screenshot collection cannot be established from the ZIP and relevant SAP copyright guidelines; the final review records a restricted distribution outcome instead of an open checklist. [Read the final validation and exceptions](PORTFOLIO-VALIDATION.md).
 
 ## Start Here — Evidence Highlights
 
@@ -25,7 +25,7 @@ For a quick assessment, begin with these **training-sandbox results**. These are
 | Read-only interface, transport and IAM investigations | Actual diagnostic inspections, with no claim of successful IDoc recovery, deployment, effective-access certification or SoD violation | [M4](M4-IDocs-Interfaces-and-Output/README.md) · [M7](M7-UAT-Release-and-Hypercare/README.md) · [M8](M8-Authorization-Access-and-Audit/README.md) |
 | Professional support deliverables | Change/test/release documents and bilingual support/training materials; the release, global handover and training exercises are simulated | [M6](M6-Requirements-Enhancements-and-Testing/README.md) · [M9](M9-Global-Support-and-Training/README.md) |
 
-**Final source-based review:** [Portfolio Validation and Final Review](PORTFOLIO-VALIDATION.md). The local deliverable set is complete. **Actual customer approvals and publication clearance are not claimed.**
+**Final assessment:** [Portfolio Validation and Final Review](PORTFOLIO-VALIDATION.md) — **complete as an independent, controlled-distribution training portfolio**. External business sign-off and public redistribution were not project acceptance criteria and are not claimed.
 
 ## 1. Portfolio Objectives
 
@@ -61,6 +61,8 @@ The focus is on the relationship between SAP system functionality and real busin
 | M9 | Global Support and Training | [Open Module 9](M9-Global-Support-and-Training/README.md) |
 
 Each module contains its own README and supporting documentation.
+
+**Reusable templates:** Unselected checkboxes and illustrative “pending approval” placeholders inside the original templates are deliberately blank design fields, **not** an unfinished project backlog. The completed working deliverables and their scope classifications are identified in the module READMEs and [final validation](PORTFOLIO-VALIDATION.md).
 
 ## 3. Module Summaries
 
@@ -118,7 +120,7 @@ Focus areas:
 
 ### M5 — Incident Management and Root Cause Analysis
 
-**Current status:** Documentation prepared with evidence-qualified partial SAP execution. Six investigation files, three detailed RCAs, two proposed service requests, one open problem record, communications and reopening workflow are linked from the [M5 README](M5-Incident-and-Root-Cause-Management/README.md). Not all original negative/fix/retest exercises were executable; do not present these as six resolved incidents.
+**Status:** M5 portfolio deliverables complete with evidence-qualified SAP execution and documented exceptions. Six investigation files, three detailed RCAs, two proposed service requests, one open problem record, communications and reopening workflow are linked from the [M5 README](M5-Incident-and-Root-Cause-Management/README.md). Not all original negative/fix/retest exercises were executable; do not present these as six resolved incidents.
 
 Focus areas:
 
@@ -132,7 +134,7 @@ Focus areas:
 
 ### M6 — Requirements, Enhancements and Testing
 
-**Status:** Documentary deliverables prepared; actual JV2 control tests TC-SD-004/005 executed (failed expected hold) and relevant earlier test cases reused. No approved configuration change, post-change regression or actual UAT. [See M6 evidence and deliverables](M6-Requirements-Enhancements-and-Testing/README.md).
+**Status:** M6 lab deliverables complete; actual JV2 control tests TC-SD-004/005 executed (failed expected hold) and relevant earlier test cases reused. No approved configuration change, post-change regression or actual UAT. [See M6 evidence and deliverables](M6-Requirements-Enhancements-and-Testing/README.md).
 
 Focus areas:
 
@@ -173,7 +175,7 @@ Focus areas:
 
 ### M9 — Global Support and Training
 
-**Status:** [M9 evidence-bounded documentation package](M9-Global-Support-and-Training/README.md) prepared. Includes a [fictional Japanese/English handover](M9-Global-Support-and-Training/M9-Global-Handover-and-Bilingual-Communication.md), [undelivered key-user training guide](M9-Global-Support-and-Training/M9-Key-User-Training-Guide.md) and [existing-case analytical capstone / KT / hypothetical KPIs](M9-Global-Support-and-Training/M9-Capstone-Knowledge-Transfer-and-Improvement.md). **No new SAP work, real course, actual handover or newly resolved unfamiliar failure.**
+**Status:** [M9 evidence-bounded documentation package](M9-Global-Support-and-Training/README.md) completed as documented training simulation. Includes a [fictional Japanese/English handover](M9-Global-Support-and-Training/M9-Global-Handover-and-Bilingual-Communication.md), [undelivered key-user training guide](M9-Global-Support-and-Training/M9-Key-User-Training-Guide.md) and [existing-case analytical capstone / KT / hypothetical KPIs](M9-Global-Support-and-Training/M9-Capstone-Knowledge-Transfer-and-Improvement.md). **No new SAP work, real course, actual handover or newly resolved unfamiliar failure.**
 
 Focus areas:
 
@@ -337,9 +339,9 @@ Preparing a functional template does not mean that the corresponding customer pr
 
 ## 9. Portfolio Quality and Validation
 
-The repository includes a central documentation validation checklist.
+The repository includes the completed final validation and scope-closure assessment.
 
-[Portfolio Validation Checklist](PORTFOLIO-VALIDATION.md)
+[Completed Portfolio Validation and Scope Closure](PORTFOLIO-VALIDATION.md)
 
 The checklist covers:
 
@@ -352,7 +354,7 @@ The checklist covers:
 - Confidentiality
 - Professional presentation
 
-The presence of the checklist does not mean that all validation activities have been completed.
+The final review records both tests actually completed and the outcome of matters that cannot be asserted (live public GitHub access, rights to distribute screenshots, customer approval). The independent portfolio is finished under the restricted distribution classification stated there.
 
 ## 10. Intended Audience
 

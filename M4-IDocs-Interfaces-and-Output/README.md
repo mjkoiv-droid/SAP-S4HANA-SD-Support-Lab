@@ -29,4 +29,4 @@
 
 This module demonstrates actual monitoring, diagnosis, cross-module settings and output verification. It does **not** establish a successful `INVOIC` posting, a tested partner-profile repair or an end-to-end failed → fixed → reprocessed IDoc. Those outcomes remain unverified.
 
-Supporting screenshots are SAP training-system records. Publication requires a separate confidentiality and screenshot review.
+Supporting screenshots are SAP training-system records. Final confidentiality/permission assessment results in **private/controlled distribution**, not unrestricted publication ([final validation](../PORTFOLIO-VALIDATION.md)).

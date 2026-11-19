@@ -14,7 +14,7 @@
 
 - [Access Audit and Baseline Monitoring](Access-Audit-and-Baseline.md) — genuine system observations, scope, KPIs, explicit access limitations.
 - [Support Runbook and Triage](Support-Runbook-and-Triage.md) — fictional support operating model and two executed, controlled training incidents.
-- [Evidence screenshots](evidence/) — selected anonymized/cropped evidence; validate publication permissions before any public release.
+- [Evidence screenshots](evidence/) — selected anonymized/cropped evidence; final full-evidence distribution is classified private/controlled; see [final validation](../PORTFOLIO-VALIDATION.md).
 - [Project Execution Backlog](../00-Project-Tracking/Execution-Backlog.md) — lab requirement mapping, updated execution statuses and outstanding verification gaps.
 
 ## Outstanding M1 audit limitations (do not mark fully verified)

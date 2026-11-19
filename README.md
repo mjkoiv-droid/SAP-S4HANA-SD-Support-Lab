@@ -2,7 +2,7 @@
 
 **SAP Sales (SD) Functional Consulting & Application Support | Independent hands-on portfolio**
 
-## Executive Summary
+# Executive Summary
 
 An independent, nine-module SAP SD application support portfolio combining actual training-system execution, incident diagnosis, testing and functional documentation.
 
@@ -39,7 +39,7 @@ An independent, nine-module SAP SD application support portfolio combining actua
 
 ---
 
-## Portfolio Documentation
+# Portfolio Documentation
 
 ### 1. Portfolio Objectives
 

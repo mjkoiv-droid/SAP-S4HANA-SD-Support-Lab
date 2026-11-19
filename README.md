@@ -4,7 +4,7 @@
 
 ## Executive Summary
 
-An independent, nine-module SAP SD application support portfolio combining actual training-system execution, incident diagnosis, testing and functional documentation—grounded in **30+ years of international industrial business experience**.
+An independent, nine-module SAP SD application support portfolio combining actual training-system execution, incident diagnosis, testing and functional documentation.
 
 **Selected results**
 - **Two executed O2C chains** from sales order through delivery, picking, PGI, billing and FI posting.
@@ -39,7 +39,9 @@ An independent, nine-module SAP SD application support portfolio combining actua
 
 ---
 
-## 1. Portfolio Objectives
+## Portfolio Documentation
+
+### 1. Portfolio Objectives
 
 This repository aims to demonstrate:
 
@@ -58,7 +60,7 @@ This repository aims to demonstrate:
 
 The focus is on the relationship between SAP system functionality and real business operations.
 
-## 2. Portfolio Navigation
+### 2. Portfolio Navigation
 
 | Module | Topic | Documentation |
 |---|---|---|
@@ -76,9 +78,9 @@ Each module contains its own README and supporting documentation.
 
 **Reusable templates:** Unselected checkboxes and illustrative “pending approval” placeholders inside the original templates are deliberately blank design fields, **not** an unfinished project backlog. The completed working deliverables and their scope classifications are identified in the module READMEs and [final validation](PORTFOLIO-VALIDATION.md).
 
-## 3. Module Summaries
+### 3. Module Summaries
 
-### M1 — System Landscape and Support Monitoring
+#### M1 — System Landscape and Support Monitoring
 
 **Status:** Verified monitoring observations and two controlled, corrected SAP cases. The access audit is partial, and the global support runbook is simulated. [View results and evidence](M1-Landscape-and-Monitoring/README.md).
 
@@ -90,7 +92,7 @@ Focus areas:
 - Operational checks
 - Support investigation methodology
 
-### M2 — Order-to-Cash Processing
+#### M2 — Order-to-Cash Processing
 
 **Status:** Two executed training-sandbox O2C chains through FI; billing block 04 negative test failed and is an open M3 issue. [View M2 traces and evidence](M2-Order-to-Cash/README.md).
 
@@ -104,7 +106,7 @@ Focus areas:
 - Billing
 - SAP SD integration with FI and MM
 
-### M3 — SD Configuration and Logistics Exceptions
+#### M3 — SD Configuration and Logistics Exceptions
 
 **Status:** Read-only observations and controlled actual tests recorded (EV-036–EV-052). CBC access denied; configuration change not implemented. [View M3 results and limitations](M3-Configuration-and-Logistics/README.md).
 
@@ -117,7 +119,7 @@ Focus areas:
 - Billing configuration
 - Logistics exception analysis
 
-### M4 — IDocs, Interfaces, Application Logs and Output
+#### M4 — IDocs, Interfaces, Application Logs and Output
 
 **Status:** Verified IDoc error diagnosis, `INVOIC` intercompany integration configuration and two completed order-confirmation outputs. Recovery/reprocessing was **not** executed. [View M4 results and evidence](M4-IDocs-Interfaces-and-Output/README.md).
 
@@ -130,7 +132,7 @@ Focus areas:
 - Technical and functional coordination
 - Integration error investigation
 
-### M5 — Incident Management and Root Cause Analysis
+#### M5 — Incident Management and Root Cause Analysis
 
 **Status:** M5 portfolio deliverables complete with evidence-qualified SAP execution and documented exceptions. Six investigation files, three detailed RCAs, two proposed service requests, one open problem record, communications and reopening workflow are linked from the [M5 README](M5-Incident-and-Root-Cause-Management/README.md). Not all original negative/fix/retest exercises were executable; do not present these as six resolved incidents.
 
@@ -144,7 +146,7 @@ Focus areas:
 - Corrective action documentation
 - Incident closure
 
-### M6 — Requirements, Enhancements and Testing
+#### M6 — Requirements, Enhancements and Testing
 
 **Status:** M6 lab deliverables complete; actual JV2 control tests TC-SD-004/005 executed (failed expected hold) and relevant earlier test cases reused. No approved configuration change, post-change regression or actual UAT. [See M6 evidence and deliverables](M6-Requirements-Enhancements-and-Testing/README.md).
 
@@ -157,7 +159,7 @@ Focus areas:
 - Functional validation
 - Business and technical coordination
 
-### M7 — UAT, Release Management and Hypercare
+#### M7 — UAT, Release Management and Hypercare
 
 **Status:** [REL-SD-001 NO-GO readiness assessment](M7-UAT-Release-and-Hypercare/Release-Readiness-REL-SD-001.md) documented; T41/400 SE09/STMS inspected read-only (EV-090–EV-093). Historical M6 tests reused strictly as pre-change baselines; no real UAT, actual release, import, post-deployment smoke testing, operational hypercare or approval. [See M7 scope and screenshots](M7-UAT-Release-and-Hypercare/README.md).
 
@@ -171,7 +173,7 @@ Focus areas:
 - Hypercare support
 - Release closure
 
-### M8 — Authorization, Access and Audit
+#### M8 — Authorization, Access and Audit
 
 **Status:** [Evidence-based M8 training review](M8-Authorization-Access-and-Audit/M8-Access-Authorization-and-SoD-Review.md) with JV2/100 read-only IAM observations (EV-094–EV-103), four analytical personas, and two potential SoD risks. Existing CBC Unauthorized incident remains open. No effective-access/SoD violation confirmation, approved change or audit sign-off.
 
@@ -185,7 +187,7 @@ Focus areas:
 - Audit evidence
 - Access review closure
 
-### M9 — Global Support and Training
+#### M9 — Global Support and Training
 
 **Status:** [M9 evidence-bounded documentation package](M9-Global-Support-and-Training/README.md) completed as documented training simulation. Includes a [fictional Japanese/English handover](M9-Global-Support-and-Training/M9-Global-Handover-and-Bilingual-Communication.md), [undelivered key-user training guide](M9-Global-Support-and-Training/M9-Key-User-Training-Guide.md) and [existing-case analytical capstone / KT / hypothetical KPIs](M9-Global-Support-and-Training/M9-Capstone-Knowledge-Transfer-and-Improvement.md). **No new SAP work, real course, actual handover or newly resolved unfamiliar failure.**
 
@@ -199,9 +201,9 @@ Focus areas:
 - Service performance KPIs
 - Continuous improvement
 
-## 4. SAP Functional Coverage
+### 4. SAP Functional Coverage
 
-### SAP S/4HANA Sales (SD)
+#### SAP S/4HANA Sales (SD)
 
 Primary functional focus:
 
@@ -216,7 +218,7 @@ Primary functional focus:
 - Functional configuration
 - Application support
 
-### Cross-Module Integration
+#### Cross-Module Integration
 
 The portfolio also addresses dependencies involving:
 
@@ -227,11 +229,11 @@ The portfolio also addresses dependencies involving:
 - SAP Security — Authorizations and access controls
 - SAP Technical and Integration teams
 
-## 5. Consulting Methodology
+### 5. Consulting Methodology
 
 The portfolio emphasizes a structured functional consulting approach.
 
-### Step 1 — Understand the Business Process
+#### Step 1 — Understand the Business Process
 
 Identify:
 
@@ -241,7 +243,7 @@ Identify:
 - Relevant SAP transactions
 - Cross-functional dependencies
 
-### Step 2 — Analyze the System
+#### Step 2 — Analyze the System
 
 Examine relevant:
 
@@ -252,7 +254,7 @@ Examine relevant:
 - System messages
 - Integration dependencies
 
-### Step 3 — Identify the Problem or Requirement
+#### Step 3 — Identify the Problem or Requirement
 
 Separate:
 
@@ -263,7 +265,7 @@ Separate:
 - Technical defects
 - Integration failures
 
-### Step 4 — Develop a Solution
+#### Step 4 — Develop a Solution
 
 Prepare:
 
@@ -273,7 +275,7 @@ Prepare:
 - Functional specifications where necessary
 - Test and validation plans
 
-### Step 5 — Validate and Document
+#### Step 5 — Validate and Document
 
 Confirm:
 
@@ -283,7 +285,7 @@ Confirm:
 - Evidence is recorded
 - Appropriate business approval is obtained
 
-## 6. Professional Background
+### 6. Professional Background
 
 The portfolio owner is an SAP-certified professional with more than 30 years of experience in international industrial business, including industrial sales, project sales, key account management, and business management.
 
@@ -291,14 +293,14 @@ The professional background provides practical familiarity with complex business
 
 This experience forms the business-process perspective behind the SAP SD portfolio.
 
-### SAP Certifications
+#### SAP Certifications
 
 - SAP S/4HANA Cloud Private Edition — Sales (C_TS462)
 - SAP S/4HANA Cloud Private Edition — Financial Accounting (C_TS4FI)
 - SAP Business AI Platform — Solution Architect (C_BAIPA)
 - SAP Joule Studio Developer (C_JSD)
 
-### Professional Focus
+#### Professional Focus
 
 Independent SAP S/4HANA consulting and contracting opportunities, particularly in:
 
@@ -309,7 +311,7 @@ Independent SAP S/4HANA consulting and contracting opportunities, particularly i
 - Order-to-cash process improvement
 - International manufacturing environments
 
-## 7. Portfolio Documentation Standards
+### 7. Portfolio Documentation Standards
 
 The repository uses Markdown documentation for readability and maintainability.
 
@@ -327,29 +329,29 @@ Documents may include:
 
 Each module provides supporting material relevant to its functional area.
 
-## 8. Evidence and Experience Transparency
+### 8. Evidence and Experience Transparency
 
 This portfolio distinguishes between different types of work.
 
-### Documented Methodology
+#### Documented Methodology
 
 Structured procedures, templates, and frameworks prepared through independent professional study.
 
-### Simulated Business Scenarios
+#### Simulated Business Scenarios
 
 Fictional examples designed to demonstrate SAP SD problem-solving and business process understanding.
 
-### SAP System Exercises
+#### SAP System Exercises
 
 Activities performed in SAP training or sandbox environments, where separately documented and supported by evidence.
 
-### Professional Customer Experience
+#### Professional Customer Experience
 
 Actual customer implementation or production support work must be identified separately and must not be inferred from simulated portfolio materials.
 
 Preparing a functional template does not mean that the corresponding customer project activity has been performed.
 
-## 9. Portfolio Quality and Validation
+### 9. Portfolio Quality and Validation
 
 The repository includes the completed final validation and scope-closure assessment.
 
@@ -368,7 +370,7 @@ The checklist covers:
 
 The final review records the documented execution scope, author self-review and evidence boundaries. This is a public-facing independent portfolio; SAP screenshot use remains subject to applicable intellectual-property conditions.
 
-## 10. Intended Audience
+### 10. Intended Audience
 
 This repository is intended for:
 
@@ -381,7 +383,7 @@ This repository is intended for:
 
 The goal is to provide a transparent, structured demonstration of SAP functional knowledge and business-oriented consulting methodology.
 
-## 11. Portfolio Disclaimer
+### 11. Portfolio Disclaimer
 
 This is an independent SAP S/4HANA SD training and professional development portfolio.
 

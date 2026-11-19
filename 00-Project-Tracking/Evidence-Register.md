@@ -2,7 +2,7 @@
 # SAP SD Lab - Evidence Register
 
 **Project:** SAP S/4HANA SD Application Support Lab  
-**Status:** In progress
+**Status:** Complete — M1–M9 evidence inventory finalized within the verified training-lab scope; EV-001–EV-103. No new SAP evidence from M9.
 
 ## Purpose
 
@@ -204,9 +204,9 @@ Each evidence item should record:
 
 ## Evidence Storage
 
-Supporting files will be stored within their respective module folders.
+Supporting evidence files are stored within their respective module folders.
 
-Every evidence file should be referenced from this register and the relevant module documentation.
+Each recorded screenshot is linked from this register; related module documents link to the relevant evidence as appropriate.
 
 ## Confidentiality
 

@@ -151,12 +151,17 @@ Deliverables: [workshop/change](../M6-Requirements-Enhancements-and-Testing/Requ
 
 ## Portfolio completion review
 
-- [ ] Verify acceptance conditions for the incident, change and audit case set.
-- [ ] Check incident, functional specification and test-case completeness and evidence quality.
-- [x] Prepare interview scenarios with defensible case-specific answers — M9-CAP-001 script; not presented.
-- [ ] Draft CV/profile language only after verifying completed exercises; do not claim commercial production experience based on lab work.
-- [x] Check **documentation/count** gate: **2 O2C traces, 6 incident/case records (with differing results), 3 RCAs, 1 proposed enhancement, at least 6 historical pre-change tests, 1 simulated UAT/release packet, 1 evidence-limited access review, 2 potential SoD analyses, 1 simulated bilingual handover, 1 undelivered training guide, all 15 requirements assessed**. **This is not proof of all requirements operationally met.**
-- [ ] Execute `PORTFOLIO-VALIDATION.md` checklist, inspect all relative links and screenshots, anonymize, verify privacy settings before any public release.
+**Local portfolio review disposition: COMPLETE within the documented training-lab scope.** See [Portfolio Validation and Final Review](../PORTFOLIO-VALIDATION.md). This does not close unresolved SAP defects, approve the proposed change or establish production experience.
+
+- [x] Review case acceptance conditions and classify outcomes: three training-case corrections evidenced; billing-block and CBC matters open; no customer/change/security sign-off.
+- [x] Review incident documentation, proposed functional specification, test/defect register and evidence limitations. Seven heterogeneous pre-change tests are not post-change regression passes.
+- [x] Prepare case-specific interview walkthrough and a defensible SAP-execution-versus-simulation explanation (M9-CAP-001; not presented to a real interviewer).
+- [x] Prepare supported CV/profile wording, with lab work explicitly identified as independent training, not customer implementation experience; see final review document.
+- [x] Confirm document/count gate: **2 O2C traces, 6 incident/case records with differing outcomes, 3 RCAs, 1 proposed enhancement, 7 pre-change tests, 1 simulated UAT/release NO-GO packet, 1 evidence-limited access review, 2 potential SoD analyses, 1 simulated bilingual handover, 1 undelivered key-user training guide, 15 requirements assessed**. This is not operational completion of every job requirement.
+- [x] Perform final local source audit: ZIP integrity, all module files, all evidence IDs, local Markdown/image paths, PNG integrity, scope disclaimers and basic Markdown credential-pattern scan.
+- [ ] **External/publication gate remains outstanding:** personally check screenshots and permission to redistribute SAP training material; verify live GitHub rendering, visibility/access and any desired independent technical review. No external/customer sign-off is assumed.
+
+**No further SAP transactions are required to complete the currently scoped portfolio.** The unperformed M9 unfamiliar-live-failure exercise and other historical technical constraints remain transparently recorded.
 
 ## Existing repository mapping / missing deliverables
 

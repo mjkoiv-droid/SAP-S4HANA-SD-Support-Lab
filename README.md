@@ -11,7 +11,21 @@ It is organized into nine modules and distinguishes **verified SAP sandbox execu
 
 **SAP evidence overview:** M1 includes 16 genuine SAP screenshots, monitoring observations and two deliberately reproduced/corrected support cases (orders `1055` and `1056`). This is **not a production client engagement**. M1 access audit is partial; M2 contains two O2C chains through FI, with a failed billing-block negative test; M3 contains verified picking correction, additional logistics observations and a proposed change without claiming configuration access. M4 documents actual IDoc error diagnosis, intercompany invoice-interface configuration, completed sales-order output and a nonexecuted recovery procedure. M5 reuses verified earlier evidence plus twelve new screenshot observations, records three resolved training defects, diagnosed but unresolved IDoc/CBC cases, successful invoice output (not an error), and a documented-only communication/reopening workflow. M6 retains the unresolved billing-control problem. M7 adds four read-only transport-management screenshots and a mock NO-GO decision, without implying any deployed correction. M8 adds filtered business-role catalog and Sales Organization restriction evidence, while reusing the unresolved CBC access denial from M5; no role changes, SoD violation proof, or formal audit certification. M9 reuses the existing EV-001–EV-103 evidence only; the new communications, key-user guide and capstone are documentation/simulations, **not new executed SAP evidence**. See module READMEs for exact evidence and limitations.
 
-**Publication:** Keep this repository **private** while executing and validating M1–M9. A downloaded ZIP cannot establish GitHub visibility settings.
+**Publication:** The local M1–M9 documentation/evidence audit is complete. Keep the repository **private until the owner confirms** training-system screenshot sharing permissions, privacy/redaction suitability and live GitHub rendering/visibility. A downloaded ZIP cannot establish these settings.
+
+## Start Here — Evidence Highlights
+
+For a quick assessment, begin with these **training-sandbox results**. These are not customer production engagement claims.
+
+| Demonstration | What was verified or prepared | Start with |
+|---|---|---|
+| Two order-to-cash chains | Sales order, picking, PGI, invoice and FI posting, with explicit boundary on payment clearing | [M2 trace 01](M2-Order-to-Cash/O2C-Scenario-01-Standard-and-FI-Correction.md) · [M2 trace 02](M2-Order-to-Cash/O2C-Scenario-02-Billing-Block-Exception.md) |
+| Three corrected training incidents | Pricing override, incomplete picking / PGI rejection and missing customer company-code data for FI transfer | [M5 incident overview](M5-Incident-and-Root-Cause-Management/README.md) |
+| Open billing-control investigation | Four pre-change negative scenarios did not enforce the *proposed* hold; actual JV2 cause and intended business rule remain unconfirmed | [M6 test and defect register](M6-Requirements-Enhancements-and-Testing/Test-Execution-and-Defect-Register.md) |
+| Read-only interface, transport and IAM investigations | Actual diagnostic inspections, with no claim of successful IDoc recovery, deployment, effective-access certification or SoD violation | [M4](M4-IDocs-Interfaces-and-Output/README.md) · [M7](M7-UAT-Release-and-Hypercare/README.md) · [M8](M8-Authorization-Access-and-Audit/README.md) |
+| Professional support deliverables | Change/test/release documents and bilingual support/training materials; the release, global handover and training exercises are simulated | [M6](M6-Requirements-Enhancements-and-Testing/README.md) · [M9](M9-Global-Support-and-Training/README.md) |
+
+**Final source-based review:** [Portfolio Validation and Final Review](PORTFOLIO-VALIDATION.md). The local deliverable set is complete. **Actual customer approvals and publication clearance are not claimed.**
 
 ## 1. Portfolio Objectives
 

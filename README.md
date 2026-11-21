@@ -24,14 +24,14 @@ An independent, nine-module SAP SD application support portfolio combining actua
 
 ### SAP SD Application Support — competency mapping
 
-| Typical responsibility | Demonstrated in this portfolio |
-|---|---|
-| O2C and SD–FI support | Executed sales/delivery/billing/FI chains |
-| Incident investigation and RCA | Three confirmed training-case corrections and retests |
-| Pricing, logistics and master-data troubleshooting | Corrected pricing, PGI and FI data issues |
-| Interface and output monitoring | Read-only IDoc diagnosis; output-status checks |
-| Functional testing and change analysis | Negative tests, defect register, proposed specification |
-| Global support, release and training methods | Bilingual support materials; simulated release assessment |
+| Typical responsibility | Skills | Demonstrated in this portfolio |
+|---|---|---|
+| O2C and SD–FI support | Sales order processing; delivery and PGI; billing; SD–FI integration | Executed sales/delivery/billing/FI chains |
+| Incident investigation and RCA | Incident diagnosis; root cause analysis; corrective testing | Three confirmed training-case corrections and retests |
+| Pricing, logistics and master-data troubleshooting | Pricing conditions; picking/PGI; customer master data | Corrected pricing, PGI and FI data issues |
+| Interface and output monitoring | IDoc status analysis; partner-profile diagnosis; output monitoring | Read-only IDoc diagnosis; output-status checks |
+| Functional testing and change analysis | Test-case design; negative testing; defect analysis; functional specifications | Negative tests, defect register, proposed specification |
+| Global support, release and training methods | Bilingual support communication; knowledge transfer; release-readiness assessment | Bilingual support materials; simulated release assessment |
 
 **Scope:** All cases distinguish executed SAP work, read-only analysis and simulations. No configuration remediation, IDoc recovery, actual release/UAT or delivered training is claimed. Billing-block behavior and CBC access remain unresolved findings.
 

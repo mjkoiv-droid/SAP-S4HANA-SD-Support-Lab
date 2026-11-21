@@ -23,7 +23,7 @@ An independent, nine-module SAP SD application support portfolio combining actua
 | **IDoc interface diagnosis** | Inbound DELFOR status 56 / partner-profile error diagnosis | [Diagnostic record](M4-IDocs-Interfaces-and-Output/IDoc-Diagnostic-Record.md) · [IDoc screenshot](M4-IDocs-Interfaces-and-Output/evidence/idoc-inbound-delfor-partner-profile-error.png) |
 | **Negative-test and defect analysis** | Documented failed proposed hold tests; cause unresolved | [Test and defect register](M6-Requirements-Enhancements-and-Testing/Test-Execution-and-Defect-Register.md) · [Invoice/FI evidence](M6-Requirements-Enhancements-and-Testing/evidence/m6-invoice90000306-accounting-links.png) |
 
-### SAP SD Application Support — competency mapping
+### SAP SD Application Support — competency and skills mapping
 
 | Typical responsibility | Skills | Demonstrated in this portfolio |
 |---|---|---|

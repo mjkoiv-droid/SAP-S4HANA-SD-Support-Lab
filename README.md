@@ -1,17 +1,18 @@
-# SAP S/4HANA SD Support Lab
+![SAP S/4HANA SD Support Lab — Functional Consulting & Application Support Portfolio](assets/sap-s4hana-sd-support-lab-banner.png)
 
-**SAP Sales (SD) Functional Consulting & Application Support | Independent hands-on portfolio**
+This README has two parts:
 
-# Executive Summary
+1. **[Executive Summary](#1-executive-summary)** — an at-a-glance overview of key achievements, practical SAP SD skills and direct links to execution evidence.
+2. **[Portfolio Documentation](#2-portfolio-documentation)** — the detailed nine-module project record, including objectives, methodology, module results and supporting evidence.
+
+# 1. Executive Summary
 
 An independent, nine-module SAP SD application support portfolio combining actual training-system execution, incident diagnosis, testing and functional documentation.
 
-**Selected results**
+### Selected results - key achievements
 - **Two executed O2C chains** from sales order through delivery, picking, PGI, billing and FI posting.
 - **Three corrected and retested cases:** pricing override, incomplete picking/PGI rejection and missing customer FI data.
 - **Further investigations:** inbound IDoc partner-profile error and unsuccessful billing-block control tests.
-
-### Six examples — reports and SAP evidence
 
 | Example | What it demonstrates | Report / execution evidence |
 |---|---|---|
@@ -39,7 +40,7 @@ An independent, nine-module SAP SD application support portfolio combining actua
 
 ---
 
-# Portfolio Documentation
+# 2. Portfolio Documentation
 
 ### 1. Portfolio Objectives
 

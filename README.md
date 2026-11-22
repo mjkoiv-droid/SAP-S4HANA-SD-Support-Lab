@@ -4,7 +4,7 @@ SAP-certified professional with over 30 years of international industrial busine
 
 <strong>SAP Certifications:</strong> S/4HANA Sales (C_TS462) · Financial Accounting (C_TS4FI) · Business AI Platform Solution Architect (C_BAIPA) · Joule Studio Developer (C_JSD)
 
-This README has two parts:
+**This README has two parts:**
 
 1. **[Executive Summary](#1-executive-summary)** — an at-a-glance overview of key achievements, practical SAP SD skills and direct links to execution evidence.
 2. **[Portfolio Documentation](#2-portfolio-documentation)** — the detailed nine-module project record, including objectives, methodology, module results and supporting evidence.

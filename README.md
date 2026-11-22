@@ -1,5 +1,9 @@
 ![SAP S/4HANA SD Support Lab — Functional Consulting & Application Support Portfolio](assets/sap-s4hana-sd-support-lab-banner.png)
 
+<sub>SAP-certified professional with over 30 years of international industrial business experience, including B2B sales, project sales, global key account management, and business management. This background provides the practical business-process perspective behind the SAP SD portfolio.</sub>
+
+<sub><strong>SAP Certifications:</strong> S/4HANA Sales (C_TS462) · Financial Accounting (C_TS4FI) · Business AI Platform Solution Architect (C_BAIPA) · Joule Studio Developer (C_JSD)</sub>
+
 This README has two parts:
 
 1. **[Executive Summary](#1-executive-summary)** — an at-a-glance overview of key achievements, practical SAP SD skills and direct links to execution evidence.

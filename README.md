@@ -2,7 +2,7 @@
 
 SAP-certified professional with over 30 years of international industrial business experience, including B2B sales, project sales, global key account management, and business management. This background provides the practical business-process perspective behind the SAP SD portfolio.
 
-<strong>SAP Certifications:</strong> S/4HANA Sales (C_TS462) · Financial Accounting (C_TS4FI) · Business AI Platform Solution Architect (C_BAIPA) · Joule Studio Developer (C_JSD)
+<strong>SAP Certifications:</strong> S/4HANA Sales (C_TS462) · Financial Accounting (C_TS4FI) · Management Accounting (C_TS4CO) · Business AI Platform Solution Architect (C_BAIPA) · Joule Studio Developer (C_JSD)
 
 **This README has two parts:**
 
@@ -302,6 +302,7 @@ This experience forms the business-process perspective behind the SAP SD portfol
 
 - SAP S/4HANA Cloud Private Edition — Sales (C_TS462)
 - SAP S/4HANA Cloud Private Edition — Financial Accounting (C_TS4FI)
+- SAP S/4HANA Cloud Private Edition — Management Accounting (C_TS4CO)
 - SAP Business AI Platform — Solution Architect (C_BAIPA)
 - SAP Joule Studio Developer (C_JSD)
 
@@ -311,6 +312,7 @@ Independent SAP S/4HANA consulting and contracting opportunities, particularly i
 
 - SAP SD application support
 - SAP SD functional consulting
+- SAP FICO functional consulting and business-process analysis
 - Implementation support
 - Functional testing and validation
 - Order-to-cash process improvement
